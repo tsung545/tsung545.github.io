@@ -51,11 +51,11 @@ head,body
 p
     margin: 0
     padding: 0
-    font-size: 22px
+    font-size: 14px
 
 @include md-width ()
     p
-        font-size: 20px
+        font-size: 16px
 
 @mixin table-normal ()
     border-collapse: collapse
@@ -70,9 +70,9 @@ p
     color: #fff
 
 @mixin table-normal-tdth ()
-    font-size: 22px
+    font-size: 14px
     border-right: 1px solid #ccc
-    padding: 12px 20px
+    padding: 8px 20px
     text-align: center
 
 @mixin table-normal-tdth-lastchild ()
@@ -97,7 +97,42 @@ p
     max-width: 960px      // 隨螢幕尺寸而變，當螢幕尺寸 ≥ 1200px 時是 1140px。
 
 h2
-    font-size: 28px
+    font-size: 20px
+
+
+@mixin keyframes($name)
+    @-webkit-keyframes #{$name}
+        @content
+    @-moz-keyframes #{$name}
+        @content
+    @-ms-keyframes #{$name}
+        @content
+    @keyframes #{$name}
+        @content
+
+@mixin transform($value) 
+    -webkit-transform: $value
+    transform: $value
+    -moz-transform: $value
+    -ms-transform: $value
+
+@mixin left($value) 
+    -webkit-left: $value
+    left: $value
+    -moz-left: $value
+    -ms-left: $value
+
+@mixin bg($value) 
+    -webkit-background-color: $value
+    background-color: $value
+    -moz-background-color: $value
+    -ms-background-color: $value
+
+@mixin animation($content)
+    -webkit-animation: $content
+    -moz-animation: $content
+    -o-animation: $content
+    animation: $content
 
 
 
@@ -131,8 +166,8 @@ header
                 color: #fff
                 transition: 0.3s
                 li
-                    padding: 24px 8px
-                    font-size: 18px
+                    padding: 16px 8px
+                    font-size: 14px
             a:hover
                 background-color: #fff
                 color: #1F499D
@@ -202,7 +237,7 @@ header
             li
                 width: fit-content
                 text-align: center
-                font-size: 22px
+                font-size: 18px
                 padding: 12px 0
         a:hover
             background-color: #fff
@@ -232,9 +267,37 @@ header
     background-position: bottom
     background-size: cover
     width: 100%
-    height: 600px
-    margin-top: 74px
+    height: 520px
+    margin-top: 52px
     .container
+        position: relative
+        +keyframes(motionInfinite)
+            0%
+                +transform(translateY(0px))
+
+            100%
+                +transform(translateY(20px))
+        +keyframes(motionUp)
+            0%
+                +transform(translateY(0))
+            100%
+                +transform(translateY(-280px))
+        .banner-bottom
+            width: 100px
+            height: 100px
+            position: absolute
+            bottom: 0
+            +animation(motionInfinite 1s 2s infinite ease-in-out alternate forwards)
+        .banner-bottom:before
+            content: ''
+            width: 100px
+            height: 100px
+            position: absolute
+            bottom: 0
+            background-image: url("../img/rainbow.png")
+            background-size: 100%
+            background-repeat: no-repeat
+            +animation(motionUp 2s 1 ease-in-out alternate both)
         .banner-content
             +flex(flex-start,center,wrap)
             width: 100%
@@ -256,7 +319,7 @@ header
                     p
                         border: 2px solid #1F499D
                         color: #1F499D
-                        font-size: 24px
+                        font-size: 18px
                         font-weight: 900
                         margin: 0
                         padding: 0
@@ -266,11 +329,11 @@ header
                         color: #fff
                         font-weight: 700
                 h1
-                    font-size: 68px
+                    font-size: 48px
                     margin: 0
                     padding: 0
                     text-shadow: 1px 1px 8px #666666
-                    line-height: 80px
+                    line-height: 60px
                     width: 100%
                     text-align: center
                 h2
@@ -279,10 +342,10 @@ header
                     margin: 0
                     padding: 0
                     text-shadow: 1px 1px 8px #666666
-                    font-size: 28px
+                    font-size: 20px
                 p
                     color: #1F499D
-                    font-size: 28px
+                    font-size: 20px
                     font-weight: 900
                     margin: 0
                     padding: 0
@@ -290,7 +353,7 @@ header
                     .banner-day
                         width: 24px
                         height: 24px
-                        font-size: 18px
+                        font-size: 14px
                         color: #ffffff
                         background-color: #1F499D
                         border-radius: 50%
@@ -303,9 +366,9 @@ header
                         width: 280px
                         height: 95px
                     h1
-                        font-size: 56px
+                        font-size: 36px
                     h2
-                        font-size: 24px
+                        font-size: 20px
 
 @include extra-lg-width ()
     .banner
@@ -315,7 +378,9 @@ header
     background-image: url("../img/bg3.jpg")
     background-position: bottom
     background-size: cover
-    height: 400px
+    height: 350px
+
+
 
 //-------- Main --------//
 
@@ -333,7 +398,8 @@ header
             width: 100%
             cursor: pointer
             button
-                font-size: 32px
+                font-family: 'Noto Sans TC', sans-serif
+                font-size: 24px
                 width: 100%
                 padding: 24px 0
                 background-color: #E2943B
@@ -364,7 +430,7 @@ header
                 list-style-type: none
                 padding-inline-start: 0px
                 li
-                    font-size: 28px
+                    font-size: 18px
                     color: #fff
                     line-height: 1.5
                     text-shadow: 1px 1px 8px #666
@@ -378,7 +444,7 @@ header
 
         .main-text
             width: 100%
-            padding: 20px
+            padding: 20px 180px
             background-color: rgba(255,255,255,0.9)
             border-radius: 10px
             box-shadow: 3px 3px 8px #565656
@@ -398,13 +464,13 @@ header
             .mark
                 color: #ff0000
                 margin-top: 24px
-            .organizer
-                background-color: #1F499D
-                color: #fff
-                text-align: center
             .table-center
                 +flex(none,center,wrap)
-                width: 100%
+                .organizer
+                    background-color: #1F499D
+                    color: #fff
+                    text-align: center
+                    width: 100%
                 .table-committee
                     +table-normal ()
                     tr
@@ -489,6 +555,8 @@ header
                         display: block
 
         @include sm-width ()
+            .main-text
+                padding: 20px
             .main-text-focus
                 ul
                     li
@@ -498,12 +566,66 @@ header
                             width: 100%
                             text-align: center
 
+//----------Top Btn----------//
+
+.top-btn
+    width: 60px
+    height: 60px
+    border-radius: 50%
+    position: fixed
+    bottom: 100px
+    right: 20px
+    border: 2px solid #565656
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.3)
+    z-index: 100
+    background-color: rgba(255,255,255,0.8)
+    a
+        +flex(center,center,none)
+        text-decoration: none
+        width: 100%
+        height: 100%
+        border-radius: 50%
+        transition: 0.3s
+        .arrow
+            width: 8px
+            height: 32px
+            background-color: #565656
+            position: relative
+            border-radius: 40px
+        .arrow:before
+            content: ''
+            position: absolute
+            top: 0
+            left: -8px
+            width: 8px
+            height: 24px
+            transform: rotate(45deg)
+            background-color: #565656
+            border-radius: 40px
+        .arrow:after
+            content: ''
+            position: absolute
+            top: 0
+            left: 8px
+            width: 8px
+            height: 24px
+            transform: rotate(-45deg)
+            background-color: #565656
+            border-radius: 40px
+    a:hover
+        background-color: #ddd
+
+@include extra-sm-width ()
+    .top-btn
+        width: 50px
+        height: 50px
+
 //-------- Footer --------//
 
 footer
     background-color: #2B5334
     color: #fff
-    padding: 24px 0
+    padding: 12px 0
     .container
         .footer-content
             +flex(center,center,wrap)
@@ -513,7 +635,7 @@ footer
                 align-content: center
                 padding: 0
                 text-align: center
-                font-size: 16px
+                font-size: 14px
             .contact
                 +flex(center,center,wrap)
                 margin: 4px 12px
@@ -526,5 +648,5 @@ footer
                 width: 100%
                 margin: 0
                 border-top: 0.5px solid rgba(255,255,255,0.3)
-                padding-top: 12px
-                margin-top: 12px
+                padding-top: 4px
+                margin-top: 4px
