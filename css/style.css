@@ -52,9 +52,6 @@ header nav {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 header nav .logo {
@@ -68,6 +65,9 @@ header nav .logo {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 52px;
   height: 52px;
   border-radius: 50%;
@@ -252,6 +252,19 @@ header .navbar-mobile a:hover {
         flex-wrap: wrap;
   }
   header nav .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-right: calc( (100% - 172px) / 2);
     margin-top: 12px;
     display: none;
@@ -396,8 +409,8 @@ header .navbar-mobile a:hover {
 }
 
 .banner .container .banner-content .banner-center img {
-  width: 350px;
-  height: 120pxs;
+  width: 300px;
+  height: 100px;
 }
 
 .banner .container .banner-content .banner-center .banner-annual {
@@ -494,6 +507,10 @@ header .navbar-mobile a:hover {
   background-image: url("../img/bg3.jpg");
   background-position: bottom;
   background-size: cover;
+  height: 350px;
+}
+
+.banner-side .container .banner-content {
   height: 350px;
 }
 
@@ -614,6 +631,16 @@ header .navbar-mobile a:hover {
   margin: 0;
   padding: 0;
   line-height: 2;
+}
+
+.main .main-content .main-text p .date {
+  background-color: #E2943B;
+  padding: 0 8px;
+  border-radius: 40px;
+}
+
+.main .main-content .main-text p a {
+  color: #ff0000;
 }
 
 .main .main-content .main-text .mark {
