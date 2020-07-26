@@ -139,8 +139,8 @@ h2
 //-------- Navbar --------//
 
 header
-    background-color: #1F499D
-    box-shadow: 0px 2px 10px rgba(0,0,0,0.3)
+    background-color: #3D74B9
+    box-shadow: 0px 1px 8px rgba(255,255,255,0.3)
     width: 100%
     position: fixed
     top: 0
@@ -148,15 +148,16 @@ header
     z-index: 100
     nav
         +flex(center,center,wrap)
+        align-items: center
         .logo
             +flex(center,center,wrap)
-            align-items: center
             width: 52px
             height: 52px 
             border-radius: 50%
             background-color: #fff
         .navbar-pc
             +flex(none,center,wrap)
+            color: #fff
             list-style-type: none
             padding-inline-start: 0
             margin: 0
@@ -165,18 +166,20 @@ header
                 text-decoration: none
                 color: #fff
                 transition: 0.3s
+                padding: 16px 12px
                 li
-                    padding: 16px 8px
-                    font-size: 14px
+                    font-size: 16px
+                    border-bottom: 2px solid #3D74B9
             a:hover
-                background-color: #fff
-                color: #1F499D
-
+                li
+                    border-bottom: 2px solid $color-yellow01
+                    color: $color-yellow01
+                
         .navbar-toggle-open
             width: 60px
             height: 60px
             border: 0
-            background-color: rgba(31,73,157,0.9)
+            background-color: rgba(61,116,185,0.9)
             position: relative
             z-index: 1000
             cursor: pointer
@@ -194,7 +197,7 @@ header
                     background-color: #fff
                     margin: 8px 0
         .navbar-toggle-close
-            background-color: #1F499D
+            background-color: #3D74B9
             border: 0
             height: 60px
             width: 60px
@@ -226,32 +229,33 @@ header
         margin: 0
         padding: 0
         padding-top: 12px
+        padding-bottom: 60px
         display: none
-        
         a
-            +flex(none,center,wrap)
-            width: calc( 50% - 2px )
+            +flex(none,flex-end,wrap)
+            width: calc( 100% / 2 )
             text-decoration: none
             color: #fff
-            border: 1px solid rgba(255,255,255,0.5)
             li
-                width: fit-content
+                width: 100px
                 text-align: center
                 font-size: 18px
-                padding: 12px 0
+                color: #fff
+                padding: 12px
+                padding-bottom: 2px
+        a:nth-child(even)
+            +flex(none,flex-start,wrap)         
         a:hover
             background-color: #fff
-            color: #1F499D
+            color: #3D74B9
 
 @include extra-lg-width ()
     header
         background-color: transparent
-        box-shadow: 0px 0px 0px rgba(0,0,0,0.3)
+        box-shadow: 0px 0px 0px rgba(255,255,255,0.3)
         nav
             +flex(center,flex-end,wrap)
             .logo
-                +flex(center,center,wrap)
-                align-items: center
                 margin-right: calc( (100% - 172px) / 2 )
                 margin-top: 12px
                 display: none
@@ -259,7 +263,6 @@ header
                 display: none
             .navbar-toggle-open
                 display: flex
-
 
 
 //-------- Banner --------//
@@ -312,7 +315,7 @@ header
                 color: #fff
                 img
                     width: 300px
-                    height: 100px
+                    height: 120px
                 .banner-annual
                     +flex(center,center,wrap)
                     width: 100%
@@ -384,7 +387,6 @@ header
     .container
         .banner-content
             height: 350px
-
 
 
 //-------- Main --------//
@@ -580,11 +582,11 @@ header
 //----------Top Btn----------//
 
 .top-btn
-    width: 60px
-    height: 60px
+    width: 50px
+    height: 50px
     border-radius: 50%
     position: fixed
-    bottom: 100px
+    bottom: 20px
     right: 20px
     border: 2px solid #565656
     box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.3)
@@ -592,6 +594,7 @@ header
     background-color: rgba(255,255,255,0.8)
     a
         +flex(center,center,none)
+        align-items: center
         text-decoration: none
         width: 100%
         height: 100%
@@ -626,10 +629,29 @@ header
     a:hover
         background-color: #ddd
 
-@include extra-sm-width ()
-    .top-btn
-        width: 50px
-        height: 50px
+//----------Home Btn----------//
+
+.home-btn
+    width: 50px
+    height: 50px
+    border-radius: 50%
+    position: fixed
+    bottom: 80px
+    right: 20px
+    border: 2px solid #565656
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.3)
+    z-index: 100
+    background-color: rgba(255,255,255,0.8)
+    a
+        +flex(center,center,none)
+        align-items: center
+        text-decoration: none
+        width: 100%
+        height: 100%
+        border-radius: 50%
+        transition: 0.3s
+    a:hover
+        background-color: #ddd
 
 //-------- Footer --------//
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant-TW">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,26 +15,12 @@
     <title>2020年中華民國數學年會</title>
 </head>
 <body>
-    <header>
+    <header id="header">
         <nav>
-            <div class="logo">
+            <!-- <div class="logo">
                 <img src="img/TMS_logo_v3.png" alt="" height="36">    
-            </div>
-            <ul class="navbar-pc">
-                <a href="index.html"><li>首頁</li></a>
-                <a href="news.html"><li>最新消息</li></a>
-                <a href="committee.html"><li>委員會</li></a>
-                <a href="program.html"><li>議程表</li></a>
-                <a href="speakers.html"><li>邀請演講</li></a>
-                <a href="registration.html"><li>註冊繳費</li></a>
-                <a href="submission.html"><li>線上投稿</li></a>
-                <a href="subsidy.html"><li>輔助申請</li></a>
-                <a href="album.html" style="background-color: #fff; color: #1F499D;"><li>年會花絮</li></a>
-                <a href="banquet.html"><li>晚宴資訊</li></a>
-                <a href="traffic.html"><li>交通資訊</li></a>
-                <a href="hotelinfo.html"><li>住宿資訊</li></a>
-                 
-            </ul>
+            </div> -->
+            <my-nav class="navbar-pc"></my-nav>
             <button class="navbar-toggle-open">
                 <div class="navbar-toggle-line-set">
                     <div class="navbar-toggle-line"></div>
@@ -51,22 +37,18 @@
             </button>
             
         </nav>
-        <ul class="navbar-mobile">
-            <a href="index.html"><li>首頁</li></a>
-            <a href="news.html"><li>最新消息</li></a>
-            <a href="committee.html"><li>委員會</li></a>
-            <a href="program.html"><li>議程表</li></a>
-            <a href="speakers.html"><li>邀請演講</li></a>
-            <a href="registration.html"><li>註冊繳費</li></a>
-            <a href="submission.html"><li>線上投稿</li></a>
-            <a href="subsidy.html"><li>輔助申請</li></a>
-            <a href="album.html" style="background-color: #fff; color: #1F499D;"><li>年會花絮</li></a>
-            <a href="banquet.html"><li>晚宴資訊</li></a>
-            <a href="traffic.html"><li>交通資訊</li></a>
-            <a href="hotelinfo.html"><li>住宿資訊</li></a>
-             
-        </ul>
+        <my-nav class="navbar-mobile"></my-nav>
     </header>
+    <section class="top-btn">
+        <a href="#">
+            <div class="arrow"></div>
+        </a>
+    </section>
+    <section class="home-btn">
+        <a href="index.html">
+            <img src="img/house.png" alt="" width="35" height="30">
+        </a>
+    </section>
     <section class="banner banner-side">
         <div class="container">
             <div class="banner-content">

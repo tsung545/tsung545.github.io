@@ -1,5 +1,75 @@
 $(function(){
 
+    var navbarData = [
+        {
+            name: '最新消息',
+            address: 'news.html'
+        },
+        {
+            name: '委員會',
+            address: 'committee.html'
+        },
+        {
+            name: '議程表',
+            address: 'program.html'
+        },
+        {
+            name: '邀請演講',
+            address: 'speakers.html'
+        },
+        {
+            name: '註冊繳費',
+            address: 'registration.html'
+        },
+        {
+            name: '線上投稿',
+            address: 'submission.html'
+        },
+        {
+            name: '輔助申請',
+            address: 'subsidy.html'
+        },
+        {
+            name: '年會花絮',
+            address: 'album.html'
+        },
+        {
+            name: '晚宴資訊',
+            address: 'banquet.html'
+        },
+        {
+            name: '交通資訊',
+            address: 'traffic.html'
+        },
+        {
+            name: '住宿資訊',
+            address: 'hotelinfo.html'
+        }
+    ]
+
+    Vue.component('my-nav', { 
+        template:
+        `
+            <ul>
+                <a v-for="item in text" v-bind:href="item.address">
+                    <li v-if="item.address == url" style="color: #EFBB24; border-bottom: 2px solid #EFBB24">{{item.name}}</li>
+                    <li v-else>{{item.name}}</li>
+                </a>
+            </ul>
+        `,
+        data(){
+            return{
+                text: navbarData,
+                url: location.href.split('/')[location.href.split('/').length - 1]
+            }
+        }
+    })
+
+    let header = new Vue({
+        el: "#header"
+    });
+
+
     //----------Navbar樣式----------//
 
     // Navbar漢堡
@@ -15,7 +85,7 @@ $(function(){
         $(".navbar-mobile").css("display","flex");
         $(".navbar-toggle-open").css("display","none");
         $(".navbar-toggle-close").css("display","flex");
-        $("header").css("background-color","#1F499D");
+        $("header").css("background-color","#3D74B9");
         $("header").css("box-shadow","0px 2px 10px rgba(0,0,0,0.3)");
         $(".logo").css("display","flex");
     });
@@ -27,7 +97,6 @@ $(function(){
         $("header").css("box-shadow","0px 0px 0px rgba(0,0,0,0.3)");
         $(".logo").css("display","none");
     });
-
 
     // var news = new Vue({
     //     el: '#news',
