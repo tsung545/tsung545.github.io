@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="zh-Hant-TW">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.js" integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.js"
+        integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous"></script>
     <!-- <script src="js/bootstrap.min.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
@@ -14,6 +17,7 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon" />
     <title>2020年中華民國數學年會</title>
 </head>
+
 <body>
     <header id="header">
         <nav>
@@ -25,17 +29,17 @@
                 <div class="navbar-toggle-line-set">
                     <div class="navbar-toggle-line"></div>
                     <div class="navbar-toggle-line"></div>
-                    <div class="navbar-toggle-line"></div>    
+                    <div class="navbar-toggle-line"></div>
                 </div>
-            
+
             </button>
             <button class="navbar-toggle-close">
                 <div class="navbar-toggle-line-set">
                     <div class="navbar-toggle-line"></div>
-                    <div class="navbar-toggle-line"></div>   
+                    <div class="navbar-toggle-line"></div>
                 </div>
             </button>
-            
+
         </nav>
         <my-nav class="navbar-mobile"></my-nav>
     </header>
@@ -55,9 +59,9 @@
                 <div class="banner-center">
                     <img src="img/rainbow.png" alt="">
                     <h1>交通資訊</h1>
-                    <h2>Transportation</h2>   
+                    <h2>Transportation</h2>
                 </div>
-            </div>    
+            </div>
         </div>
     </section>
     <section class="main">
@@ -65,128 +69,138 @@
             <div class="main-content">
                 <div class="main-text">
                     <h2>地理位置</h2>
-                    <img alt="地理位置圖" title="地理位置圖" src="http://www.fju.edu.tw/showImg/subLabelImg/1_9_83_1.jpg" style="width: 100%;">
+                    <img alt="地理位置圖" title="地理位置圖" src="http://www.fju.edu.tw/showImg/subLabelImg/1_9_83_1.jpg"
+                        style="width: 100%;">
                     <h2>公車站牌位置圖</h2>
-                    <img alt="公車站牌位置圖" title="公車站牌位置圖" src="http://www.fju.edu.tw/showImg/subLabelImg/1_9_172_1.jpg" style="width: 100%;">
+                    <img alt="公車站牌位置圖" title="公車站牌位置圖" src="http://www.fju.edu.tw/showImg/subLabelImg/1_9_172_1.jpg"
+                        style="width: 100%;">
                     <h2>輔大捷運站</h2>
-                    <iframe allowfullscreen="" frameborder="0"  style="border:0;width: 100%;" height="450" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1807.5147944904927!2d121.4344381!3d25.0330699!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a7e62da2f981%3A0x85bf93ced826265b!2z5o236YGL6LyU5aSn56uZ!5e0!3m2!1szh-TW!2stw!4v1505187108330"></iframe>
+                    <iframe allowfullscreen="" frameborder="0" style="border:0;width: 100%;" height="450"
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1807.5147944904927!2d121.4344381!3d25.0330699!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a7e62da2f981%3A0x85bf93ced826265b!2z5o236YGL6LyU5aSn56uZ!5e0!3m2!1szh-TW!2stw!4v1505187108330"></iframe>
                     <h2>捷運站及公車轉乘班次資訊</h2>
-                    <table class="table-speakers">
-                     <tr>
-                         <th>
-                             <strong>捷運站</strong>
-                         </th>
-                         <th>
-                             <strong>轉乘公車</strong>
-                         </th>
-                     </tr>
-                     </thead>
-                     <tbody>
-                         <tr>
-                             <td>
-                                 <strong>輔大站</strong>
-                                 <br>
-                                 <strong>(輔大週邊公車)</strong>
-                             </td>
-                             <td>
-                                 <strong>《捷運接駁公車》：</strong>
-                                 <br>
-                                 <p>藍2(新莊-捷運西門站)、橘21(迴龍-新北產業園區)、橘22(瓊林-捷運新莊站)</p>
-                                 <br>
-                                 <strong>《台北--輔大》：</strong>
-                                 <br>
-                                 <p>111(新莊-陽明山)(例假日行駛)、235(國父紀念館-新莊)、299(輔大-永春高中)、299區間車(輔大-台北車站)、513(輔大-捷運台大醫院站)、615(丹鳳-台北車站)、618(新莊-士林)、635(迴龍-台北)、636(迴龍-圓環)、637(五股-台北)、638(五股-捷運南京復興站)、639(樹林-北門)、663(國父紀念館-新莊)、797(五股-市政府)、799(樹林-台北)、801(五股-松山機場)、1501(五股-動物園)、1503(五股-動物園)</p>
-                                 <br>
-                                 <strong>《板橋--輔大》：</strong>
-                                 <br>
-                                 <p>99(板橋-新莊)、802區間車(新莊-捷運新埔站)、810(土城-迴龍)、842(新莊-捷運新埔站)、845(新莊-捷運新埔站)</p>
-                                 <br>
-                                 <strong>《樹林--輔大》：</strong>
-                                 <br>
-                                 <p>800(樹林-捷運輔大站)、859(泰山-樹林)、985萬大樹林線(捷運輔大站-捷運龍山寺站)</p>
-                                 <br>
-                                 <strong>《三峽--輔大》：</strong>
-                                 <br>
-                                 <p>802(三峽-捷運新埔站)</p>
-                                 <br>
-                                 <strong>《淡水--輔大》：</strong>
-                                 <br>
-                                 <p>880(樹林-淡海)、883(樹林-淡海)</p>
-                                 <br>
-                                 <strong>《桃園--輔大》：</strong>
-                                 <br>
-                                 <p>5009(桃園-新莊)、9102(桃園-台北)、1803(中壢-基隆)</p>
-                             </td>
-                         </tr>
-                         <tr>
-                             <td>
-                                 <strong>台北車站</strong>
-                             </td>
-                             <td>
-                                 <p>513(輔大-捷運台大醫院站)、299(輔大-永春高中)、299區間車(輔大-台北車站)、615(丹鳳-台北車站)</p>
-                             </td>
-                         </tr>
-                         <tr>
-                             <td>
-                                 <strong>台大醫院站</strong>
-                             </td>
-                             <td>
-                                 <p>513(輔大-捷運台大醫院站)</p>
-                             </td>
-                         </tr>
-                         <tr>
-                             <td>
-                                 <strong>西門站</strong>
-                             </td>
-                             <td>
-                                 <p>235(國父紀念館-新莊)、513(輔大-捷運台大醫院站)、635(迴龍-台北)、637(五股-台北)、663(國父紀念館-新莊)、797(五股-市政府)、799(樹林-西門)、藍2(新莊-捷運西門站)</p>
-                             </td>
-                         </tr>
-                         <tr>
-                             <td>
-                                 <strong>民權西路站</strong>
-                             </td>
-                             <td>
-                                 <p>618(新莊-士林)、636(迴龍-圓環)、638(五股-捷運南京東路站)、801(五股-松山機場)</p>
-                             </td>
-                         </tr>
-                         <tr>
-                             <td>
-                                 <strong>新埔站</strong>
-                             </td>
-                             <td>
-                                 <p>99(板橋-新莊)、802(三峽-捷運新埔站)、802區間車(新莊-捷運新埔站)、842(新莊-捷運新埔站)、845(新莊-捷運新埔站)</p>
-                             </td>
-                         </tr>
-                     </tbody>
-                    </table>
+                    <div class="table-center">
+                        <table class="table-speakers">
+                            <tr>
+                                <th>
+                                    <strong>捷運站</strong>
+                                </th>
+                                <th>
+                                    <strong>轉乘公車</strong>
+                                </th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <strong>輔大站</strong>
+                                        <br>
+                                        <strong>(輔大週邊公車)</strong>
+                                    </td>
+                                    <td>
+                                        <strong>《捷運接駁公車》：</strong>
+                                        <br>
+                                        <p>藍2(新莊-捷運西門站)、橘21(迴龍-新北產業園區)、橘22(瓊林-捷運新莊站)</p>
+                                        <br>
+                                        <strong>《台北--輔大》：</strong>
+                                        <br>
+                                        <p>111(新莊-陽明山)(例假日行駛)、235(國父紀念館-新莊)、299(輔大-永春高中)、299區間車(輔大-台北車站)、513(輔大-捷運台大醫院站)、615(丹鳳-台北車站)、618(新莊-士林)、635(迴龍-台北)、636(迴龍-圓環)、637(五股-台北)、638(五股-捷運南京復興站)、639(樹林-北門)、663(國父紀念館-新莊)、797(五股-市政府)、799(樹林-台北)、801(五股-松山機場)、1501(五股-動物園)、1503(五股-動物園)
+                                        </p>
+                                        <br>
+                                        <strong>《板橋--輔大》：</strong>
+                                        <br>
+                                        <p>99(板橋-新莊)、802區間車(新莊-捷運新埔站)、810(土城-迴龍)、842(新莊-捷運新埔站)、845(新莊-捷運新埔站)</p>
+                                        <br>
+                                        <strong>《樹林--輔大》：</strong>
+                                        <br>
+                                        <p>800(樹林-捷運輔大站)、859(泰山-樹林)、985萬大樹林線(捷運輔大站-捷運龍山寺站)</p>
+                                        <br>
+                                        <strong>《三峽--輔大》：</strong>
+                                        <br>
+                                        <p>802(三峽-捷運新埔站)</p>
+                                        <br>
+                                        <strong>《淡水--輔大》：</strong>
+                                        <br>
+                                        <p>880(樹林-淡海)、883(樹林-淡海)</p>
+                                        <br>
+                                        <strong>《桃園--輔大》：</strong>
+                                        <br>
+                                        <p>5009(桃園-新莊)、9102(桃園-台北)、1803(中壢-基隆)</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>台北車站</strong>
+                                    </td>
+                                    <td>
+                                        <p>513(輔大-捷運台大醫院站)、299(輔大-永春高中)、299區間車(輔大-台北車站)、615(丹鳳-台北車站)</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>台大醫院站</strong>
+                                    </td>
+                                    <td>
+                                        <p>513(輔大-捷運台大醫院站)</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>西門站</strong>
+                                    </td>
+                                    <td>
+                                        <p>235(國父紀念館-新莊)、513(輔大-捷運台大醫院站)、635(迴龍-台北)、637(五股-台北)、663(國父紀念館-新莊)、797(五股-市政府)、799(樹林-西門)、藍2(新莊-捷運西門站)
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>民權西路站</strong>
+                                    </td>
+                                    <td>
+                                        <p>618(新莊-士林)、636(迴龍-圓環)、638(五股-捷運南京東路站)、801(五股-松山機場)</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>新埔站</strong>
+                                    </td>
+                                    <td>
+                                        <p>99(板橋-新莊)、802(三峽-捷運新埔站)、802區間車(新莊-捷運新埔站)、842(新莊-捷運新埔站)、845(新莊-捷運新埔站)</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
                     <h2>MRT捷運路線圖</h2>
-                    <img alt="MRT捷運路線圖" title="MRT捷運路線圖" src="http://www.fju.edu.tw/showImg/subLabelImg/1_9_86_1.jpg" style="width: 100%;">
+                    <img alt="MRT捷運路線圖" title="MRT捷運路線圖" src="http://www.fju.edu.tw/showImg/subLabelImg/1_9_86_1.jpg"
+                        style="width: 100%;">
                 </div>
-            </div>    
+            </div>
         </div>
     </section>
     <footer>
         <div class="container">
-            <div class="footer-content">                
+            <div class="footer-content">
                 <a href="tel:0229052452" class="contact">
-                    <img src="https://img.icons8.com/ultraviolet/40/000000/phone.png" width="25" height="25"/>
+                    <img src="https://img.icons8.com/ultraviolet/40/000000/phone.png" width="25" height="25" />
                     <p>&ensp;TEL:&ensp;</p>
                     <p>(02)29052452</p>
                 </a>
                 <a href="fax:0229044509" class="contact">
-                    <img src="https://img.icons8.com/ultraviolet/40/000000/phone-office.png" width="25" height="25"/>
+                    <img src="https://img.icons8.com/ultraviolet/40/000000/phone-office.png" width="25" height="25" />
                     <p>&ensp;FAX:&ensp;</p>
                     <p>(02)29044509</p>
                 </a>
                 <a href="mailto:tms2020@math.fju.edu.tw" class="contact">
-                    <img src="https://img.icons8.com/ultraviolet/40/000000/email-open.png" width="25" height="25"/>
+                    <img src="https://img.icons8.com/ultraviolet/40/000000/email-open.png" width="25" height="25" />
                     <p>&ensp;E-mail:&ensp;</p>
                     <p>tms2020@math.fju.edu.tw</p>
                 </a>
                 <p class="copyright">© 2020 中華民國數學年會 Taiwan Mathematical Society Annual Meeting</p>
-            </div>    
+            </div>
         </div>
     </footer>
 </body>
+
 </html>
