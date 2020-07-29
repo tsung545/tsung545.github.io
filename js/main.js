@@ -26,7 +26,7 @@ $(function(){
             address: 'submission.html'
         },
         {
-            name: '輔助申請',
+            name: '補助申請',
             address: 'subsidy.html'
         },
         {
