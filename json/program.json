@@ -1,0 +1,35 @@
+[
+    {
+        "title": "數論與代數 Number Theory and Algebra"
+    },
+    {
+        "title": "分析 Analysis"
+    },
+    {
+        "title": "微分幾何與代數幾何 Differential and Algebraic Geometry"
+    },
+    {
+        "title": "動態系統與生物數學 Dynamical Systems and Biomathematics"
+    },
+    {
+        "title": "偏微分方程 Partial Differential Equations"
+    },
+    {
+        "title": "離散數學 Discrete Mathematics"
+    },
+    {
+        "title": "計算數學 Computational Mathematics"
+    },
+    {
+        "title": "機率 Probability"
+    },
+    {
+        "title": "最佳化 Optimization"
+    },
+    {
+        "title": "統計 Statistics"
+    },
+    {
+        "title": "資訊數學 Information Mathematics"
+    }
+]

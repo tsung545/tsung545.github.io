@@ -47,6 +47,13 @@ $(function(){
         }
     ]
 
+    //----------Vue.js----------//
+    
+    // axios.get 本機修改要記得改成 localhost
+    // 'http://localhost:5500/static/json/navbar.json'
+    // axios.get 上傳時要記得改成相對路徑
+    // './static/json/navbar.json'
+
     Vue.component('my-nav', { 
         template:
         `
@@ -65,10 +72,106 @@ $(function(){
         }
     })
 
-    let header = new Vue({
+    Vue.component('my-footer', { 
+        template:
+        `
+            <div class="footer-content">                
+                <a href="tel:0229052452" class="contact">
+                    <img src="https://img.icons8.com/ultraviolet/40/000000/phone.png" width="25" height="25"/>
+                    <p>&ensp;TEL:&ensp;</p>
+                    <p>(02)29052452</p>
+                </a>
+                <a href="fax:0229044509" class="contact">
+                    <img src="https://img.icons8.com/ultraviolet/40/000000/phone-office.png" width="25" height="25"/>
+                    <p>&ensp;FAX:&ensp;</p>
+                    <p>(02)29044509</p>
+                </a>
+                <a href="mailto:tms2020@math.fju.edu.tw" class="contact">
+                    <img src="https://img.icons8.com/ultraviolet/40/000000/email-open.png" width="25" height="25"/>
+                    <p>&ensp;E-mail:&ensp;</p>
+                    <p>tms2020@math.fju.edu.tw</p>
+                </a>
+                <p class="copyright">© 2020 中華民國數學年會 Taiwan Mathematical Society Annual Meeting</p>
+            </div>   
+        `
+    })
+
+    var header = new Vue({
         el: "#header"
     });
 
+    var footer = new Vue({
+        el: "#footer"
+    });
+
+    var news = new Vue({
+        el: "#news",
+        data: {
+            items: []     
+        },
+        computed: {
+            reverseItems() {
+                return this.items.reverse();
+            }
+        },
+        created() {
+            axios.get('./json/news.json')
+                .then(res => {
+                    this.items = res.data;
+                })
+                .catch(error => {
+                    alert("異常");
+            })
+        }
+    });
+
+    var committee = new Vue({
+        el: "#committee",
+        data: {
+            items: []     
+        },
+        created() {
+            axios.get('./json/committee.json')
+                .then(res => {
+                    this.items = res.data;
+                })
+                .catch(error => {
+                    alert("異常");
+            })
+        }
+    });
+
+    var program = new Vue({
+        el: "#program",
+        data: {
+            items: []     
+        },
+        created() {
+            axios.get('./json/program.json')
+                .then(res => {
+                    this.items = res.data;
+                })
+                .catch(error => {
+                    alert("異常");
+            })
+        }
+    });
+
+    var speakers = new Vue({
+        el: "#speakers",
+        data: {
+            items: []     
+        },
+        created() {
+            axios.get('./json/speakers.json')
+                .then(res => {
+                    this.items = res.data;
+                })
+                .catch(error => {
+                    alert("異常");
+            })
+        }
+    });
 
     //----------Navbar樣式----------//
 
@@ -97,80 +200,5 @@ $(function(){
         $("header").css("box-shadow","0px 0px 0px rgba(0,0,0,0.3)");
         $(".logo").css("display","none");
     });
-
-    // var news = new Vue({
-    //     el: '#news',
-    //     data: {
-    //         items: [],
-    //     },
-    //     // created() {
-    //     //     axios.get('http://127.0.0.1:5500/json/news.json')
-    //     //         .then(res => {
-    //     //             this.items = res.data;
-    //     //             console.log(this.items);
-    //     //         })
-    //     //         .catch(error => {
-    //     //             alert("異常");
-    //     //         })
-    //     // }
-    //     created() {
-    //         axios.get('https://script.google.com/macros/s/AKfycbxbi1JxeJfT5SsSHoxOzpfnBFz2CrcLoRicC01x/exec')
-    //             .then(res => {
-    //                 this.items = res.data;
-    //                 console.log(this.items);
-    //             })
-    //             .catch(error => {
-    //                 alert("異常");
-    //             })
-    //     },
-    //     methods: {
-    //         dateFormat: function(time){
-    //             var date = new Date(time)
-    //             var year = date.getFullYear();
-    //             var month = date.getMonth() < 10 ? '0'+ (date.getMonth() + 1) : (date.getMonth() + 1);
-    //             var day = date.getDate() < 10 ? '0' + date.getDate() : date.getDate();
-    //             return year + '/' + month + '/' + day
-    //         }
-    //     }
-    // })
-
-    // var info = new Vue({
-    //     el: '#info',
-    //     data: {
-    //         name: '',
-    //         phone: '',
-    //         email: '',
-    //         items: []
-    //     },
-    //     methods: {
-    //         postData: function(){
-    //             // axios.post('https://cors-anywhere.herokuapp.com/https://script.google.com/macros/s/AKfycby0GI2hpa0yftUFjXutmHi-KlXBTL1l6rqUv5wB/exec',{
-    //             //     "name": this.name,
-    //             //     "phone": this.phone,
-    //             //     "email": this.email
-    //             // })
-    //             axios({
-    //                 method: 'POST',
-    //                 url: 'https://script.google.com/macros/s/AKfycby0GI2hpa0yftUFjXutmHi-KlXBTL1l6rqUv5wB/exec',
-    //                 data: {
-    //                     name: this.name,
-    //                     phone: this.phone,
-    //                     email: this.email
-    //                 },
-    //                 headers: {
-    //                     'Content-Type': 'text/plain;charset=utf-8',
-    //                 }
-    //             })
-    //             .then(res => {
-    //                 this.items = res.data;
-    //                 console.log(this.items);
-    //             })
-    //             .catch(error => {
-    //                 alert("異常");
-    //             }) 
-    //         }
-    //     }
-    // })
-
 
 });

@@ -61,65 +61,45 @@
                     <p>12.05<span class="banner-day">六</span> - 12.06<span class="banner-day">日</span></p>
                 </div>
             </div>
-            <!-- <div class="banner-bottom"></div>   -->
+            <div class="banner-bottom"></div>
+            <div class="banner-bottom2"></div>
+            <div class="banner-bottom3"></div>
+            <div class="banner-bottom4"></div>
         </div>
     </section>
-    <section class="main">
+    <section id="news" class="main">
         <div class="container">
             <div class="main-content">
-                <div class="main-text-focus">
-                    <ul>
-                        <li>
-                            <span class="focus-title">會議時間</span>
-                            <span class="focus-content">2020年12月5日(六)至2020年12月6日(日)</span>
-                        </li>
-                        <li>
-                            <span class="focus-title">會議地點</span>
-                            <span class="focus-content">輔仁大學數學系</span>
-                        </li>
-                        <li>
-                            <span class="focus-title">主辦單位</span>
-                            <span class="focus-content">中華民國數學會</span>
-                        </li>
-                        <li>
-                            <span class="focus-title">承辦單位</span>
-                            <span class="focus-content">輔仁大學數學系</span>
-                        </li>
-                        <li>
-                            <span class="focus-title">協辦單位</span>
-                            <span class="focus-content">科技部自然司數學研究推動中心、輔仁大學</span>
-                        </li>
-                    </ul>
-
+                <div class="main-text">
+                    <h2>會議資訊</h2>
+                    <div class="focus-content">
+                        <span class="block title">會議時間</span><p>2020年12月5日(六)至2020年12月6日(日)</p>
+                    </div>
+                    <div class="focus-content">
+                        <span class="block title">會議地點</span><p>輔仁大學數學系</p>
+                    </div>
+                    <div class="focus-content">
+                        <span class="block title">主辦單位</span><p>中華民國數學會</p>
+                    </div>
+                    <div class="focus-content">
+                        <span class="block title">承辦單位</span><p>輔仁大學數學系</p>
+                    </div>
+                    <div class="focus-content">
+                        <span class="block title">協辦單位</span><p>科技部自然司數學研究推動中心、輔仁大學</p>
+                    </div>
                 </div>
                 <div class="main-text">
                     <h2>最新消息</h2>
-                    <p><span class="date">2020.07.20</span> 2020數學年會邀請演講名單已確定！<a href="speakers.html">點我看更多</a></p>
-                    <p><span class="date">2020.07.20</span> 9月15日起開放線上註冊繳費，10月15日前繳交註冊費享有早鳥優惠唷</p>
+                    <div class="focus-content" v-for="item in reverseItems">
+                        <span class="block date">{{item.date}}</span><p v-html="item.content"></p>
+                    </div>
                 </div>
             </div>    
         </div>
     </section>
-    <footer>
+    <footer id="footer">
         <div class="container">
-            <div class="footer-content">                
-                <a href="tel:0229052452" class="contact">
-                    <img src="https://img.icons8.com/ultraviolet/40/000000/phone.png" width="25" height="25"/>
-                    <p>&ensp;TEL:&ensp;</p>
-                    <p>(02)29052452</p>
-                </a>
-                <a href="fax:0229044509" class="contact">
-                    <img src="https://img.icons8.com/ultraviolet/40/000000/phone-office.png" width="25" height="25"/>
-                    <p>&ensp;FAX:&ensp;</p>
-                    <p>(02)29044509</p>
-                </a>
-                <a href="mailto:tms2020@math.fju.edu.tw" class="contact">
-                    <img src="https://img.icons8.com/ultraviolet/40/000000/email-open.png" width="25" height="25"/>
-                    <p>&ensp;E-mail:&ensp;</p>
-                    <p>tms2020@math.fju.edu.tw</p>
-                </a>
-                <p class="copyright">© 2020 中華民國數學年會 Taiwan Mathematical Society Annual Meeting</p>
-            </div>    
+            <my-footer></my-footer>
         </div>
     </footer>
 </body>

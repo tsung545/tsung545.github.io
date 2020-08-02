@@ -1,16 +1,22 @@
 //----------Global----------//
 
 $color-black01: #000000
-$color-black02: #9a9a9a
-$color-black03: #dddddd
-$color-black04: #eaeaea
-$color-black05: #fafafa
+$color-black02: #565656
+$color-black03: #666666
+$color-black04: #dddddd
+$color-black05: #cccccc
 $color-black06: #ffffff
-$color-blue01: #2B5F75
-$color-blue02: #cae7e8
-$color-blue03: #EBEFF1
-$color-yellow01: #EFBB24
-$color-yellow02: #FAD689
+$color-blue01: #1F499D
+$color-blue02: #3D74B9
+$color-blue03: rgba(61,116,185,0.9)
+$color-yellow01: #E2943B
+$color-green01: #2B5334
+$color-red01: #ff0000
+$color-red02: #DE85A6
+$color-shadow01: rgba(0,0,0,0.3)
+$color-shadow02: rgba(255,255,255,0.3)
+$color-shadow03: rgba(255,255,255,0.9)
+
 
 @mixin flex ($align,$justify,$wrap)
     display: flex
@@ -61,25 +67,26 @@ p
     border-collapse: collapse
     border-spacing: 0
     width: 100%
+    border: 1px solid $color-black05
 
 @mixin table-normal-tr ()
-    border-bottom: 1px solid #ccc
+    border-bottom: 1px solid $color-black05
 
 @mixin table-normal-th ()
-    background-color: #DE85A6
-    color: #fff
+    background-color: $color-red02
+    color: $color-black06
 
 @mixin table-normal-tdth ()
     font-size: 14px
-    border-right: 1px solid #ccc
+    border-right: 1px solid $color-black05
     padding: 8px 20px
     text-align: center
 
 @mixin table-normal-tdth-lastchild ()
-    border-right: 0px solid #ccc
+    border-right: 0px solid $color-black05
 
 @mixin table-normal-tr-lastchild ()
-    border-bottom: 0px solid #ccc
+    border-bottom: 0px solid $color-black05
 
 
 
@@ -97,7 +104,7 @@ p
     max-width: 960px      // 隨螢幕尺寸而變，當螢幕尺寸 ≥ 1200px 時是 1140px。
 
 h2
-    font-size: 20px
+    font-size: 24px
 
 
 @mixin keyframes($name)
@@ -134,13 +141,33 @@ h2
     -o-animation: $content
     animation: $content
 
+@mixin banner-bottom ($left)
+    width: 100px
+    height: 100px
+    position: absolute
+    left: $left
+    bottom: 0
+
+
+@mixin banner-bottom-before ($left,$url)
+    content: ''
+    width: 80px
+    height: 120px
+    position: absolute
+    bottom: 0
+    left: $left
+    // background-image: url("../img/DSCF002_1.jpg")
+    background-image: url("../img/"+$url)
+    background-size: 100%
+    background-repeat: no-repeat
+
 
 
 //-------- Navbar --------//
 
 header
-    background-color: #3D74B9
-    box-shadow: 0px 1px 8px rgba(255,255,255,0.3)
+    background-color: $color-blue02
+    box-shadow: 0px 1px 8px $color-shadow02
     width: 100%
     position: fixed
     top: 0
@@ -154,22 +181,22 @@ header
             width: 52px
             height: 52px 
             border-radius: 50%
-            background-color: #fff
+            background-color: $color-black06
         .navbar-pc
             +flex(none,center,wrap)
-            color: #fff
+            color: $color-black06
             list-style-type: none
             padding-inline-start: 0
             margin: 0
             margin-left: 8px
             a
                 text-decoration: none
-                color: #fff
+                color: $color-black06
                 transition: 0.3s
                 padding: 16px 12px
                 li
                     font-size: 16px
-                    border-bottom: 2px solid #3D74B9
+                    border-bottom: 2px solid $color-blue02
             a:hover
                 li
                     border-bottom: 2px solid $color-yellow01
@@ -179,7 +206,7 @@ header
             width: 60px
             height: 60px
             border: 0
-            background-color: rgba(61,116,185,0.9)
+            background-color: $color-blue03
             position: relative
             z-index: 1000
             cursor: pointer
@@ -194,10 +221,10 @@ header
                 .navbar-toggle-line
                     width: 32px
                     height: 2px
-                    background-color: #fff
+                    background-color: $color-black06
                     margin: 8px 0
         .navbar-toggle-close
-            background-color: #3D74B9
+            background-color: $color-blue02
             border: 0
             height: 60px
             width: 60px
@@ -215,7 +242,7 @@ header
                 .navbar-toggle-line
                     width: 36px
                     height: 2px
-                    background-color: #fff
+                    background-color: $color-black06
                     transform: rotate(40deg)
                 .navbar-toggle-line:last-child
                     transform: rotate(-40deg)
@@ -235,24 +262,24 @@ header
             +flex(none,flex-end,wrap)
             width: calc( 100% / 2 )
             text-decoration: none
-            color: #fff
+            color: $color-black06
             li
                 width: 100px
                 text-align: center
                 font-size: 18px
-                color: #fff
+                color: $color-black06
                 padding: 12px
                 padding-bottom: 2px
         a:nth-child(even)
             +flex(none,flex-start,wrap)         
         a:hover
-            background-color: #fff
-            color: #3D74B9
+            background-color: $color-black06
+            color: $color-blue02
 
 @include extra-lg-width ()
     header
         background-color: transparent
-        box-shadow: 0px 0px 0px rgba(255,255,255,0.3)
+        box-shadow: 0px 0px 0px $color-shadow02
         nav
             +flex(center,flex-end,wrap)
             .logo
@@ -268,7 +295,7 @@ header
 //-------- Banner --------//
 
 .banner
-    background-image: url("../img/bg.jpg")
+    background-image: url("../img/bg4.jpg")
     background-position: bottom
     background-size: cover
     width: 100%
@@ -279,7 +306,6 @@ header
         +keyframes(motionInfinite)
             0%
                 +transform(translateY(0px))
-
             100%
                 +transform(translateY(20px))
         +keyframes(motionUp)
@@ -287,22 +313,60 @@ header
                 +transform(translateY(0))
             100%
                 +transform(translateY(-280px))
+        +keyframes(motionInfinite2)
+            0%
+                +transform(translateY(0px))
+            100%
+                +transform(translateY(50px))
+        +keyframes(motionUp2)
+            0%
+                +transform(translateY(0))
+            100%
+                +transform(translateY(-200px))
+        +keyframes(motionInfinite3)
+            0%
+                +transform(translateY(0px))
+            100%
+                +transform(translateY(40px))
+        +keyframes(motionUp3)
+            0%
+                +transform(translateY(0))
+            100%
+                +transform(translateY(-320px))
+        +keyframes(motionInfinite4)
+            0%
+                +transform(translateY(0px))
+            100%
+                +transform(translateY(60px))
+        +keyframes(motionUp4)
+            0%
+                +transform(translateY(0))
+            100%
+                +transform(translateY(-240px))
         .banner-bottom
-            width: 100px
-            height: 100px
-            position: absolute
-            bottom: 0
+            +banner-bottom(15%)
             +animation(motionInfinite 1s 2s infinite ease-in-out alternate forwards)
         .banner-bottom:before
-            content: ''
-            width: 100px
-            height: 100px
-            position: absolute
-            bottom: 0
-            background-image: url("../img/rainbow.png")
-            background-size: 100%
-            background-repeat: no-repeat
-            +animation(motionUp 2s 1 ease-in-out alternate both)
+            +banner-bottom-before(15%,"balloon1.png")
+            +animation(motionUp2 2s 1 ease-in-out alternate both)
+        .banner-bottom2
+            +banner-bottom(0)
+            +animation(motionInfinite2 1s 2.5s infinite ease-in-out alternate forwards)
+        .banner-bottom2:before
+            +banner-bottom-before(0,"balloon2.png")
+            +animation(motionUp 2s 0.5s 1 ease-in-out alternate both)
+        .banner-bottom3
+            +banner-bottom(82%)
+            +animation(motionInfinite3 1s 1.5s infinite ease-in-out alternate forwards)
+        .banner-bottom3:before
+            +banner-bottom-before(82%,"balloon3.png")
+            +animation(motionUp3 2s 1 ease-in-out alternate both)
+        .banner-bottom4
+            +banner-bottom(70%)
+            +animation(motionInfinite4 1s 1s infinite ease-in-out alternate forwards)
+        .banner-bottom4:before
+            +banner-bottom-before(70%,"balloon4.png")
+            +animation(motionUp4 2s 1 ease-in-out alternate both)
         .banner-content
             +flex(flex-start,center,wrap)
             width: 100%
@@ -312,7 +376,7 @@ header
                 +flex(flex-start,center,wrap)
                 width: fit-content
                 padding-top: 6vh
-                color: #fff
+                color: $color-black06
                 img
                     width: 300px
                     height: 120px
@@ -322,22 +386,22 @@ header
                     margin-bottom: 12px
                     padding-top: 12px
                     p
-                        border: 2px solid #1F499D
-                        color: #1F499D
+                        border: 2px solid $color-blue01
+                        color: $color-blue01
                         font-size: 18px
                         font-weight: 900
                         margin: 0
                         padding: 0
                         padding: 0px 8px
                     p:last-child
-                        background-color: #1F499D
-                        color: #fff
+                        background-color: $color-blue01
+                        color: $color-black06
                         font-weight: 700
                 h1
                     font-size: 48px
                     margin: 0
                     padding: 0
-                    text-shadow: 1px 1px 8px #666666
+                    text-shadow: 1px 1px 8px $color-black03
                     line-height: 60px
                     width: 100%
                     text-align: center
@@ -346,10 +410,10 @@ header
                     text-align: center
                     margin: 0
                     padding: 0
-                    text-shadow: 1px 1px 8px #666666
+                    text-shadow: 1px 1px 8px $color-black03
                     font-size: 20px
                 p
-                    color: #1F499D
+                    color: $color-blue01
                     font-size: 20px
                     font-weight: 900
                     margin: 0
@@ -359,13 +423,42 @@ header
                         width: 24px
                         height: 24px
                         font-size: 14px
-                        color: #ffffff
-                        background-color: #1F499D
+                        color: $color-black06
+                        background-color: $color-blue01
                         border-radius: 50%
                         padding: 2px 6px
                         margin-left: 4px
 
-            @include extra-sm-width ()
+@include extra-lg-width ()
+    .banner
+        margin-top: 0
+        .container
+            .banner-bottom3
+                +banner-bottom(78%)
+
+@include md-width ()
+    .banner
+        .container
+            .banner-bottom3
+                +banner-bottom(72%)
+            .banner-bottom4
+                +banner-bottom(65%)
+@include sm-width ()
+    .banner
+        .container
+            .banner-bottom
+                display: none
+            .banner-bottom2
+                display: none
+            .banner-bottom3
+                display: none
+            .banner-bottom4
+                display: none
+
+@include extra-sm-width ()
+    .banner
+        .container
+            .banner-content
                 .banner-center
                     img
                         width: 280px
@@ -375,9 +468,6 @@ header
                     h2
                         font-size: 20px
 
-@include extra-lg-width ()
-    .banner
-        margin-top: 0
 
 .banner-side
     background-image: url("../img/bg3.jpg")
@@ -401,89 +491,80 @@ header
         +flex(flex-start,center,wrap)
         width: 100%
         padding: 48px 0
-        a
-            width: 100%
-            cursor: pointer
-            button
-                font-family: 'Noto Sans TC', sans-serif
-                font-size: 24px
-                width: 100%
-                padding: 24px 0
-                background-color: #E2943B
-                border-radius: 10px
-                border: 0px solid #000
-                box-shadow: 3px 3px 8px #565656
-                transition: 0.3s
-                color: #ffffff
-                font-weight: 700
-                position: relative
-            button:before
-                content: ''
-                position: absolute
-                top: 50%
-                left: 50%
-                transform: translate(-50%,-50%)
-                width: calc( 100% - 20px )
-                height: calc( 100% - 20px )
-                border: 1px dashed rgba(255,255,255,0.5)
-            button:hover
-                transform: translateY(-4px)
-                cursor: pointer
-        .main-text-focus
-            width: 100%
-            margin-bottom: 72px
-            ul
-                width: fit-content
-                list-style-type: none
-                padding-inline-start: 0px
-                li
-                    font-size: 18px
-                    color: #fff
-                    line-height: 1.5
-                    text-shadow: 1px 1px 8px #666
-                    margin: 12px 0
-                    .focus-title
-                        background-color: #DE85A6
-                        padding: 0 20px
-                        border-radius: 40px
-                        margin-right: 8px
-                        text-shadow: 0px 0px 0px #666
-
         .main-text
             width: 100%
             padding: 20px 180px
-            background-color: rgba(255,255,255,0.9)
-            border-radius: 10px
-            box-shadow: 3px 3px 8px #565656
-            margin-bottom: 40px
+            padding-bottom: 40px
+            background-color: $color-shadow03
             h2
                 margin: 0
                 padding: 0
                 text-align: center
-                margin-bottom: 24px
+                margin-bottom: 12px
                 padding-bottom: 8px
-                color: #1F499D
-                border-bottom: 3px solid #1F499D
-            p
-                margin: 0
-                padding: 0
-                line-height: 2
-                .date
-                    background-color: #E2943B
+                color: $color-blue01
+                position: relative
+            a
+                width: 100%
+                cursor: pointer
+                button
+                    font-family: 'Noto Sans TC', sans-serif
+                    font-size: 24px
+                    width: 100%
+                    padding: 24px 0
+                    margin-top: 24px
+                    background-color: $color-yellow01
+                    border-radius: 10px
+                    border: 0px solid $color-black01
+                    box-shadow: 3px 3px 8px $color-black02
+                    transition: 0.3s
+                    color: $color-black06
+                    font-weight: 700
+                    position: relative
+                button:before
+                    content: ''
+                    position: absolute
+                    top: 50%
+                    left: 50%
+                    transform: translate(-50%,-50%)
+                    width: calc( 100% - 20px )
+                    height: calc( 100% - 20px )
+                    border: 1px dashed $color-shadow03
+                button:hover
+                    transform: translateY(-4px)
+                    cursor: pointer
+            .focus-content
+                +flex(center,flex-start,wrap)
+                align-items: center
+                .block
                     padding: 0 8px
+                    margin-right: 8px
                     border-radius: 40px
-                a
-                    color: #ff0000
+                    height: fit-content
+                    font-size: 14px
+                p
+                    margin: 0
+                    padding: 0
+                    line-height: 2
+                    a
+                        color: $color-red01
+                .date
+                    background-color: $color-yellow01
+                .title
+                    background-color: $color-red02
+                
             .mark
-                color: #ff0000
+                color: $color-red01
                 margin-top: 24px
             .table-center
                 +flex(none,center,wrap)
                 .organizer
-                    background-color: #1F499D
-                    color: #fff
+                    background-color: $color-blue01
+                    color: $color-black06
                     text-align: center
                     width: 100%
+                    font-size: 16px
+                    padding: 4px
                 .table-committee
                     +table-normal ()
                     tr
@@ -543,24 +624,30 @@ header
                 .table-registration-mobile
                     display: none
                     .table-item
-                        background-color: #fff
-                        border: 1px solid #ccc
+                        background-color: $color-black06
+                        border: 1px solid $color-black05
                         margin-bottom: 24px
                         p
                             text-align: center
                             padding: 4px
                             span
-                                color: #ff0000
+                                color: $color-red01
                         .table-item-title
-                            background-color: #DE85A6
-                            color: #ffffff
+                            background-color: $color-red02
+                            color: $color-black06
                         .table-item-title-main
-                            background-color: #1F499D
-                            color: #ffffff
-
+                            background-color: $color-blue01
+                            color: $color-black06
+        .main-text:first-child
+            border-top-left-radius: 10px
+            border-top-right-radius: 10px
+        .main-text:last-child
+            border-bottom-left-radius: 10px
+            border-bottom-right-radius: 10px
 
         @include md-width ()
             .main-text
+                padding: 20px 40px
                 .table-center
                     .table-registration
                         display: none
@@ -570,14 +657,10 @@ header
         @include sm-width ()
             .main-text
                 padding: 20px
-            .main-text-focus
-                ul
-                    li
-                        +flex(none,center,wrap)
-                        margin: 28px 0
-                        .focus-content
-                            width: 100%
-                            text-align: center
+                .focus-content
+                    margin-bottom: 16px
+                    p
+                        width: 100%
 
 //----------Top Btn----------//
 
@@ -588,10 +671,10 @@ header
     position: fixed
     bottom: 20px
     right: 20px
-    border: 2px solid #565656
-    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.3)
+    border: 2px solid $color-black02
+    box-shadow: 0 -1px 5px $color-shadow01
     z-index: 100
-    background-color: rgba(255,255,255,0.8)
+    background-color: $color-shadow03
     a
         +flex(center,center,none)
         align-items: center
@@ -603,7 +686,7 @@ header
         .arrow
             width: 8px
             height: 32px
-            background-color: #565656
+            background-color: $color-black02
             position: relative
             border-radius: 40px
         .arrow:before
@@ -614,7 +697,7 @@ header
             width: 8px
             height: 24px
             transform: rotate(45deg)
-            background-color: #565656
+            background-color: $color-black02
             border-radius: 40px
         .arrow:after
             content: ''
@@ -624,10 +707,10 @@ header
             width: 8px
             height: 24px
             transform: rotate(-45deg)
-            background-color: #565656
+            background-color: $color-black02
             border-radius: 40px
     a:hover
-        background-color: #ddd
+        background-color: $color-black04
 
 //----------Home Btn----------//
 
@@ -638,10 +721,10 @@ header
     position: fixed
     bottom: 80px
     right: 20px
-    border: 2px solid #565656
-    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.3)
+    border: 2px solid $color-black02
+    box-shadow: 0 -1px 5px $color-shadow01
     z-index: 100
-    background-color: rgba(255,255,255,0.8)
+    background-color: $color-shadow03
     a
         +flex(center,center,none)
         align-items: center
@@ -651,13 +734,13 @@ header
         border-radius: 50%
         transition: 0.3s
     a:hover
-        background-color: #ddd
+        background-color: $color-black04
 
 //-------- Footer --------//
 
 footer
-    background-color: #2B5334
-    color: #fff
+    background-color: $color-green01
+    color: $color-black06
     padding: 12px 0
     .container
         .footer-content
@@ -673,13 +756,13 @@ footer
                 +flex(center,center,wrap)
                 margin: 4px 12px
                 text-decoration: none
-                color: #fff
+                color: $color-black06
                 transition: 0.3s
             .contact:hover
                 transform: translateY(-4px)
             .copyright
                 width: 100%
                 margin: 0
-                border-top: 0.5px solid rgba(255,255,255,0.3)
+                border-top: 0.5px solid $color-shadow02
                 padding-top: 4px
                 margin-top: 4px

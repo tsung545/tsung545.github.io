@@ -60,13 +60,14 @@
             </div>    
         </div>
     </section>
-    <section class="main">
+    <section id="news" class="main">
         <div class="container">
             <div class="main-content">
                 <div class="main-text">
                     <h2>最新消息</h2>
-                    <p><span class="date">2020.07.20</span> 2020數學年會邀請演講名單已確定！<a href="speakers.html">點我看更多</a></p>
-                    <p><span class="date">2020.07.20</span> 9月15日起開放線上註冊繳費，10月15日前繳交註冊費享有早鳥優惠唷</p>
+                    <div class="focus-content" v-for="item in reverseItems">
+                        <span class="block date">{{item.date}}</span><p v-html="item.content"></p>
+                    </div>
                 </div>
             </div>    
         </div>
