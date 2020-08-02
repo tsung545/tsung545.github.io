@@ -115,7 +115,7 @@ $(function(){
             }
         },
         created() {
-            axios.get('./json/news.json')
+            axios.get('http://localhost:5500/json/news.json')
                 .then(res => {
                     this.items = res.data;
                 })
@@ -131,7 +131,7 @@ $(function(){
             items: []     
         },
         created() {
-            axios.get('./json/committee.json')
+            axios.get('http://localhost:5500/json/committee.json')
                 .then(res => {
                     this.items = res.data;
                 })
@@ -147,7 +147,7 @@ $(function(){
             items: []     
         },
         created() {
-            axios.get('./json/program.json')
+            axios.get('http://localhost:5500/json/program.json')
                 .then(res => {
                     this.items = res.data;
                 })
@@ -163,7 +163,7 @@ $(function(){
             items: []     
         },
         created() {
-            axios.get('./json/speakers.json')
+            axios.get('http://localhost:5500/json/speakers.json')
                 .then(res => {
                     this.items = res.data;
                 })
