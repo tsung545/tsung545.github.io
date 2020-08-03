@@ -935,6 +935,7 @@ header .navbar-mobile a:hover {
 }
 
 .main .main-content .main-text .mark {
+  width: 100%;
   color: #ff0000;
   margin-top: 24px;
 }
