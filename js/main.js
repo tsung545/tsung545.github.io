@@ -18,7 +18,7 @@ $(function(){
             address: 'speakers.html'
         },
         {
-            name: '註冊繳費',
+            name: '線上註冊',
             address: 'registration.html'
         },
         {
