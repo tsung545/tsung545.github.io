@@ -1089,11 +1089,12 @@ header .navbar-mobile a:hover {
   border-right: 1px solid #cccccc;
   padding: 8px 20px;
   text-align: center;
-  width: 25%;
+  width: 18%;
 }
 
 .main .main-content .main-text .table-center .table-registration tr td:last-child, .main .main-content .main-text .table-center .table-registration tr th:last-child {
   border-right: 0px solid #cccccc;
+  width: 200px;
 }
 
 .main .main-content .main-text .table-center .table-registration tr:last-child {
@@ -1161,6 +1162,10 @@ header .navbar-mobile a:hover {
   .main .main-content .main-text .focus-content p {
     width: 100%;
   }
+}
+
+#registration .main-content .main-text {
+  padding: 20px 40px;
 }
 
 .top-btn {

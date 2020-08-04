@@ -617,9 +617,10 @@ header
                             +table-normal-th ()
                         td,th
                             +table-normal-tdth ()
-                            width: 25%
+                            width: 18%
                         td:last-child,th:last-child
                             +table-normal-tdth-lastchild ()
+                            width: 200px
                     tr:last-child
                         +table-normal-tr-lastchild ()
                 .table-registration-mobile
@@ -645,6 +646,7 @@ header
         .main-text:last-child
             border-bottom-left-radius: 10px
             border-bottom-right-radius: 10px
+        
 
         @include md-width ()
             .main-text
@@ -662,6 +664,10 @@ header
                     margin-bottom: 16px
                     p
                         width: 100%
+#registration
+    .main-content
+        .main-text
+            padding: 20px 40px
 
 //----------Top Btn----------//
 
