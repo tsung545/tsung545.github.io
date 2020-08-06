@@ -60,12 +60,46 @@
             </div>    
         </div>
     </section>
-    <section class="main">
+    <section id="program" class="main">
         <div class="container">
             <div class="main-content">
                 <div class="main-text">
-                    <h2>Coming Soon</h2>
-                    <p style="color: #DE85A6; font-size: 72px; text-align: center;">Coming Soon</p>
+                    <h2>2020中華民國數學年會論文徵稿須知</h2>
+                    <p>『2020中華民國數學年會』將於2020年12月5日(星期六)至12月6日(星期日)假輔仁大學舉行。本會針對下列主題公開徵求論文，經審查通過後，將於年會中口頭發表(發表時段25分鐘)。</p>
+                    <div class="table-center">
+                        <table class="table-program">
+                            <tr>
+                                <th>編號 No.</th>
+                                <th>主題 Session</th>
+                            </tr>
+                            <tr v-for="item in items">
+                                <td>{{item.number}}</td>
+                                <td>{{item.title}}</td>
+                            </tr>
+                        </table>    
+                    </div>
+                </div>
+                <div class="main-text">
+                    <h2>重要日程</h2>
+                    <p>109年9月15日：投稿開始、註冊與繳費開始</p>
+                    <p>109年10月15日：截稿</p>
+                    <p>109年11月20日：公告議程</p>
+                    <p>109年12月5-6日：數學年會</p>
+                </div>
+                <div class="main-text">
+                    <h2>投稿方式</h2>
+                    <p>請於投稿開放期間完成:<br>
+                       1.  稿件請用TeX格式進行編輯 ( LaTex線上編輯網址 : overleaf.com ，可採用google 登入或e-mail註冊帳號 )。<br>
+                       2.  論文摘要轉換成pdf檔案。<br>
+                       3.  檔名命名規則: T[No.]_[Name of the Author]_Abstract  ( No. 主題Session編號 )。<br>
+                       4.  摘要請於報名時一併上傳 ( 按此進入報名系統 )，若須更新請於10月31日前將檔案寄至: tms2020@math.fju.edu.tw 。<br>
+                    </p>
+                </div>
+                <div class="main-text">
+                    <h2>格式範例</h2>
+                    <p>TeX 樣板 LaTex Template (下載 tms2020-abstract-template.tex)</p>
+                    <p>Pdf檔為編譯LaTex Template後之輸出檔案 (下載 tms2020-abstract-template.pdf )</p>
+                    <p>論文摘要上傳已截止，如為受邀講者，請將摘要寄至 : tms2020@math.fju.edu.tw</p>
                 </div>
             </div>    
         </div>
