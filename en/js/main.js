@@ -103,7 +103,7 @@ $(function(){
             }
         },
         created() {
-            axios.get('./en/json/news.json')
+            axios.get('./json/news.json')
                 .then(res => {
                     this.items = res.data;
                 })
@@ -119,7 +119,7 @@ $(function(){
             items: []     
         },
         created() {
-            axios.get('./en/json/committee.json')
+            axios.get('./json/committee.json')
                 .then(res => {
                     this.items = res.data;
                 })
@@ -135,7 +135,7 @@ $(function(){
             items: []     
         },
         created() {
-            axios.get('./en/json/program.json')
+            axios.get('./json/program.json')
                 .then(res => {
                     this.items = res.data;
                 })
@@ -151,7 +151,7 @@ $(function(){
             items: []     
         },
         created() {
-            axios.get('./en/json/speakers.json')
+            axios.get('./json/speakers.json')
                 .then(res => {
                     this.items = res.data;
                 })
