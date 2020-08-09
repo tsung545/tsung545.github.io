@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.js" integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous"></script>
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+    <script src="js/main.js"></script>
+    <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon" />
+    <title>2020年中華民國數學年會</title>
+</head>
+<body>
+    <header id="header">
+        <nav>
+            <!-- <div class="logo">
+                <img src="img/TMS_logo_v3.png" alt="" height="36">    
+            </div> -->
+            <my-nav class="navbar-pc"></my-nav>
+            <button class="navbar-toggle-open">
+                <div class="navbar-toggle-line-set">
+                    <div class="navbar-toggle-line"></div>
+                    <div class="navbar-toggle-line"></div>
+                    <div class="navbar-toggle-line"></div>    
+                </div>
+                
+            </button>
+            <button class="navbar-toggle-close">
+                <div class="navbar-toggle-line-set">
+                    <div class="navbar-toggle-line"></div>
+                    <div class="navbar-toggle-line"></div>   
+                </div>
+            </button>
+            
+        </nav>
+        <my-nav class="navbar-mobile"></my-nav>
+    </header>
+    <section class="top-btn">
+        <a href="#">
+            <div class="arrow"></div>
+        </a>
+    </section>
+    <section class="home-btn">
+        <a href="index.html">
+            <img src="img/house.png" alt="" width="35" height="30">
+        </a>
+    </section>
+    <section class="banner banner-side">
+        <div class="container">
+            <div class="banner-content">
+                <div class="banner-center">
+                    <img src="img/rainbow.png" alt="">
+                    <h1>On-line Registration</h1>   
+                </div>
+            </div>    
+        </div>
+    </section>
+    <section id="registration" class="main">
+        <div class="container">
+            <div class="main-content">
+                <div class="main-text">
+                    <h2>Table of Registration Fee</h2>
+                    <div class="table-center">
+                        <table class="table-registration">
+                            <tr>
+                                <th colspan="2">Categories</th>
+                                <th>Early bird payment<br>(09/15-10/15)</th>
+                                <th>Standard registration fee</th>
+                                <th>Reminders</th>
+                            </tr>
+                            <tr>
+                                <td rowspan="6">Regular Participants</td>
+                                <td>Member of TMS</td>
+                                <td>NTD 2,000/per</td>
+                                <td>NTD 2,500/per</td>
+                                <td><br>A valid membership of TMS is required.</td>
+                            </tr>
+                            <tr>
+                                <td>Non-Member of TMS</td>
+                                <td>NTD 2,400/per</td>
+                                <td>NTD 3,000/per</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Graduate students (Master or Ph.D. students)</td>
+                                <td>NTD 400/per</td>
+                                <td>NTD 1,000/per</td>
+                                <td rowspan="3">It’s required to present a valid ID for the applied category at Reception, or to pay up in full the difference.</td>
+                            </tr>
+                            <tr>
+                                <td> Undergraduate student*</td>
+                                <td colspan="2">Free</td>
+                            </tr>
+                            <tr>
+                                <td>Retirees*</td>
+                                <td colspan="2">Free</td>
+                            </tr>
+                            <tr>
+                                <td>Session organizers</td>
+                                <td colspan="2">Free</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">Invited Speakers〔45 minutes〕</td>
+                                <td colspan="2">Free</td>
+                                <td rowspan="2">Please see Call for Papers at our conference website for abstract submission.</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">Invited Speakers〔25 minutes〕</td>
+                                <td colspan="2">The same as the fee for regular participants.</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">Accompanying persons</td>
+                                <td>NTD 800/per</td>
+                                <td>NTD 1,000/per</td>
+                                <td>The fee includes 2 lunch and 1 dinner during conference.</td>
+                            </tr>  
+                        </table>
+                        <div class="table-registration-mobile">
+                            <div class="table-item">
+                                <p class="table-item-title-main">Categories</p>
+                                <p><span>Member of TMS</span></p>
+                                <p class="table-item-title">Early bird payment<br>(09/15-10/15)</p>
+                                <p>NTD 2,000/per</p>
+                                <p class="table-item-title">Standard registration fee</p>
+                                <p>NTD 2,500/per</p>
+                                <p class="table-item-title">Reminders</p>
+                                <p>A valid membership of TMS is required.</p>
+                            </div>
+                            <div class="table-item">
+                                <p class="table-item-title-main">Categories</p>
+                                <p><span>Non-Member of TMS</span></p>
+                                <p class="table-item-title">Early bird payment<br>(09/15-10/15)</p>
+                                <p>NTD 2,400/per</p>
+                                <p class="table-item-title">Standard registration fee</p>
+                                <p>NTD 3,000/per</p>
+                                <p class="table-item-title">Reminders</p>
+                                <p>None.</p>
+                            </div>
+                            <div class="table-item">
+                                <p class="table-item-title-main">Categories</p>
+                                <p><span>Graduate students (Master or PhD student)</span></p>
+                                <p class="table-item-title">Early bird payment<br>(09/15-10/15)</p>
+                                <p>NTD 400/per</p>
+                                <p class="table-item-title">Standard registration fee</p>
+                                <p>NTD 1,000/per</p>
+                                <p class="table-item-title">Reminders</p>
+                                <p>It’s required to present a valid ID for the applied category at Reception, or to pay up in full the difference.</p>
+                            </div>
+                            <div class="table-item">
+                                <p class="table-item-title-main">Categories</p>
+                                <p><span>Undergraduate student*</span></p>
+                                <p class="table-item-title">Early bird payment<br>(09/15-10/15)</p>
+                                <p>Free</p>
+                                <p class="table-item-title">Standard registration fee</p>
+                                <p>Free</p>
+                                <p class="table-item-title">Reminders</p>
+                                <p>It’s required to present a valid ID for the applied category at Reception, or to pay up in full the difference.</p>
+                            </div>
+                            <div class="table-item">
+                                <p class="table-item-title-main">Categories</p>
+                                <p><span>Retirees*</span></p>
+                                <p class="table-item-title">Early bird payment<br>(09/15-10/15)</p>
+                                <p>Free</p>
+                                <p class="table-item-title">Standard registration fee</p>
+                                <p>Free</p>
+                                <p class="table-item-title">Reminders</p>
+                                <p>It’s required to present a valid ID for the applied category at Reception, or to pay up in full the difference.</p>
+                            </div>
+                            <div class="table-item">
+                                <p class="table-item-title-main">Categories</p>
+                                <p><span>Session organizers</span></p>
+                                <p class="table-item-title">Early bird payment<br>(09/15-10/15)</p>
+                                <p>Free</p>
+                                <p class="table-item-title">Standard registration fee</p>
+                                <p>Free</p>
+                                <p class="table-item-title">Reminders</p>
+                                <p>None.</p>
+                            </div>
+                            <div class="table-item">
+                                <p class="table-item-title-main">Categories</p>
+                                <p><span>Invited Speakers〔45 minutes〕</span></p>
+                                <p class="table-item-title">Early bird payment<br>(09/15-10/15)</p>
+                                <p>Free</p>
+                                <p class="table-item-title">Standard registration fee</p>
+                                <p>Free</p>
+                                <p class="table-item-title">Reminders</p>
+                                <p>Please see Call for Papers at our conference website for abstract submission.</p>
+                            </div>
+                            <div class="table-item">
+                                <p class="table-item-title-main">Categories</p>
+                                <p><span>Invited Speakers〔25 minutes〕</span></p>
+                                <p class="table-item-title">Early bird payment<br>(09/15-10/15)</p>
+                                <p>The same as the fee for regular participants.</p>
+                                <p class="table-item-title">Standard registration fee</p>
+                                <p>The same as the fee for regular participants.</p>
+                                <p class="table-item-title">Reminders</p>
+                                <p>Please see Call for Papers at our conference website for abstract submission.</p>
+                            </div>
+                            <div class="table-item">
+                                <p class="table-item-title-main">Categories</p>
+                                <p><span></span></p>
+                                <p class="table-item-title">Early bird payment<br>(09/15-10/15)</p>
+                                <p>The same as the fee for regular participants.</p>
+                                <p class="table-item-title">Standard registration fee</p>
+                                <p>The same as the fee for regular participants.</p>
+                                <p class="table-item-title">Reminders</p>
+                                <p>Please see Call for Papers at our conference website for abstract submission.</p>
+                            </div>
+                            <div class="table-item">
+                                <p class="table-item-title-main">Categories</p>
+                                <p><span>Accompanying persons</span></p>
+                                <p class="table-item-title">Early bird payment<br>(09/15-10/15)</p>
+                                <p>NTD 800/per</p>
+                                <p class="table-item-title">Standard registration fee</p>
+                                <p>NTD 1,000/per</p>
+                                <p class="table-item-title">Reminders</p>
+                                <p>The fee includes 2 lunch and 1 dinner during conference.</p>
+                            </div>
+                        </div>
+                        <p class="mark">*Undergraduate students and Retirees need to pay NTD 800 per person if wishing to attend conference dinner.</p>
+                        <p class="mark">Please use a valid E-mail address to register online.</p>
+                        <p class="mark">Registration Deadline: 2020/11/15.</p>
+                        <p class="mark">On-site registration will be available.</p>
+                        <a href="https://tms.neticrm.tw/civicrm/event/register?reset=1&id=6" target="_blank"><button>Register and Pay Now!</button></a>    
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="footer-content">                
+                <a href="tel:0229052452" class="contact">
+                    <img src="https://img.icons8.com/ultraviolet/40/000000/phone.png" width="25" height="25"/>
+                    <p>&ensp;TEL:&ensp;</p>
+                    <p>(02)29052452</p>
+                </a>
+                <a href="fax:0229044509" class="contact">
+                    <img src="https://img.icons8.com/ultraviolet/40/000000/phone-office.png" width="25" height="25"/>
+                    <p>&ensp;FAX:&ensp;</p>
+                    <p>(02)29044509</p>
+                </a>
+                <a href="mailto:tms2020@math.fju.edu.tw" class="contact">
+                    <img src="https://img.icons8.com/ultraviolet/40/000000/email-open.png" width="25" height="25"/>
+                    <p>&ensp;E-mail:&ensp;</p>
+                    <p>tms2020@math.fju.edu.tw</p>
+                </a>
+                <p class="copyright">© 2020 中華民國數學年會 Taiwan Mathematical Society Annual Meeting</p>
+            </div>    
+        </div>
+    </footer>
+</body>
+</html>

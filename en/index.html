@@ -20,14 +20,13 @@
             <!-- <div class="logo">
                 <img src="img/TMS_logo_v3.png" alt="" height="36">    
             </div> -->
-            <my-nav class="navbar-pc"></my-nav>
+            <my-nav class="navbar-pc"></my-nav> 
             <button class="navbar-toggle-open">
                 <div class="navbar-toggle-line-set">
                     <div class="navbar-toggle-line"></div>
                     <div class="navbar-toggle-line"></div>
                     <div class="navbar-toggle-line"></div>    
                 </div>
-                
             </button>
             <button class="navbar-toggle-close">
                 <div class="navbar-toggle-line-set">
@@ -35,7 +34,6 @@
                     <div class="navbar-toggle-line"></div>   
                 </div>
             </button>
-            
         </nav>
         <my-nav class="navbar-mobile"></my-nav>
     </header>
@@ -49,58 +47,53 @@
             <img src="img/house.png" alt="" width="35" height="30">
         </a>
     </section>
-    <section class="banner banner-side">
+    <section class="banner">
         <div class="container">
             <div class="banner-content">
                 <div class="banner-center">
                     <img src="img/rainbow.png" alt="">
-                    <h1>議程表</h1>
-                    <h2>Program</h2>   
+                    <div class="banner-annual">
+                        <p>2020</p>
+                        <p>輔大數學</p>
+                    </div>
+                    <h1>中華民國<br>數學年會</h1>
+                    <h2>TMS Annual Meeting</h2>
+                    <p>12.05<span class="banner-day">六</span> - 12.06<span class="banner-day">日</span></p>
                 </div>
-            </div>    
+            </div>
+            <div class="banner-bottom"></div>
+            <div class="banner-bottom2"></div>
+            <div class="banner-bottom3"></div>
+            <div class="banner-bottom4"></div>
         </div>
     </section>
-    <section id="program" class="main">
+    <section id="news" class="main">
         <div class="container">
             <div class="main-content">
                 <div class="main-text">
-                    <h2>分組議程</h2>
-                    <div class="table-center">
-                        <table class="table-program">
-                            <tr>
-                                <th>編號 </th>
-                                <th>主題</th>
-                            </tr>
-                            <tr v-for="item in items">
-                                <td>{{item.number}}</td>
-                                <td>{{item.title}}</td>
-                            </tr>
-                        </table>    
+                    <h2>會議資訊</h2>
+                    <div class="focus-content">
+                        <span class="block title">會議時間</span><p>2020年12月5日(六)至2020年12月6日(日)</p>
+                    </div>
+                    <div class="focus-content">
+                        <span class="block title">會議地點</span><p>輔仁大學數學系</p>
+                    </div>
+                    <div class="focus-content">
+                        <span class="block title">主辦單位</span><p>中華民國數學會</p>
+                    </div>
+                    <div class="focus-content">
+                        <span class="block title">承辦單位</span><p>輔仁大學數學系</p>
+                    </div>
+                    <div class="focus-content">
+                        <span class="block title">協辦單位</span><p>科技部自然司數學研究推動中心、輔仁大學</p>
                     </div>
                 </div>
             </div>    
         </div>
     </section>
-    <footer>
+    <footer id="footer">
         <div class="container">
-            <div class="footer-content">                
-                <a href="tel:0229052452" class="contact">
-                    <img src="https://img.icons8.com/ultraviolet/40/000000/phone.png" width="25" height="25"/>
-                    <p>&ensp;TEL:&ensp;</p>
-                    <p>(02)29052452</p>
-                </a>
-                <a href="fax:0229044509" class="contact">
-                    <img src="https://img.icons8.com/ultraviolet/40/000000/phone-office.png" width="25" height="25"/>
-                    <p>&ensp;FAX:&ensp;</p>
-                    <p>(02)29044509</p>
-                </a>
-                <a href="mailto:tms2020@math.fju.edu.tw" class="contact">
-                    <img src="https://img.icons8.com/ultraviolet/40/000000/email-open.png" width="25" height="25"/>
-                    <p>&ensp;E-mail:&ensp;</p>
-                    <p>tms2020@math.fju.edu.tw</p>
-                </a>
-                <p class="copyright">© 2020 中華民國數學年會 Taiwan Mathematical Society Annual Meeting</p>
-            </div>    
+            <my-footer></my-footer>
         </div>
     </footer>
 </body>

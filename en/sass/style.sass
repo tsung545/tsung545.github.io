@@ -269,7 +269,8 @@ header
         padding-bottom: 60px
         display: none
         a
-            +flex(none,flex-end,wrap)
+            +flex(center,flex-end,wrap)
+            align-items: center
             width: calc( 100% / 2 )
             text-decoration: none
             color: $color-black06
@@ -281,7 +282,8 @@ header
                 padding: 12px
                 padding-bottom: 2px
         a:nth-child(even)
-            +flex(none,flex-start,wrap)         
+            +flex(center,flex-start,wrap)
+            align-items: center      
         a:hover
             background-color: $color-black06
             color: $color-blue02

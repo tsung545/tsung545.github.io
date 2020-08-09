@@ -1,0 +1,46 @@
+[
+    {
+        "number": "1",
+        "title": "Analysis"
+    },
+    {
+        "number": "2",
+        "title": "Differential and Algebraic Geometry"
+    },
+    {
+        "number": "3",
+        "title": "Dynamical Systems and Biomathematics"
+    },
+    {
+        "number": "4",
+        "title": "Number Theory and Algebra"
+    },
+    {
+        "number": "5",
+        "title": "Discrete Mathematics"
+    },
+    {
+        "number": "6",
+        "title": "Computational Mathematics"
+    },
+    {
+        "number": "7",
+        "title": "Probability"
+    },
+    {
+        "number": "8",
+        "title": "Partial Differential Equations"
+    },
+    {
+        "number": "9",
+        "title": "Optimization"
+    },
+    {
+        "number": "10",
+        "title": "Statistics"
+    },
+    {
+        "number": "11",
+        "title": "Information Mathematics"
+    }
+]

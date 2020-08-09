@@ -1,6 +1,6 @@
 [
     {
-        "title": "分析",
+        "title": "Analysis",
         "organizer": "Organizer: 李明憶 國立中央大學數學系",
         "speakers": 
         [
@@ -31,7 +31,7 @@
         ]       
     },
     {
-        "title": "微分幾何與代數幾何",
+        "title": "Differential and Algebraic Geometry",
         "organizer": "Organizer: 蔡忠潤 國立臺灣大學數學系",
         "speakers": 
         [
@@ -70,7 +70,7 @@
         ]       
     },
     {
-        "title": "動態系統與生物數學",
+        "title": "Dynamical Systems and Biomathematics",
         "organizer": "Organizer: 王埄彬 長庚通識中心",
         "speakers": 
         [
@@ -101,7 +101,7 @@
         ]       
     },
     {
-        "title": "數論與代數",
+        "title": "Number Theory and Algebra",
         "organizer": "Organizer: 余家富 中央研究院數學所",
         "speakers": 
         [
@@ -136,7 +136,7 @@
         ]       
     },
     {
-        "title": "離散數學",
+        "title": "Discrete Mathematics",
         "organizer": "Organizer: 王彩蓮 國立中山大學應用數學系",
         "speakers": 
         [
@@ -167,7 +167,7 @@
         ]       
     },
     {
-        "title": "計算數學",
+        "title": "Computational Mathematics",
         "organizer": "Organizer: 薛名成 國立交通大學數學系",
         "speakers": 
         [
@@ -198,7 +198,7 @@
         ]       
     },
     {
-        "title": "機率",
+        "title": "Probability",
         "organizer": "Organizer: 須上苑 國立中央大學數學系",
         "speakers": 
         [
@@ -229,7 +229,7 @@
         ]       
     },
     {
-        "title": "偏微分方程",
+        "title": "Partial Differential Equations",
         "organizer": "Organizer: 吳恭儉 國立成功大學數學系",
         "speakers": 
         [
@@ -260,7 +260,7 @@
         ]       
     },
     {
-        "title": "最佳化",
+        "title": "Optimization",
         "organizer": "Organizer: 許瑞麟 國立成功大學數學系",
         "speakers": 
         [
@@ -299,7 +299,7 @@
         ]       
     },
     {
-        "title": "統計",
+        "title": "Statistics",
         "organizer": "Organizer: 黃禮珊 國立清華大學統計所",
         "speakers": 
         [
@@ -330,7 +330,7 @@
         ]       
     },
     {
-        "title": "資訊數學",
+        "title": "Information Mathematics",
         "organizer": "Organizer: 潘俊杰 輔仁大學數學系",
         "speakers": 
         [

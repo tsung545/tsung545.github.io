@@ -225,13 +225,16 @@ header .navbar-mobile a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-line-pack: none;
-      align-content: none;
+  -ms-flex-line-pack: center;
+      align-content: center;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: calc( 100% / 2);
   text-decoration: none;
   color: #ffffff;
@@ -250,13 +253,16 @@ header .navbar-mobile a:nth-child(even) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-line-pack: none;
-      align-content: none;
+  -ms-flex-line-pack: center;
+      align-content: center;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 header .navbar-mobile a:hover {

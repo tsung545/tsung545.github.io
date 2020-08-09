@@ -2,48 +2,32 @@ $(function(){
 
     var navbarData = [
         {
-            name: '最新消息',
-            address: 'news.html'
-        },
-        {
-            name: '委員會',
+            name: 'Commiteee',
             address: 'committee.html'
         },
         {
-            name: '議程表',
+            name: 'Program',
             address: 'program.html'
         },
         {
-            name: '邀請演講',
+            name: 'Invited Speakers',
             address: 'speakers.html'
         },
         {
-            name: '線上註冊',
+            name: 'On-line Registration',
             address: 'registration.html'
         },
         {
-            name: '線上投稿',
+            name: 'Abstract Submission',
             address: 'submission.html'
         },
         {
-            name: '補助申請',
+            name: 'Subsidy',
             address: 'subsidy.html'
         },
         {
-            name: '年會花絮',
+            name: 'Album',
             address: 'album.html'
-        },
-        {
-            name: '晚宴資訊',
-            address: 'banquet.html'
-        },
-        {
-            name: '交通資訊',
-            address: 'traffic.html'
-        },
-        {
-            name: '住宿資訊',
-            address: 'hotelinfo.html'
         }
     ]
 
@@ -62,8 +46,8 @@ $(function(){
                     <li v-if="item.address == url" style="color: #EFBB24; border-bottom: 2px solid #EFBB24">{{item.name}}</li>
                     <li v-else>{{item.name}}</li>
                 </a>
-                <a class="language" href="/en/index.html">
-                    <li>ENGLISH</li>
+                <a class="language" href="../../index.html">
+                    <li>中文版</li>
                 </a>
             </ul>
            
@@ -119,7 +103,7 @@ $(function(){
             }
         },
         created() {
-            axios.get('./json/news.json')
+            axios.get('./en/json/news.json')
                 .then(res => {
                     this.items = res.data;
                 })
@@ -135,7 +119,7 @@ $(function(){
             items: []     
         },
         created() {
-            axios.get('./json/committee.json')
+            axios.get('./en/json/committee.json')
                 .then(res => {
                     this.items = res.data;
                 })
@@ -151,7 +135,7 @@ $(function(){
             items: []     
         },
         created() {
-            axios.get('./json/program.json')
+            axios.get('./en/json/program.json')
                 .then(res => {
                     this.items = res.data;
                 })
@@ -167,7 +151,7 @@ $(function(){
             items: []     
         },
         created() {
-            axios.get('./json/speakers.json')
+            axios.get('./en/json/speakers.json')
                 .then(res => {
                     this.items = res.data;
                 })
