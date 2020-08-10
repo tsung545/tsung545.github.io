@@ -1,0 +1,132 @@
+\documentclass[12pt]{article}   % you have 10pt, 11pt, or 12pt options
+
+\setlength{\textwidth}{17.2cm}     % if you change this, consider changing
+\setlength{\evensidemargin}{-.3cm} % side margins to retain centering
+\setlength{\oddsidemargin}{-.3cm}
+
+\setlength{\textheight}{23cm}   % if you change this, consider changing
+\setlength{\topmargin}{-2cm}  % top margin to retain centering
+\setlength{\headsep}{1.6cm}
+
+%---------------------- These packages below add functionality to your version of LaTeX --------------
+%---------------------- You might not use all of them --------------------------------------
+\usepackage{amssymb}
+\usepackage{latexsym}
+\usepackage{amsthm}
+\usepackage{enumerate}
+\usepackage{epsfig}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{float}
+\usepackage{subfigure}
+\usepackage{amsmath}
+\usepackage{makeidx}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{url}
+\pagestyle{fancy}
+\pagestyle{empty}
+
+
+%---------- the symbols below will give you the blackboard bold of R, T, etc. ----------
+\DeclareSymbolFont{AMSb}{U}{msb}{m}{n}  
+\DeclareMathSymbol{\Sph}{\mathbin}{AMSb}{"53} \DeclareMathSymbol{\R}{\mathbin}{AMSb}{"52}
+\DeclareMathSymbol{\T}{\mathbin}{AMSb}{"54} \DeclareMathSymbol{\Z}{\mathbin}{AMSb}{"5A}
+\DeclareMathSymbol{\K}{\mathbin}{AMSb}{"4B}
+
+%------------------------- Theorem and Proof Environments -------------------------------------------------
+
+% This section defines all the environments you might use.  Just type
+% \begin{theorem, or corollary, or whatever}, then the optional name of the
+% theorem inside {} (or empty {} if no name), then body of the theorem,
+% corollary, whatever, also inside {} then \end{theorem, corollary, whatever}
+%
+% Notice when I use them in the paper, I put an optional "argument" to the function
+% and this gives a name to the theorem
+
+\newenvironment{theorem}[1]{\vspace{.9cm}\noindent    {\bf Theorem {#1}}}{\vspace{.1cm}}
+\newenvironment{lemma}[1]{\vspace{.9cm}\noindent    {\bf Lemma {#1}}}{\vspace{.1cm}}
+\newenvironment{corollary}[1]{\vspace{.9cm}\noindent    {\bf Corollary {#1}}}{\vspace{.1cm}}
+\newenvironment{definition}{\vspace{.9cm}\noindent {\bf Definition}}{\vspace{.1cm}}
+\def\qed{\hfill $\Box$}
+\renewenvironment{proof}{\vspace{.5cm}   \noindent{\bf Proof: }}{\qed \vspace{1cm}}
+ 
+
+%Picture inclusion
+
+\newcommand\pic[3]{
+\begin{figure}[H] \begin{center} 
+\epsfig{file=#1, height=#2pt} 
+\end{center} 
+\caption{#3} 
+\end{figure}
+}
+
+\def\inj{\text{inj}}
+\def\diam{\text{diam}}
+\def\area{\text{area}}
+\def\length{\text{length}}
+
+% Keywords command
+\providecommand{\keywords}[1]
+{
+  \small	
+  \textbf{\textit{Keywords---}} #1
+}
+
+%*****************************************************************************************
+
+\begin{document}  % necessary part of document
+
+\title{  LaTeX \, Template and Tutorial for Math Modelers  }
+
+\author{Your Name\\
+        \small{ Your Department, Your University }\\
+        \small{ E-mail: Your E-mail address }
+        }
+        
+\date{} %No Date
+
+\maketitle
+
+\thispagestyle{empty}
+
+\begin{abstract}
+This is a template of the abstract of the contributing presentation for 2020 TMS Annual Meeting. The file should be named such as
+ \begin{center}{\tt T[No.]\textunderscore [Name of the Author]\textunderscore Abstract}.\end{center}
+ \noindent The number in the bracket represents the topic. Please refer to the website of 2020 TMS for the number of the topic.\\
+\end{abstract}
+
+\keywords{   keyword 1, keyword 2, keyword 3    }
+
+%------------------------------------------------------------------------------------
+\begin{thebibliography}{99}  % 99 is the highest number of references this expects;  
+                                                       % this sets the expected width of the citation
+\bibitem{ } 
+P. Erd\H os, 
+\emph{ A selection of problems and results in combinatorics },  
+Recent trends in combinatorics (Matrahaza, 1995),  
+Cambridge Univ. Press, 
+Cambridge, 2001, pp. 1--6.
+
+\bibitem{ }
+R.L. Graham, D.E. Knuth, and O. Patashnik, 
+\emph{Concrete mathematics}, 
+Addison-Wesley, 
+Reading, MA, 1989.
+
+\bibitem{ } 
+D.E. Knuth, 
+\emph{   Two notes on notation  }, 
+Amer. Math. Monthly \textbf{99} (1992), 403--422.
+
+\bibitem{ } 
+H. Simpson, 
+\emph{Proof of the Riemann Hypothesis},  
+preprint (2003), available at 
+\url{http://www.math.drofnats.edu/riemann.ps}.
+
+\end{thebibliography}
+
+\end{document}
+
