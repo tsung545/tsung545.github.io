@@ -3,32 +3,32 @@
         "major":
         [
             {
-                "name": "李瑩英(召集人)",
-                "unit": "台灣大學數學系"
+                "name": "Yng-Ing Lee (President)",
+                "unit": "Department of Mathematics, National Taiwan University"
             },
             {
-                "name": "何南國",
-                "unit": "清華大學數學系"
+                "name": "Nan-Kuo Ho",
+                "unit": "Department of Mathematics, National Tsing Hua University"
             },
             {
-                "name": "楊肅煜",
-                "unit": "中央大學數學系"
+                "name": "Suh-Yuh Yang",
+                "unit": "Department of Mathematics, National Central University"
             },
             {
-                "name": "謝銘倫",
-                "unit": "臺灣大學數學系"
+                "name": "Ming-Lun Hsieh",
+                "unit": "Department of Mathematics, National Taiwan University"
             },
             {
-                "name": "夏俊雄",
-                "unit": "臺灣大學數學系"
+                "name": "Chun-Hsiung Hsia",
+                "unit": "Department of Mathematics, National Taiwan University"
             },
             {
-                "name": "陳冠宇",
-                "unit": "交通大學應用數學系"
+                "name": "Guan-Yu Chen",
+                "unit": "Department of Applied Mathematics, National Chiao Tung University"
             },
             {
-                "name": "張茂盛",
-                "unit": "輔仁大學數學系<br>(109年承辦學校)"
+                "name": "Mao-Sheng Chang",
+                "unit": "Department of Mathematics, Fu Jen Catholic University<br>(host school in 2020)"
             }
         ]
     },
@@ -36,60 +36,60 @@
         "minor":
         [
             {
-                "name": "張茂盛",
-                "unit": "輔仁大學數學系"
+                "name": "Mao-Sheng Chang",
+                "unit": "Department of Mathematics, Fu Jen Catholic University"
             },
             {
-                "name": "郭仲成",
-                "unit": "輔仁大學數學系"
+                "name": "Chung-Cheng Kuo",
+                "unit": "Department of Mathematics, Fu Jen Catholic University"
             },
             {
-                "name": "邱文齡",
-                "unit": "輔仁大學數學系"
+                "name": "Wen-Lin Chiou",
+                "unit": "Department of Mathematics, Fu Jen Catholic University"
             },
             {
-                "name": "陳思勉",
-                "unit": "輔仁大學數學系"
+                "name": "Sy-Mien Chen",
+                "unit": "Department of Mathematics, Fu Jen Catholic University"
             },
             {
-                "name": "蕭鴻銘",
-                "unit": "輔仁大學數學系"
+                "name": "H. M. Shaw",
+                "unit": "Department of Mathematics, Fu Jen Catholic University"
             },
             {
-                "name": "楊南屏",
-                "unit": "輔仁大學數學系"
+                "name": "N. P. Yang",
+                "unit": "Department of Mathematics, Fu Jen Catholic University"
             },
             {
-                "name": "李安莉",
-                "unit": "輔仁大學數學系"
+                "name": "Anly Li",
+                "unit": "Department of Mathematics, Fu Jen Catholic University"
             },
             {
-                "name": "蘇萾欽",
-                "unit": "輔仁大學數學系"
+                "name": "Ying-Chin Su",
+                "unit": "Department of Mathematics, Fu Jen Catholic University"
             },
             {
-                "name": "嚴健彰",
-                "unit": "輔仁大學數學系"
+                "name": "Chien-Chang Yen",
+                "unit": "Department of Mathematics, Fu Jen Catholic University"
             },
             {
-                "name": "葉乃實",
-                "unit": "輔仁大學數學系"
+                "name": "Yeh, Nai-Sher",
+                "unit": "Department of Mathematics, Fu Jen Catholic University"
             },
             {
-                "name": "潘俊杰",
-                "unit": "輔仁大學數學系"
+                "name": "Jun-Jie Pan",
+                "unit": "Department of Mathematics, Fu Jen Catholic University"
             },
             {
-                "name": "李勇達",
-                "unit": "輔仁大學數學系"
+                "name": "Yung-Ta Li",
+                "unit": "Department of Mathematics, Fu Jen Catholic University"
             },
             {
-                "name": "林可軒",
-                "unit": "輔仁大學數學系"
+                "name": "Ke-Shiuan Lynn",
+                "unit": "Department of Mathematics, Fu Jen Catholic University"
             },
             {
-                "name": "李樹政",
-                "unit": "輔仁大學數學系"
+                "name": "Shu-Cheng Lee",
+                "unit": "Department of Mathematics, Fu Jen Catholic University"
             }
         ]
     }
