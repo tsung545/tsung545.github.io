@@ -95,7 +95,7 @@ $(function(){
                     <p>&ensp;E-mail:&ensp;</p>
                     <p>tms2020@math.fju.edu.tw</p>
                 </a>
-                <p class="copyright">© 2020 中華民國數學年會 Taiwan Mathematical Society Annual Meeting</p>
+                <p class="copyright">© 2020 中華民國數學年會 2020 Annual Meeting of Mathematical Society of the Republic of China</p>
             </div>   
         `
     })
