@@ -1,0 +1,20 @@
+[
+    {
+        "photo": "img/chi.jpg",
+        "name": "蕭美琪",
+        "unit": "University of Notre Dame",
+        "study": "多複變分析"
+    },
+    {
+        "photo": "img/Wee-Teck-Gan.jpg",
+        "name": "Wee-Teck Gan",
+        "unit": "National University of Singapore",
+        "study": "表現論"
+    },
+    {
+        "photo": "img/user.png",
+        "name": "Winner of 2020 Academic Award of Taiwanese Mathematical Society",
+        "unit": "",
+        "study": ""
+    }
+]

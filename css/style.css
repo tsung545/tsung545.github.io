@@ -1208,6 +1208,10 @@ header .navbar-mobile a:hover {
   .main .main-content .main-text .focus-content p {
     width: 100%;
   }
+  .main .main-content .main-text .main-speakers .content {
+    width: 100%;
+    padding-left: 0;
+  }
 }
 
 #registration .main-content .main-text {

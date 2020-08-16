@@ -545,6 +545,21 @@ header
                 button:hover
                     transform: translateY(-4px)
                     cursor: pointer
+            .main-speakers
+                +flex(none,center,wrap)
+                background-color: $color-black04
+                padding: 20px
+                border-radius: 20px
+                margin-bottom: 16px
+                .photo
+                    width: 150px
+                    height: 150px
+                    background-size: cover
+                    background-position: center
+                    border-radius: 50%
+                .content
+                    width: calc( 100% - 170px )
+                    padding-left: 20px
             .focus-content
                 +flex(center,flex-start,wrap)
                 align-items: center
@@ -676,6 +691,10 @@ header
                     margin-bottom: 16px
                     p
                         width: 100%
+                .main-speakers
+                    .content
+                        width: 100%
+                        padding-left: 0
 #registration
     .main-content
         .main-text
