@@ -164,12 +164,20 @@ $(function(){
     var speakers = new Vue({
         el: "#speakers",
         data: {
-            items: []     
+            items: [],
+            items2: []    
         },
         created() {
             axios.get('./json/speakers.json')
                 .then(res => {
                     this.items = res.data;
+                })
+                .catch(error => {
+                    alert("異常");
+            }),
+            axios.get('./json/main-speakers.json')
+                .then(res => {
+                    this.items2 = res.data;
                 })
                 .catch(error => {
                     alert("異常");

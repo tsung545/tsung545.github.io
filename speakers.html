@@ -65,31 +65,14 @@
             <div class="main-content">
                 <div class="main-text">
                     <h2>大會主講</h2>
-                    <div class="table-center">
-                        <table class="table-speakers">
-                            <tr>
-                                <th>編號</th>
-                                <th>講者姓名</th>
-                                <th>隸屬</th>
-                                <th>領域</th>
-                            </tr>
-                            <tr>
-                                <td>1</td>
-                                <td>蕭美琪</td>
-                                <td>University of Notre Dame</td>
-                                <td>多複變分析</td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>Wee-Teck Gan</td>
-                                <td>National University of Singapore</td>
-                                <td>表現論</td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td colspan="3">2020年學術獎得主</td>
-                            </tr>
-                        </table>
+                    <div class="main-speakers" v-for="item2 in items2">
+                        <div class="photo" v-bind:style="{'background-image': 'url(' + item2.photo + ')'}"></div>
+                        <div class="content">
+                            <h3>{{item2.name}}</h3>
+                            <p v-if="item2.unit !=''">單位：{{item2.unit}}</p>
+                            <p v-if="item2.study !=''">領域：{{item2.study}}</p>
+                            <p v-if="item2.unit =='' && item2.study ==''">待定</p>
+                        </div>
                     </div>
                 </div>
                 <div class="main-text" v-for="item in items">

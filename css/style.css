@@ -906,6 +906,36 @@ header .navbar-mobile a:hover {
   cursor: pointer;
 }
 
+.main .main-content .main-text .main-speakers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: none;
+      align-content: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #dddddd;
+  padding: 20px;
+  border-radius: 20px;
+  margin-bottom: 16px;
+}
+
+.main .main-content .main-text .main-speakers .photo {
+  width: 150px;
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+}
+
+.main .main-content .main-text .main-speakers .content {
+  width: calc( 100% - 170px);
+  padding-left: 20px;
+}
+
 .main .main-content .main-text .focus-content {
   display: -webkit-box;
   display: -ms-flexbox;
