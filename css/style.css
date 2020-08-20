@@ -960,6 +960,8 @@ header .navbar-mobile a:hover {
   height: -moz-fit-content;
   height: fit-content;
   font-size: 14px;
+  margin-bottom: 6px;
+  margin-top: 6px;
 }
 
 .main .main-content .main-text .focus-content p {
@@ -978,6 +980,23 @@ header .navbar-mobile a:hover {
 
 .main .main-content .main-text .focus-content .title {
   background-color: #E49DB7;
+}
+
+.main .main-content .main-text .focus-content ol {
+  -webkit-padding-start: 18px;
+          padding-inline-start: 18px;
+  -webkit-margin-before: 0.2em;
+          margin-block-start: 0.2em;
+  margin-bottom: 0.2em;
+}
+
+.main .main-content .main-text .focus-content ol li {
+  font-size: 14px;
+  line-height: 2;
+}
+
+.main .main-content .main-text .focus-content ol li a {
+  color: #ff0000;
 }
 
 .main .main-content .main-text .mark {
