@@ -988,6 +988,7 @@ header .navbar-mobile a:hover {
   -webkit-margin-before: 0.2em;
           margin-block-start: 0.2em;
   margin-bottom: 0.2em;
+  width: 100%;
 }
 
 .main .main-content .main-text .focus-content ol li {
