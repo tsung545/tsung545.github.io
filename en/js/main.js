@@ -22,10 +22,6 @@ $(function(){
             address: 'submission.html'
         },
         {
-            name: 'Subsidy',
-            address: 'subsidy.html'
-        },
-        {
             name: 'Album',
             address: 'album.html'
         }
