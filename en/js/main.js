@@ -24,6 +24,10 @@ $(function(){
         {
             name: 'Album',
             address: 'album.html'
+        },
+        {
+            name: 'Transportation',
+            address: 'traffic.html'
         }
     ]
 
