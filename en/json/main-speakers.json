@@ -1,19 +1,19 @@
 [
     {
         "photo": "img/chi.jpg",
-        "name": "蕭美琪",
+        "name": "Mei-Chi Shaw",
         "unit": "University of Notre Dame",
-        "study": "多複變分析"
+        "study": "Complex Analysis and Partial Differential Geometry"
     },
     {
         "photo": "img/Wee-Teck-Gan.jpg",
         "name": "Wee-Teck Gan",
         "unit": "National University of Singapore",
-        "study": "表現論"
+        "study": "Automorphic Representations"
     },
     {
         "photo": "img/user.png",
-        "name": "Winner of 2020 Academic Award of Taiwanese Mathematical Society",
+        "name": "2020 Academic Award Winner",
         "unit": "",
         "study": ""
     }

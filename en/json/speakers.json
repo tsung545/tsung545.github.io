@@ -1,362 +1,362 @@
 [
     {
         "title": "Analysis",
-        "organizer": "Organizer: 李明憶 國立中央大學數學系",
+        "organizer": "Organizer: Ming-Yi Lee(李明憶) Department of Mathematics, National Central University",
         "speakers": 
         [
             {
-                "name": "方向",
-                "unit": "國立中央大學數學系"    
+                "name": "Xiang Fang",
+                "unit": "Department of Mathematics, National Central University"    
             },
             {
-                "name": "黃皓瑋",
-                "unit": "國立中山大學應用數學系"    
+                "name": "Hao-Wei Huang",
+                "unit": "Department of Applied Mathematics, National Sun Yat-sen University"
             },
             {
-                "name": "王昆湶",
-                "unit": "國立東華大學應用數學系"    
+                "name": "Kun-Chuan Wang",
+                "unit": "Department of Applied Mathematics, National Dong Hwa University"    
             },
             {
-                "name": "王國仲",
-                "unit": "國立交通大學應用數學系"    
+                "name": "Kuo-Zhong Wang",
+                "unit": "Department of Applied Mathematics, National Chiao Tung University"    
             },
             {
-                "name": "王雅書",
-                "unit": "國立中興大學應用數學系"    
+                "name": "Ya-Shu Wang",
+                "unit": "Department of Applied Mathematics, National Chung Hsing University"    
             },
             {
-                "name": "陳宏益",
-                "unit": "國立中山大學應用數學系"    
+                "name": "Hong-Yi Chen",
+                "unit": "Department of Applied Mathematics, National Sun Yat-sen University"    
             }
         ]       
     },
     {
         "title": "Differential and Algebraic Geometry",
-        "organizer": "Organizer: 蔡忠潤 國立臺灣大學數學系",
+        "organizer": "Organizer: Chung-Jun Tsai(蔡忠潤) Department of Mathematics, National Taiwan University",
         "speakers": 
         [
             {
-                "name": "吳思曄",
-                "unit": "國立清華大學數學系"    
+                "name": "Siye Wu",
+                "unit": "Department of Mathematics, National Tsing Hua University"    
             },
             {
-                "name": "郭庭榕",
-                "unit": "國立臺灣師範大學數學系"    
+                "name": "Ting-Jung Kuo",
+                "unit": "Department of Mathematics, National Taiwan Normal University"    
             },
             {
-                "name": "劉之中",
-                "unit": "國立成功大學數學系"    
+                "name": "Chih-Chung Liu",
+                "unit": "Department of Mathematics, National Cheng Kung University"    
             },
             {
-                "name": "郭孝豪",
-                "unit": "Indiana University/國立臺灣大學數學系"    
+                "name": "Siao-Hao Guo",
+                "unit": "Department of Mathematics, Indiana University/Department of Mathematics, National Taiwan University"    
             },
             {
-                "name": "廖軒毅",
-                "unit": "KIAS/國立清華大學數學系(TBC)"    
+                "name": "Hsuan-Yi Liao",
+                "unit": "KIAS/Department of Mathematics, National Tsing Hua University"    
             },
             {
-                "name": "陳正傑",
-                "unit": "國立中央大學數學系"    
+                "name": "Jheng-Jie Chen",
+                "unit": "Department of Mathematics, National Central University"    
             },
             {
-                "name": "賴青瑞",
-                "unit": "國立成功大學數學系"    
+                "name": "Ching-Jui Lai",
+                "unit": "Department of Mathematics, National Cheng Kung University"    
             },
             {
-                "name": "傅斯緯",
-                "unit": "NCTS/國立臺灣大學數學系"    
+                "name": "Ser-Wei Fu",
+                "unit": "NCTS/Department of Mathematics, National Taiwan University"    
             }
         ]       
     },
     {
         "title": "Dynamical Systems and Biomathematics",
-        "organizer": "Organizer: 王埄彬 長庚通識中心",
+        "organizer": "Organizer: Feng-Bin Wang (王埄彬) Department of Natural Science in the Center for General Education, Chang Gung",
         "speakers": 
         [
             {
-                "name": "楊定揮",
-                "unit": "淡江大學數學系"    
+                "name": "Ting-Hui Yang",
+                "unit": "Department of Mathematics, Tamkang University"    
             },
             {
-                "name": "莊重",
-                "unit": "國立交通大學應用數學系"    
+                "name": "Jonq Juang",
+                "unit": "Department of Applied Mathematics, National Chiao Tung University"    
             },
             {
-                "name": "吳昌鴻",
-                "unit": "國立交通大學應用數學系"    
+                "name": "Chang-Hong Wu",
+                "unit": "Department of Applied Mathematics, National Chiao Tung University"    
             },
             {
-                "name": "張志鴻",
-                "unit": "國立高雄大學應用數學系"    
+                "name": "Chih-Hung Chang",
+                "unit": "Department of Applied Mathematics, National University of Kaohsiung"    
             },
             {
-                "name": "曾睿彬",
-                "unit": "國立政治大學應用數學系"    
+                "name": "Jui-Pin Tseng",
+                "unit": "Department of Mathematical Sciences, National Chengchi University"    
             },
             {
-                "name": "鄭昌源",
-                "unit": "國立屏東大學應用數學系"    
+                "name": "Chang-yuan Cheng",
+                "unit": "Department of Applied Mathematics, National Pingtung University"    
             }
         ]       
     },
     {
         "title": "Number Theory and Algebra",
-        "organizer": "Organizer: 余家富 中央研究院數學所",
+        "organizer": "Organizer: Chia-Fu Yu (余家富) Institute of Mathematics, Academia Sinica",
         "speakers": 
         [
             {
-                "name": "魏福村",
-                "unit": "國立清華大學數學系"    
+                "name": "Fu-Tsun Wei",
+                "unit": "Department of Mathematics, National Tsing Hua University"    
             },
             {
-                "name": "黃世昌",
-                "unit": "國立成功大學數學系"    
+                "name": "Shih-Chang Huang",
+                "unit": "Department of Mathematics, National Cheng Kung University"    
             },
             {
-                "name": "賴俊儒",
-                "unit": "中央研究院數學所"    
+                "name": "Chun-Ju Lai",
+                "unit": "Institute of Mathematics, Academia Sinica"    
             },
             {
-                "name": "郭容妙",
-                "unit": "國立中興大學應用數學系"    
+                "name": "Jung-Miao Kuo",
+                "unit": "Department of Applied Mathematics, National Chung Hsing University"    
             },
             {
-                "name": "時本一樹",
-                "unit": "中央研究院數學所"    
+                "name": "Kazuki Tokimoto",
+                "unit": "Institute of Mathematics, Academia Sinica"    
             },
             {
-                "name": "寺門康裕",
-                "unit": "中央研究院數學所"    
+                "name": "Yasuhiro Terakado",
+                "unit": "Institute of Mathematics, Academia Sinica"    
             },
             {
-                "name": "楊策仲",
-                "unit": "國立臺灣大學數學系"    
+                "name": "Tse-Chung Yang",
+                "unit": "Department of Mathematics, National Taiwan University"    
             }
         ]       
     },
     {
         "title": "Discrete Mathematics",
-        "organizer": "Organizer: 王彩蓮 國立中山大學應用數學系",
+        "organizer": "Organizer: Tsai-Lien Wong (王彩蓮) Department of Applied Mathematics, National Sun Yat-sen University",
         "speakers": 
         [
             {
-                "name": "傅東山",
-                "unit": "國立屏東大學應用數學系"    
+                "name": "Tung-Shan Fu",
+                "unit": "Department of Applied Mathematics, National Pingtung University"    
             },
             {
-                "name": "葉鴻國",
-                "unit": "國立中央大學應用數學系"    
+                "name": "Hong-Gwa Yeh",
+                "unit": "Department of Mathematics, National Central University"    
             },
             {
-                "name": "林晉宏",
-                "unit": "國立中山大學應用數學系"    
+                "name": "Jephian Chin-Hung Lin",
+                "unit": "Department of Applied Mathematics, National Sun Yat-sen University"    
             },
             {
-                "name": "羅元勳",
-                "unit": "國立屏東大學應用數學系"    
+                "name": "Yuan-Hsun Lo",
+                "unit": "Department of Applied Mathematics, National Pingtung University"    
             },
             {
-                "name": "陳宏賓",
-                "unit": "國立中興大學應用數學系"    
+                "name": "Hong-Bin Chen",
+                "unit": "Department of Applied Mathematics, National Chung Hsing University"    
             },
             {
-                "name": "俞韋亘",
-                "unit": "國立中央大學應用數學系"    
+                "name": "Wei-Hsuan Yu",
+                "unit": "Department of Mathematics, National Central University"    
             }
         ]       
     },
     {
         "title": "Computational Mathematics",
-        "organizer": "Organizer: 薛名成 國立交通大學數學系",
+        "organizer": "Organizer: Ming-Cheng Shiue (薛名成) Department of Mathematics of Applied Mathematics, National Chiao Tung University",
         "speakers": 
         [
             {
-                "name": "卓建宏",
-                "unit": "國立中正大學數學系"    
+                "name": "Chien-Hong Cho",
+                "unit": "Department of Mathematics, National Chung Cheng University"    
             },
             {
-                "name": "黃聰明",
-                "unit": "國立臺灣師範大學數學系"    
+                "name": "Tsung-Ming Huang",
+                "unit": "Department of Mathematics, National Taiwan Normal University"    
             },
             {
-                "name": "曾昱豪",
-                "unit": "國立高雄大學應用數學系"    
+                "name": "Yu-Hau Tseng",
+                "unit": "Department of Applied Mathematics, National University of Kaohsiung"    
             },
             {
-                "name": "謝博文",
-                "unit": "國立中興大學應用數學系"    
+                "name": "Po-Wen Hsieh",
+                "unit": "Department of Applied Mathematics, National Chung Hsing University"    
             },
             {
-                "name": "王琪仁",
-                "unit": "國立中正大學數學系"    
+                "name": "Chi-Jen Wang",
+                "unit": "Department of Mathematics, National Chung Cheng University"    
             },
             {
-                "name": "陳孟豁",
-                "unit": "國立中正大學數學系"    
+                "name": "Meng-Huo Chen",
+                "unit": "Department of Mathematics, National Chung Cheng University"    
             }
         ]       
     },
     {
         "title": "Probability",
-        "organizer": "Organizer: 須上苑 國立中央大學數學系",
+        "organizer": "Organizer: Shang-Yuan Shiu (須上苑) Department of Mathematics, National Central University",
         "speakers": 
         [
             {
-                "name": "施信宏",
-                "unit": "國立高雄大學應用數學系"    
+                "name": "Hsin-Hung Shih",
+                "unit": "Department of Applied Mathematics, National University of Kaohsiung"    
             },
             {
-                "name": "李育杰",
-                "unit": "國立交通大學應用數學系"    
+                "name": "Yuh-Jye Lee",
+                "unit": "Department of Applied Mathematics, National Chiao Tung University"    
             },
             {
-                "name": "洪芷漪",
-                "unit": "國立政治大學應用數學系"    
+                "name": "Jyy-I Hong",
+                "unit": "Department of Mathematical Sciences, National Chengchi University"    
             },
             {
-                "name": "孫立憲",
-                "unit": "國立中央大學統計所"    
+                "name": "Li-Hsien Sun",
+                "unit": "Graduate Institute of Statistics, National Central University"    
             },
             {
                 "name": "Yuki Chino",
-                "unit": "NCTS"    
+                "unit": "Department of Applied Mathematics, National Chiao Tung University"    
             },
             {
-                "name": "陳美如",
-                "unit": "國立中山大學應用數學系"    
+                "name": "May-Ru Chen",
+                "unit": "Department of Applied Mathematics, National Sun Yat-sen University"    
             }
         ]       
     },
     {
         "title": "Partial Differential Equations",
-        "organizer": "Organizer: 吳恭儉 國立成功大學數學系",
+        "organizer": "Organizer: Kung-Chien Wu (吳恭儉) Department of Mathematics, National Cheng Kung University",
         "speakers": 
         [
             {
-                "name": "陳逸昆",
-                "unit": "國立臺灣大學數學系"    
+                "name": "I-Kun Chen",
+                "unit": "Department of Mathematics, National Taiwan University"    
             },
             {
-                "name": "吳宗芳",
-                "unit": "國立高雄大學應用數學系"    
+                "name": "Tsung-Fang Wu",
+                "unit": "Department of Applied Mathematics, National University of Kaohsiung"    
             },
             {
-                "name": "李俊璋",
-                "unit": "國立清華大學計算與建模科學研究所"    
+                "name": "Chiun-Chang Lee",
+                "unit": "Institute of Computational and Modeling Science, National Tsing Hua University"    
             },
             {
-                "name": "關汝琳",
-                "unit": "國立成功大學數學系"    
+                "name": "Ru-Lin Kuan",
+                "unit": "Department of Mathematics, National Cheng Kung University"    
             },
             {
-                "name": "蘇承芳",
-                "unit": "國立交通大學應用數學系"    
+                "name": "Cheng-Fang Su",
+                "unit": "Department of Applied Mathematics, National Chiao Tung University"    
             },
             {
-                "name": "呂明杰",
-                "unit": "國立成功大學數學系"    
+                "name": "Ming-Jiea Lyu",
+                "unit": "Department of Mathematics, National Cheng Kung University"    
             }
         ]       
     },
     {
         "title": "Optimization",
-        "organizer": "Organizer: 許瑞麟 國立成功大學數學系",
+        "organizer": "Organizer: Ruey-Lin Sheu (許瑞麟) Department of Mathematics, National Cheng Kung University",
         "speakers": 
         [
             {
-                "name": "陳鵬文",
-                "unit": "國立中興大學數學系"    
+                "name": "Pengwen Chen",
+                "unit": "Department of Applied Mathematics, National Chung Hsing University"    
             },
             {
-                "name": "林智仁",
-                "unit": "國立臺灣大學資工系"    
+                "name": "Chih-Jen Lin",
+                "unit": "Department of Computer Science & Information Engineering, National Taiwan University"    
             },
             {
-                "name": "胡承方",
-                "unit": "國立嘉義大學應用數學系"    
+                "name": "Cheng-Feng Hu",
+                "unit": "Department of Applied Mathematics, National Chiayi University"    
             },
             {
-                "name": "葉啟村",
-                "unit": "國立臺南大學應用數學系"    
+                "name": "Chi-Tsuen Yeh",
+                "unit": "Department of Applied Mathematics, National University of Tainan"    
             },
             {
-                "name": "陳界山",
-                "unit": "國立臺灣師範大學數學系"    
+                "name": "Jein-Shan Chen",
+                "unit": "Department of Mathematics, National Taiwan Normal University"    
             },
             {
-                "name": "杜威仕",
-                "unit": "國立高雄師範大學數學系"    
+                "name": "Wei-Shih Du",
+                "unit": "Department of Mathematics, National Kaohsiung Normal University"    
             },
             {
-                "name": "孫新民",
-                "unit": "國立臺南大學應用數學系"    
+                "name": "Hsin-Min Sun",
+                "unit": "Department of Applied Mathematics, National University of Tainan"    
             },
             {
-                "name": "林仁彥",
-                "unit": "國立嘉義大學應用數學系"    
+                "name": "Jen-Yen Lin",
+                "unit": "Department of Applied Mathematics, National Chiayi University"    
             }
         ]       
     },
     {
         "title": "Statistics",
-        "organizer": "Organizer: 黃禮珊 國立清華大學統計所",
+        "organizer": "Organizer: Li-Shan Huang (黃禮珊) Institute of Statistics, National Tsing Hua University",
         "speakers": 
         [
             {
-                "name": "黃彥棕",
-                "unit": "中央研究院統計所"    
+                "name": "Yen-Tsung Huang",
+                "unit": "Institute of Statistical Science, Academia Sinica"    
             },
             {
-                "name": "盧鴻興",
-                "unit": "國立交通大學統計所"    
+                "name": "Henry Horng-Shing Lu",
+                "unit": "Institute of Statistics, National Chiao Tung University"    
             },
             {
-                "name": "洪弘",
-                "unit": "國立臺灣大學流行病學與預防醫學研究所"    
+                "name": "Hung Hung",
+                "unit": "Institute of Epidemiology and Preventive Medicine, National Taiwan University"    
             },
             {
-                "name": "蔡志群",
-                "unit": "淡江大學數學系"    
+                "name": "Chih-Chun Tsai",
+                "unit": "Department of Mathematics, Tamkang University"    
             },
             {
-                "name": "黃世豪",
-                "unit": "國立中央大學數學系"    
+                "name": "Shih-Hao Huang",
+                "unit": "Department of Mathematics, National Central University"    
             },
             {
-                "name": "簡立欣",
-                "unit": "國家衛生研究院群體健康科學所"    
+                "name": "Li-Hsin Chien",
+                "unit": "Institute of Population Health Sciences, National Health Research Institutes"    
             }
         ]       
     },
     {
         "title": "Information Mathematics",
-        "organizer": "Organizer: 潘俊杰 輔仁大學數學系",
+        "organizer": "Organizer: Jun-Jie Pan (潘俊杰) Department of Mathematics, Fu Jen Catholic University",
         "speakers": 
         [
             {
-                "name": "蘇建華",
-                "unit": "NOVAtime創辦人"    
+                "name": "Frank Su",
+                "unit": "Founder of NOVAtime"    
             },
             {
-                "name": "陳君明",
-                "unit": "匯智安全科技董事長"    
+                "name": "Jimmy Chen",
+                "unit": "Chairman, WiSECURE Technologies"    
             },
             {
-                "name": "詹雁如",
-                "unit": "NOVAtime共同創辦人"    
+                "name": "Joyce Jan",
+                "unit": "Co-founder of NOVAtime"    
             },
             {
-                "name": "翁浩正",
-                "unit": "戴夫寇爾Devcore執行長"    
+                "name": "Allen Own",
+                "unit": "CEO at DEVCORE"    
             },
             {
-                "name": "魏澤人",
-                "unit": "國立交通大學智慧科學暨綠能學院"    
+                "name": "Tzer-jen Wei",
+                "unit": "College of Artificial Intelligence, National Chiao Tung University"    
             },
             {
-                "name": "蔡炎龍",
-                "unit": "國立政治大學應用數學系"    
+                "name": "Yen-Lung Tsai",
+                "unit": "Department of Mathematical Sciences, National Chengchi University"    
             }
         ]       
     }
