@@ -28,6 +28,10 @@ $(function(){
         {
             name: 'Transportation',
             address: 'traffic.html'
+        },
+        {
+            name: 'Accommdation',
+            address: 'hotelinfo.html'
         }
     ]
 
