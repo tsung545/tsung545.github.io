@@ -172,6 +172,21 @@ $(function(){
             })
         }
     });
+    var hotelinfo = new Vue({
+        el: "#hotelinfo",
+        data: {
+            items: []  
+        },
+        created() {
+            axios.get('./json/hotelinfo.json')
+                .then(res => {
+                    this.items = res.data;
+                })
+                .catch(error => {
+                    alert("異常");
+            })
+        }
+    });
 
     //----------Navbar樣式----------//
 

@@ -271,9 +271,10 @@ header
         a
             +flex(center,flex-end,wrap)
             align-items: center
-            width: calc( 100% / 2 )
+            width: calc( (100% - 24px) / 2 )
             text-decoration: none
             color: $color-black06
+            padding-right: 8px
             li
                 width: 100px
                 text-align: center
@@ -283,7 +284,8 @@ header
                 padding-bottom: 2px
         a:nth-child(even)
             +flex(center,flex-start,wrap)
-            align-items: center      
+            align-items: center   
+            padding-left: 8px   
         a:hover
             background-color: $color-black06
             color: $color-blue02
@@ -560,6 +562,25 @@ header
                 .content
                     width: calc( 100% - 170px )
                     padding-left: 20px
+            .hotel-item
+                +flex(none,center,wrap)
+                background-color: $color-black04
+                padding: 20px
+                border-radius: 10px
+                margin-bottom: 16px
+                .hotel-title
+                    +flex(center,center,wrap)
+                    width: 200px
+                    h3
+                        margin-block-start: 0
+                        margin-block-end: 0
+                .hotel-content
+                    width: calc( 100% - 221px )
+                    padding-left: 20px
+                    border-left: 1px solid $color-black03
+                    a
+                        color: $color-red01
+                        word-break: break-all
             .focus-content
                 +flex(center,flex-start,wrap)
                 align-items: center
@@ -695,6 +716,16 @@ header
                     .content
                         width: 100%
                         padding-left: 0
+                .hotel-item
+                    .hotel-title
+                        +flex(center,center,wrap)
+                        width: 100%
+                    .hotel-content
+                        width: 100%
+                        padding-left: 0
+                        padding-top: 12px
+                        border-left: 0px solid $color-black03
+                        border-top: 1px solid $color-black03
 #registration
     .main-content
         .main-text

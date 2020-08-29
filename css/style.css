@@ -225,13 +225,16 @@ header .navbar-mobile a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-line-pack: none;
-      align-content: none;
+  -ms-flex-line-pack: center;
+      align-content: center;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: calc( 100% / 2);
   text-decoration: none;
   color: #ffffff;
@@ -250,13 +253,16 @@ header .navbar-mobile a:nth-child(even) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-line-pack: none;
-      align-content: none;
+  -ms-flex-line-pack: center;
+      align-content: center;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 header .navbar-mobile a:hover {
@@ -936,6 +942,55 @@ header .navbar-mobile a:hover {
   padding-left: 20px;
 }
 
+.main .main-content .main-text .hotel-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: none;
+      align-content: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #dddddd;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 16px;
+}
+
+.main .main-content .main-text .hotel-item .hotel-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 200px;
+}
+
+.main .main-content .main-text .hotel-item .hotel-title h3 {
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+}
+
+.main .main-content .main-text .hotel-item .hotel-content {
+  width: calc( 100% - 221px);
+  padding-left: 20px;
+  border-left: 1px solid #666666;
+}
+
+.main .main-content .main-text .hotel-item .hotel-content a {
+  color: #ff0000;
+  word-break: break-all;
+}
+
 .main .main-content .main-text .focus-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -960,8 +1015,6 @@ header .navbar-mobile a:hover {
   height: -moz-fit-content;
   height: fit-content;
   font-size: 14px;
-  margin-bottom: 6px;
-  margin-top: 6px;
 }
 
 .main .main-content .main-text .focus-content p {
@@ -980,24 +1033,6 @@ header .navbar-mobile a:hover {
 
 .main .main-content .main-text .focus-content .title {
   background-color: #E49DB7;
-}
-
-.main .main-content .main-text .focus-content ol {
-  -webkit-padding-start: 18px;
-          padding-inline-start: 18px;
-  -webkit-margin-before: 0.2em;
-          margin-block-start: 0.2em;
-  margin-bottom: 0.2em;
-  width: 100%;
-}
-
-.main .main-content .main-text .focus-content ol li {
-  font-size: 14px;
-  line-height: 2;
-}
-
-.main .main-content .main-text .focus-content ol li a {
-  color: #ff0000;
 }
 
 .main .main-content .main-text .mark {
@@ -1231,6 +1266,26 @@ header .navbar-mobile a:hover {
   .main .main-content .main-text .main-speakers .content {
     width: 100%;
     padding-left: 0;
+  }
+  .main .main-content .main-text .hotel-item .hotel-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+  }
+  .main .main-content .main-text .hotel-item .hotel-content {
+    width: 100%;
+    padding-left: 0;
+    padding-top: 12px;
+    border-left: 0px solid #666666;
+    border-top: 1px solid #666666;
   }
 }
 

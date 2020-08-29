@@ -558,6 +558,27 @@ header
                 .content
                     width: calc( 100% - 170px )
                     padding-left: 20px
+                    a
+                        word-break: break-all
+            .hotel-item
+                +flex(none,center,wrap)
+                background-color: $color-black04
+                padding: 20px
+                border-radius: 10px
+                margin-bottom: 16px
+                .hotel-title
+                    +flex(center,center,wrap)
+                    width: 200px
+                    h3
+                        margin-block-start: 0
+                        margin-block-end: 0
+                .hotel-content
+                    width: calc( 100% - 221px )
+                    padding-left: 20px
+                    border-left: 1px solid $color-black03
+                    a
+                        color: $color-red01
+                        word-break: break-all
 
             .focus-content
                 +flex(center,flex-start,wrap)
@@ -705,6 +726,17 @@ header
                     .content
                         width: 100%
                         padding-left: 0
+                .hotel-item
+                    .hotel-title
+                        +flex(center,center,wrap)
+                        width: 100%
+                    .hotel-content
+                        width: 100%
+                        padding-left: 0
+                        padding-top: 12px
+                        border-left: 0px solid $color-black03
+                        border-top: 1px solid $color-black03
+
 #registration
     .main-content
         .main-text

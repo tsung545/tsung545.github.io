@@ -77,90 +77,22 @@
             </div>    
         </div>
     </section>
-    <section class="main">
+    <section id="hotelinfo" class="main">
         <div class="container">
             <div class="main-content">
                 <div class="main-text">
+                    <br>
                     <p>以下是鄰近輔仁大學的住宿資訊，提供與會者參考。</p>
-                </div>
-                <div class="main-text">
-                    <h2>翰品酒店(新莊)</h2>
-                    <div class="focus-content">
-                        <span class="block title">地址</span><p>新北市新莊區中正路82號</p>
-                    </div>
-                    <div class="focus-content">
-                        <span class="block title">電話</span><p>(02)29987699</p>
-                    </div>
-                    <div class="focus-content">
-                        <span class="block title">網址</span><p><a href="https://xinzhuang.chateaudechine.com/" target="_blank">https://xinzhuang.chateaudechine.com/</a></p>
-                    </div>
-                    <div class="focus-content">
-                        <ol>
-                        </ol>
-                    </div>
-                </div>
-                <div class="main-text">
-                    <h2>馥華大觀商務旅館</h2>
-                    <div class="focus-content">
-                        <span class="block title">地址</span><p>新北市新莊區大觀街60號</p>
-                    </div>
-                    <div class="focus-content">
-                        <span class="block title">電話</span><p>(02)89911278</p>
-                    </div>
-                    <div class="focus-content">
-                        <span class="block title">網址</span><p><a href="https://www.hotelpurity.com/about_ch.php" target="_blank">https://www.hotelpurity.com/about_ch.php</a></p>
-                    </div>
-                    <div class="focus-content">
-                        <ol>
-                        </ol>
-                    </div>
-                </div>
-                <div class="main-text">
-                    <h2>麗京棧酒店</h2>
-                    <div class="focus-content">
-                        <span class="block title">地址</span><p>新北市泰山區新北大道七段36號</p>
-                    </div>
-                    <div class="focus-content">
-                        <span class="block title">電話</span><p>(02)29010909</p>
-                    </div>
-                    <div class="focus-content">
-                        <span class="block title">網址</span><p><a href="http://www.hotel-intrendy.com/" target="_blank">http://www.hotel-intrendy.com/</a></p>
-                    </div>
-                    <div class="focus-content">
-                        <ol>
-                        </ol>
-                    </div>
-                </div>
-                <div class="main-text">
-                    <h2>幸福讚精品飯店</h2>
-                    <div class="focus-content">
-                        <span class="block title">地址</span><p>新北市新莊區思源路332巷9號</p>
-                    </div>
-                    <div class="focus-content">
-                        <span class="block title">電話</span><p>(02)29976688</p>
-                    </div>
-                    <div class="focus-content">
-                        <span class="block title">網址</span><p><a href="http://www.happinessinn-taipei.com/" target="_blank">http://www.happinessinn-taipei.com/</a></p>
-                    </div>
-                    <div class="focus-content">
-                        <ol>
-                        </ol>
-                    </div>
-                </div>
-                <div class="main-text">
-                    <h2>新莊客旅</h2>
-                    <div class="focus-content">
-                        <span class="block title">地址</span><p>新北市新莊區中華路一段103號</p>
-                    </div>
-                    <div class="focus-content">
-                        <span class="block title">電話</span><p>(02)22776599</p>
-                    </div>
-                    <div class="focus-content">
-                        <span class="block title">網址</span><p><a href="https://www.landmarkhotel.com.tw/" target="_blank">https://www.landmarkhotel.com.tw/</a></p>
-                    </div>
-                    <div class="focus-content">
-                        <ol>
-                        </ol>
+                    <br>
+                    <div class="hotel-item" v-for="item in items">
+                        <div class="hotel-title">
+                            <h3>{{item.title}}</h3>
+                        </div>
+                        <div class="hotel-content">
+                            <p>地址：{{item.address}}</p>
+                            <p>電話：{{item.tel}}</p>
+                            <p>網址：<a v-bind:href="item.website" target="_blank">{{item.website}}</a></p>
+                        </div>
                     </div>
                 </div>
             </div>    
