@@ -30,7 +30,7 @@ $(function(){
             address: 'traffic.html'
         },
         {
-            name: 'Accommdation',
+            name: 'Accommodation',
             address: 'hotelinfo.html'
         }
     ]
