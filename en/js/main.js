@@ -18,7 +18,7 @@ $(function(){
             address: 'registration.html'
         },
         {
-            name: 'Call for Papers',
+            name: 'Abstract Submission',
             address: 'submission.html'
         },
         {
