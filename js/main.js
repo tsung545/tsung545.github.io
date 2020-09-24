@@ -201,6 +201,22 @@ $(function(){
         }
     });
 
+    var attendee = new Vue({
+        el: "#attendee",
+        data: {
+            items: []  
+        },
+        created() {
+            axios.get('https://spreadsheets.google.com/feeds/list/1KH6Fy1T-R3T_2Qkql8MLtlf991hEG3m-IZrm4DKlONo/1/public/values?alt=json')
+                .then(res => {
+                    this.items = res.data.feed.entry;
+                })
+                .catch(error => {
+                    alert("異常");
+            })
+        }
+    });
+
     //----------Navbar樣式----------//
 
     // Navbar漢堡
