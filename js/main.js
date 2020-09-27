@@ -149,9 +149,28 @@ $(function(){
         el: "#program",
         data: {
             items: []     
+            items: [],
+            mainPage: '議程表總覽',
+            currentTab: '議程表總覽'
         },
         created() {
             axios.get('./json/program.json')
+                .then(res => {
+                    this.items = res.data;
+                })
+                .catch(error => {
+                    alert("異常");
+            })
+        }
+    });
+
+    var programSimple = new Vue({
+        el: "#program-simple",
+        data: {
+            items: []
+        },
+        created() {
+            axios.get('./json/program-simple.json')
                 .then(res => {
                     this.items = res.data;
                 })
