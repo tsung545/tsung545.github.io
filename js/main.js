@@ -147,8 +147,7 @@ $(function(){
 
     var program = new Vue({
         el: "#program",
-        data: {
-            items: []     
+        data: {    
             items: [],
             mainPage: '議程表總覽',
             currentTab: '議程表總覽'
