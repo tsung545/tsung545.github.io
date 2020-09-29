@@ -715,6 +715,23 @@ header
                             width: 200px
                     tr:last-child
                         +table-normal-tr-lastchild ()
+                .table-registration-2
+                    +table-normal ()
+                    tr
+                        +table-normal-tr ()
+                        th
+                            +table-normal-th ()
+                        td,th
+                            +table-normal-tdth ()
+                            padding: 8px
+                        td:nth-child(1),th:nth-child(1)
+                            width: 50px
+                        td:nth-child(2),th:nth-child(2)
+                            width: 80px
+                        td:nth-child(3),th:nth-child(3)
+                            width: calc( 100% - 110px )
+                    tr:last-child
+                        +table-normal-tr-lastchild ()
                 .table-registration-mobile
                     display: none
                     .table-item

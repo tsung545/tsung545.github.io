@@ -1298,6 +1298,46 @@ header .navbar-mobile a:hover {
   border-bottom: 0px solid #cccccc;
 }
 
+.main .main-content .main-text .table-center .table-registration-2 {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #cccccc;
+}
+
+.main .main-content .main-text .table-center .table-registration-2 tr {
+  border-bottom: 1px solid #cccccc;
+}
+
+.main .main-content .main-text .table-center .table-registration-2 tr th {
+  background-color: #E49DB7;
+  color: #ffffff;
+}
+
+.main .main-content .main-text .table-center .table-registration-2 tr td, .main .main-content .main-text .table-center .table-registration-2 tr th {
+  font-size: 14px;
+  border-right: 1px solid #cccccc;
+  padding: 8px 20px;
+  text-align: center;
+  padding: 8px;
+}
+
+.main .main-content .main-text .table-center .table-registration-2 tr td:nth-child(1), .main .main-content .main-text .table-center .table-registration-2 tr th:nth-child(1) {
+  width: 50px;
+}
+
+.main .main-content .main-text .table-center .table-registration-2 tr td:nth-child(2), .main .main-content .main-text .table-center .table-registration-2 tr th:nth-child(2) {
+  width: 80px;
+}
+
+.main .main-content .main-text .table-center .table-registration-2 tr td:nth-child(3), .main .main-content .main-text .table-center .table-registration-2 tr th:nth-child(3) {
+  width: calc( 100% - 110px);
+}
+
+.main .main-content .main-text .table-center .table-registration-2 tr:last-child {
+  border-bottom: 0px solid #cccccc;
+}
+
 .main .main-content .main-text .table-center .table-registration-mobile {
   display: none;
 }
