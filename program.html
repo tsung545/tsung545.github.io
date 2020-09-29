@@ -92,7 +92,7 @@
                         <select v-model="currentTab" class="program-select">
                             <option v-bind:value="mainPage">選擇類別</option>
                             <option v-bind:value="mainPage">{{mainPage}}</option>
-                            <option v-for="(item,index) in items" v-bind:value="item.name">{{(index + 1) + '.' + item.name}}</option>
+                            <option v-for="item in items" v-bind:value="item.name">{{item.name}}</option>
                         </select>    
                     </div>
                     
