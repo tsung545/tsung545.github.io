@@ -158,17 +158,24 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td style="background-color: #D9E1F2;">14:00 - 14:25</td>
+                                    <td style="background-color: #fff2cc;">13:35 - 14:00</td>
                                     <td v-for="item in items" style="background-color: #e2efda;">
                                         <p>主持人：<span style="font-weight: bold;">{{item.topic[1].host}}</span></p>
                                         <p>演講者：<span style="font-weight: bold;">{{item.topic[1].speaker}}</span></p>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td style="background-color: #D9E1F2;">14:25 - 14:50 </td>
+                                    <td style="background-color: #D9E1F2;">14:00 - 14:25</td>
                                     <td v-for="item in items" style="background-color: #e2efda;">
                                         <p>主持人：<span style="font-weight: bold;">{{item.topic[2].host}}</span></p>
                                         <p>演講者：<span style="font-weight: bold;">{{item.topic[2].speaker}}</span></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="background-color: #D9E1F2;">14:25 - 14:50 </td>
+                                    <td v-for="item in items" style="background-color: #e2efda;">
+                                        <p>主持人：<span style="font-weight: bold;">{{item.topic[3].host}}</span></p>
+                                        <p>演講者：<span style="font-weight: bold;">{{item.topic[3].speaker}}</span></p>
                                     </td>
                                 </tr>
                                 <tr>
@@ -181,6 +188,20 @@
                                         <p style="font-weight: bold;">臺灣大學-IBM量子電腦中心主任 張慶瑞教授</p>
                                         <p style="font-weight: bold;">主持人：</p>
                                         <p style="color: #ff0000;">LH108<br>理工綜合教室</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="background-color: #fff2cc;">15:00 - 15:25</td>
+                                    <td v-for="item in items" style="background-color: #e2efda;">
+                                        <p>主持人：<span style="font-weight: bold;">{{item.topic[4].host}}</span></p>
+                                        <p>演講者：<span style="font-weight: bold;">{{item.topic[4].speaker}}</span></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="background-color: #fff2cc;">15:25 - 15:50</td>
+                                    <td v-for="item in items" style="background-color: #e2efda;">
+                                        <p>主持人：<span style="font-weight: bold;">{{item.topic[5].host}}</span></p>
+                                        <p>演講者：<span style="font-weight: bold;">{{item.topic[5].speaker}}</span></p>
                                     </td>
                                 </tr>
                                 <tr>
@@ -241,31 +262,31 @@
                                 </tr>
                                 <tr>
                                     <td style="background-color: #D9E1F2;">10:10 - 10:55</td>
-                                    <td v-for="item in items" style="background-color: #e2efda;" v-bind:rowspan="item.topic[3].rowspan">
-                                        <p style="color: #ff0000;">{{item.topic[3].time}}</p>
-                                        <p>主持人：<span style="font-weight: bold;">{{item.topic[3].host}}</span></p>
-                                        <p>演講者：<span style="font-weight: bold;" v-html="item.topic[3].speaker"></span></p>
+                                    <td v-for="item in items" style="background-color: #e2efda;" v-bind:rowspan="item.topic[6].rowspan">
+                                        <p style="color: #ff0000;">{{item.topic[6].time}}</p>
+                                        <p>主持人：<span style="font-weight: bold;">{{item.topic[6].host}}</span></p>
+                                        <p>演講者：<span style="font-weight: bold;" v-html="item.topic[6].speaker"></span></p>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td style="background-color: #D9E1F2;">11:00 - 11:25</td>
-                                    <td v-for="item in items" style="background-color: #e2efda;" v-if="item.topic[4].rowspan != 0">
-                                        <p>主持人：<span style="font-weight: bold;">{{item.topic[4].host}}</span></p>
-                                        <p>演講者：<span style="font-weight: bold;">{{item.topic[4].speaker}}</span></p>
+                                    <td v-for="item in items" style="background-color: #e2efda;" v-if="item.topic[7].rowspan != 0">
+                                        <p>主持人：<span style="font-weight: bold;">{{item.topic[7].host}}</span></p>
+                                        <p>演講者：<span style="font-weight: bold;">{{item.topic[7].speaker}}</span></p>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td style="background-color: #D9E1F2;">11:25 - 11:50</td>
-                                    <td v-for="item in items" style="background-color: #e2efda;" v-if="item.topic[5].rowspan != 0">
-                                        <p>主持人：<span style="font-weight: bold;">{{item.topic[5].host}}</span></p>
-                                        <p>演講者：<span style="font-weight: bold;">{{item.topic[5].speaker}}</span></p>
+                                    <td v-for="item in items" style="background-color: #e2efda;" v-if="item.topic[8].rowspan != 0">
+                                        <p>主持人：<span style="font-weight: bold;">{{item.topic[8].host}}</span></p>
+                                        <p>演講者：<span style="font-weight: bold;">{{item.topic[8].speaker}}</span></p>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td style="background-color: #D9E1F2;">11:50 - 12:15</td>
                                     <td v-for="item in items" style="background-color: #e2efda;">
-                                        <p>主持人：<span style="font-weight: bold;">{{item.topic[6].host}}</span></p>
-                                        <p>演講者：<span style="font-weight: bold;">{{item.topic[6].speaker}}</span></p>
+                                        <p>主持人：<span style="font-weight: bold;">{{item.topic[9].host}}</span></p>
+                                        <p>演講者：<span style="font-weight: bold;">{{item.topic[9].speaker}}</span></p>
                                     </td>
                                 </tr>
                                 <tr>
@@ -280,31 +301,45 @@
                                     </td>
                                 </tr>
                                 <tr>
+                                    <td style="background-color: #fff2cc;">12:15 - 12:40</td>
+                                    <td v-for="item in items" style="background-color: #e2efda;">
+                                        <p>主持人：<span style="font-weight: bold;">{{item.topic[10].host}}</span></p>
+                                        <p>演講者：<span style="font-weight: bold;">{{item.topic[10].speaker}}</span></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="background-color: #fff2cc;">13:35 - 14:00</td>
+                                    <td v-for="item in items" style="background-color: #e2efda;">
+                                        <p>主持人：<span style="font-weight: bold;">{{item.topic[11].host}}</span></p>
+                                        <p>演講者：<span style="font-weight: bold;">{{item.topic[11].speaker}}</span></p>
+                                    </td>
+                                </tr>
+                                <tr>
                                     <td style="background-color: #D9E1F2;">14:00 - 14:25</td>
                                     <td v-for="item in items" style="background-color: #e2efda;">
-                                        <p>主持人：<span style="font-weight: bold;">{{item.topic[7].host}}</span></p>
-                                        <p>演講者：<span style="font-weight: bold;">{{item.topic[7].speaker}}</span></p>
+                                        <p>主持人：<span style="font-weight: bold;">{{item.topic[12].host}}</span></p>
+                                        <p>演講者：<span style="font-weight: bold;">{{item.topic[12].speaker}}</span></p>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td style="background-color: #D9E1F2;">14:25 - 14:50</td>
                                     <td v-for="item in items" style="background-color: #e2efda;">
-                                        <p>主持人：<span style="font-weight: bold;">{{item.topic[8].host}}</span></p>
-                                        <p>演講者：<span style="font-weight: bold;">{{item.topic[8].speaker}}</span></p>
+                                        <p>主持人：<span style="font-weight: bold;">{{item.topic[13].host}}</span></p>
+                                        <p>演講者：<span style="font-weight: bold;">{{item.topic[13].speaker}}</span></p>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td style="background-color: #D9E1F2;">14:50 - 15:15</td>
                                     <td v-for="item in items" style="background-color: #e2efda;">
-                                        <p>主持人：<span style="font-weight: bold;">{{item.topic[9].host}}</span></p>
-                                        <p>演講者：<span style="font-weight: bold;">{{item.topic[9].speaker}}</span></p>
+                                        <p>主持人：<span style="font-weight: bold;">{{item.topic[14].host}}</span></p>
+                                        <p>演講者：<span style="font-weight: bold;">{{item.topic[14].speaker}}</span></p>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td style="background-color: #D9E1F2;">15:15 - 15:40</td>
                                     <td v-for="item in items" style="background-color: #e2efda;">
-                                        <p>主持人：<span style="font-weight: bold;">{{item.topic[10].host}}</span></p>
-                                        <p>演講者：<span style="font-weight: bold;">{{item.topic[10].speaker}}</span></p>
+                                        <p>主持人：<span style="font-weight: bold;">{{item.topic[15].host}}</span></p>
+                                        <p>演講者：<span style="font-weight: bold;">{{item.topic[15].speaker}}</span></p>
                                     </td>
                                 </tr>
                                 <tr>
@@ -376,17 +411,24 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td style="background-color: #D9E1F2;">14:00 - 14:25</td>
+                                <td style="background-color: #fff2cc;">13:35 - 14:00</td>
                                 <td style="background-color: #e2efda;">
                                     <p>主持人：<span style="font-weight: bold;">{{item.topic[1].host}}</span></p>
                                     <p>演講者：<span style="font-weight: bold;">{{item.topic[1].speaker}}</span></p>
                                 </td>
                             </tr>
                             <tr>
-                                <td style="background-color: #D9E1F2;">14:25 - 14:50 </td>
+                                <td style="background-color: #D9E1F2;">14:00 - 14:25</td>
                                 <td style="background-color: #e2efda;">
                                     <p>主持人：<span style="font-weight: bold;">{{item.topic[2].host}}</span></p>
                                     <p>演講者：<span style="font-weight: bold;">{{item.topic[2].speaker}}</span></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="background-color: #D9E1F2;">14:25 - 14:50 </td>
+                                <td style="background-color: #e2efda;">
+                                    <p>主持人：<span style="font-weight: bold;">{{item.topic[3].host}}</span></p>
+                                    <p>演講者：<span style="font-weight: bold;">{{item.topic[3].speaker}}</span></p>
                                 </td>
                             </tr>
                             <tr>
@@ -399,6 +441,20 @@
                                     <p style="font-weight: bold;">臺灣大學-IBM量子電腦中心主任 張慶瑞教授</p>
                                     <p style="font-weight: bold;">主持人：</p>
                                     <p style="color: #ff0000;">LH108<br>理工綜合教室</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="background-color: #fff2cc;">15:00 - 15:25</td>
+                                <td style="background-color: #e2efda;">
+                                    <p>主持人：<span style="font-weight: bold;">{{item.topic[4].host}}</span></p>
+                                    <p>演講者：<span style="font-weight: bold;">{{item.topic[4].speaker}}</span></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="background-color: #fff2cc;">15:25 - 15:50</td>
+                                <td style="background-color: #e2efda;">
+                                    <p>主持人：<span style="font-weight: bold;">{{item.topic[5].host}}</span></p>
+                                    <p>演講者：<span style="font-weight: bold;">{{item.topic[5].speaker}}</span></p>
                                 </td>
                             </tr>
                             <tr>
@@ -457,29 +513,29 @@
                             <tr>
                                 <td style="background-color: #D9E1F2;">10:10 - 10:55</td>
                                 <td style="background-color: #e2efda;">
-                                    <p>主持人：<span style="font-weight: bold;">{{item.topic[3].host}}</span></p>
-                                    <p>演講者：<span style="font-weight: bold;">{{item.topic[3].speaker}}</span></p>
+                                    <p>主持人：<span style="font-weight: bold;">{{item.topic[6].host}}</span></p>
+                                    <p>演講者：<span style="font-weight: bold;">{{item.topic[6].speaker}}</span></p>
                                 </td>
                             </tr>
                             <tr>
                                 <td style="background-color: #D9E1F2;">11:00 - 11:25</td>
                                 <td style="background-color: #e2efda;">
-                                    <p>主持人：<span style="font-weight: bold;">{{item.topic[4].host}}</span></p>
-                                    <p>演講者：<span style="font-weight: bold;">{{item.topic[4].speaker}}</span></p>
+                                    <p>主持人：<span style="font-weight: bold;">{{item.topic[7].host}}</span></p>
+                                    <p>演講者：<span style="font-weight: bold;">{{item.topic[7].speaker}}</span></p>
                                 </td>
                             </tr>
                             <tr>
                                 <td style="background-color: #D9E1F2;">11:25 - 11:50</td>
                                 <td style="background-color: #e2efda;">
-                                    <p>主持人：<span style="font-weight: bold;">{{item.topic[5].host}}</span></p>
-                                    <p>演講者：<span style="font-weight: bold;">{{item.topic[5].speaker}}</span></p>
+                                    <p>主持人：<span style="font-weight: bold;">{{item.topic[8].host}}</span></p>
+                                    <p>演講者：<span style="font-weight: bold;">{{item.topic[8].speaker}}</span></p>
                                 </td>
                             </tr>
                             <tr>
                                 <td style="background-color: #D9E1F2;">11:50 - 12:15</td>
                                 <td style="background-color: #e2efda;">
-                                    <p>主持人：<span style="font-weight: bold;">{{item.topic[6].host}}</span></p>
-                                    <p>演講者：<span style="font-weight: bold;">{{item.topic[6].speaker}}</span></p>
+                                    <p>主持人：<span style="font-weight: bold;">{{item.topic[9].host}}</span></p>
+                                    <p>演講者：<span style="font-weight: bold;">{{item.topic[9].speaker}}</span></p>
                                 </td>
                             </tr>
                             <tr>
@@ -494,31 +550,45 @@
                                 </td>
                             </tr>
                             <tr>
+                                <td style="background-color: #fff2cc;">12:15 - 12:40</td>
+                                <td style="background-color: #e2efda;">
+                                    <p>主持人：<span style="font-weight: bold;">{{item.topic[10].host}}</span></p>
+                                    <p>演講者：<span style="font-weight: bold;">{{item.topic[10].speaker}}</span></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="background-color: #fff2cc;">13:35 - 14:00</td>
+                                <td style="background-color: #e2efda;">
+                                    <p>主持人：<span style="font-weight: bold;">{{item.topic[11].host}}</span></p>
+                                    <p>演講者：<span style="font-weight: bold;">{{item.topic[11].speaker}}</span></p>
+                                </td>
+                            </tr>
+                            <tr>
                                 <td style="background-color: #D9E1F2;">14:00 - 14:25</td>
                                 <td style="background-color: #e2efda;">
-                                    <p>主持人：<span style="font-weight: bold;">{{item.topic[7].host}}</span></p>
-                                    <p>演講者：<span style="font-weight: bold;">{{item.topic[7].speaker}}</span></p>
+                                    <p>主持人：<span style="font-weight: bold;">{{item.topic[12].host}}</span></p>
+                                    <p>演講者：<span style="font-weight: bold;">{{item.topic[12].speaker}}</span></p>
                                 </td>
                             </tr>
                             <tr>
                                 <td style="background-color: #D9E1F2;">14:25 - 14:50</td>
                                 <td style="background-color: #e2efda;">
-                                    <p>主持人：<span style="font-weight: bold;">{{item.topic[8].host}}</span></p>
-                                    <p>演講者：<span style="font-weight: bold;">{{item.topic[8].speaker}}</span></p>
+                                    <p>主持人：<span style="font-weight: bold;">{{item.topic[13].host}}</span></p>
+                                    <p>演講者：<span style="font-weight: bold;">{{item.topic[13].speaker}}</span></p>
                                 </td>
                             </tr>
                             <tr>
                                 <td style="background-color: #D9E1F2;">14:50 - 15:15</td>
                                 <td style="background-color: #e2efda;">
-                                    <p>主持人：<span style="font-weight: bold;">{{item.topic[9].host}}</span></p>
-                                    <p>演講者：<span style="font-weight: bold;">{{item.topic[9].speaker}}</span></p>
+                                    <p>主持人：<span style="font-weight: bold;">{{item.topic[14].host}}</span></p>
+                                    <p>演講者：<span style="font-weight: bold;">{{item.topic[14].speaker}}</span></p>
                                 </td>
                             </tr>
                             <tr>
                                 <td style="background-color: #D9E1F2;">15:15 - 15:40</td>
                                 <td style="background-color: #e2efda;">
-                                    <p>主持人：<span style="font-weight: bold;">{{item.topic[10].host}}</span></p>
-                                    <p>演講者：<span style="font-weight: bold;">{{item.topic[10].speaker}}</span></p>
+                                    <p>主持人：<span style="font-weight: bold;">{{item.topic[15].host}}</span></p>
+                                    <p>演講者：<span style="font-weight: bold;">{{item.topic[15].speaker}}</span></p>
                                 </td>
                             </tr>
                             <tr>
