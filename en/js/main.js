@@ -135,11 +135,29 @@ $(function(){
 
     var program = new Vue({
         el: "#program",
+        data: {    
+            items: [],
+            mainPage: 'Program',
+            currentTab: 'Program'
+        },
+        created() {
+            axios.get('./json/program.json')
+                .then(res => {
+                    this.items = res.data;
+                })
+                .catch(error => {
+                    alert("異常");
+            })
+        }
+    });
+
+    var programSimple = new Vue({
+        el: "#program-simple",
         data: {
             items: []     
         },
         created() {
-            axios.get('./json/program.json')
+            axios.get('./json/program-simple.json')
                 .then(res => {
                     this.items = res.data;
                 })

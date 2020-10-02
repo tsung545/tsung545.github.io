@@ -484,21 +484,22 @@
                             </tr>
                             <tr>
                                 <td style="background-color: #D9E1F2;">10:10 - 10:55</td>
-                                <td style="background-color: #e2efda;">
+                                <td style="background-color: #e2efda;" v-bind:rowspan="item.topic[4].rowspan">
+                                    <p style="color: #ff0000;">{{item.topic[4].time}}</p>
                                     <p>主持人：<span style="font-weight: bold;">{{item.topic[4].host}}</span></p>
-                                    <p>演講者：<span style="font-weight: bold;">{{item.topic[4].speaker}}</span></p>
+                                    <p>演講者：<span style="font-weight: bold;" v-html="item.topic[4].speaker"></span></p>
                                 </td>
                             </tr>
                             <tr>
                                 <td style="background-color: #D9E1F2;">11:00 - 11:25</td>
-                                <td style="background-color: #e2efda;">
+                                <td style="background-color: #e2efda;" v-if="item.topic[5].rowspan != 0">
                                     <p>主持人：<span style="font-weight: bold;">{{item.topic[5].host}}</span></p>
                                     <p>演講者：<span style="font-weight: bold;">{{item.topic[5].speaker}}</span></p>
                                 </td>
                             </tr>
                             <tr>
                                 <td style="background-color: #D9E1F2;">11:25 - 11:50</td>
-                                <td style="background-color: #e2efda;">
+                                <td style="background-color: #e2efda;" v-if="item.topic[5].rowspan != 0">
                                     <p>主持人：<span style="font-weight: bold;">{{item.topic[6].host}}</span></p>
                                     <p>演講者：<span style="font-weight: bold;">{{item.topic[6].speaker}}</span></p>
                                 </td>
