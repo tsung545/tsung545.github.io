@@ -30,6 +30,15 @@
           }]
         }
     </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-180555058-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'UA-180555058-1');
+    </script>
 </head>
 <body>
     <header id="header">
@@ -85,7 +94,7 @@
                         <button v-on:click ="currentTab = mainPage">{{mainPage}}</button><button v-for="item in items" v-bind:key="item.name" v-on:click= "currentTab = item">{{item.name}}</button>
                     </div> -->
                     <div class="program-top">
-                        <a href="doc/2020數學年會議程表(彙整)109.9.21.pdf">
+                        <a href="doc/2020數學年會議程表(彙整)109.10.15.pdf" target="_blank">
                             <img src="img/download.png" alt="" width="30" height="30">
                             <p>年會議程表pdf版</p>
                         </a>
@@ -484,21 +493,22 @@
                             </tr>
                             <tr>
                                 <td style="background-color: #D9E1F2;">10:10 - 10:55</td>
-                                <td style="background-color: #e2efda;">
+                                <td style="background-color: #e2efda;" v-bind:rowspan="item.topic[4].rowspan">
+                                    <p style="color: #ff0000;">{{item.topic[4].time}}</p>
                                     <p>主持人：<span style="font-weight: bold;">{{item.topic[4].host}}</span></p>
-                                    <p>演講者：<span style="font-weight: bold;">{{item.topic[4].speaker}}</span></p>
+                                    <p>演講者：<span style="font-weight: bold;" v-html="item.topic[4].speaker"></span></p>
                                 </td>
                             </tr>
                             <tr>
                                 <td style="background-color: #D9E1F2;">11:00 - 11:25</td>
-                                <td style="background-color: #e2efda;">
+                                <td style="background-color: #e2efda;" v-if="item.topic[5].rowspan != 0">
                                     <p>主持人：<span style="font-weight: bold;">{{item.topic[5].host}}</span></p>
                                     <p>演講者：<span style="font-weight: bold;">{{item.topic[5].speaker}}</span></p>
                                 </td>
                             </tr>
                             <tr>
                                 <td style="background-color: #D9E1F2;">11:25 - 11:50</td>
-                                <td style="background-color: #e2efda;">
+                                <td style="background-color: #e2efda;" v-if="item.topic[5].rowspan != 0">
                                     <p>主持人：<span style="font-weight: bold;">{{item.topic[6].host}}</span></p>
                                     <p>演講者：<span style="font-weight: bold;">{{item.topic[6].speaker}}</span></p>
                                 </td>
