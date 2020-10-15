@@ -298,7 +298,7 @@ header .navbar-mobile a:hover {
 }
 
 .banner {
-  background-image: url("../img/bg4.jpg");
+  background-image: url("../img/bg4.svg");
   background-position: bottom;
   background-size: cover;
   width: 100%;
@@ -815,7 +815,7 @@ header .navbar-mobile a:hover {
 }
 
 .banner-side {
-  background-image: url("../img/bg3.jpg");
+  background-image: url("../img/bg3.svg");
   background-position: bottom;
   background-size: cover;
   height: 350px;
@@ -826,7 +826,7 @@ header .navbar-mobile a:hover {
 }
 
 .main {
-  background-image: url("../img/bg2.jpg");
+  background-image: url("../img/bg2.svg");
   background-position: center;
   background-size: cover;
   width: 100%;
