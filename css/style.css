@@ -1,10 +1,11 @@
+@charset "UTF-8";
 head, body {
   margin: 0;
   padding: 0;
   color: #000000;
-  font-family: 'Noto Sans TC', sans-serif;
   background-color: #cccccc;
   overflow-x: hidden;
+  font-family: "微軟正黑體", "Microsoft JhengHei", sans-serif;
 }
 
 p {

@@ -69,17 +69,17 @@ $(function(){
         `
             <div class="footer-content">                
                 <a href="tel:0229052452" class="contact">
-                    <img src="https://img.icons8.com/ultraviolet/40/000000/phone.png" width="25" height="25"/>
+                    <img src="../img/phone.svg" width="25" height="25"/>
                     <p>&ensp;TEL:&ensp;</p>
                     <p>(02)29052452</p>
                 </a>
                 <a href="fax:0229044509" class="contact">
-                    <img src="https://img.icons8.com/ultraviolet/40/000000/phone-office.png" width="25" height="25"/>
+                    <img src="../img/fax.svg" width="25" height="25"/>
                     <p>&ensp;FAX:&ensp;</p>
                     <p>(02)29044509</p>
                 </a>
                 <a href="mailto:tms2020@math.fju.edu.tw" class="contact">
-                    <img src="https://img.icons8.com/ultraviolet/40/000000/email-open.png" width="25" height="25"/>
+                    <img src="../img/email.svg" width="25" height="25"/>
                     <p>&ensp;E-mail:&ensp;</p>
                     <p>tms2020@math.fju.edu.tw</p>
                 </a>
@@ -95,116 +95,107 @@ $(function(){
     var footer = new Vue({
         el: "#footer"
     });
+    
 
-    var news = new Vue({
-        el: "#news",
-        data: {
-            items: []     
-        },
-        computed: {
-            reverseItems() {
-                return this.items.reverse();
+    if(document.getElementById('committee')){
+        var committee = new Vue({
+            el: "#committee",
+            data: {
+                items: []     
+            },
+            created() {
+                axios.get('./json/committee.json')
+                    .then(res => {
+                        this.items = res.data;
+                    })
+                    .catch(error => {
+                        alert("異常");
+                })
             }
-        },
-        created() {
-            axios.get('./json/news.json')
-                .then(res => {
-                    this.items = res.data;
-                })
-                .catch(error => {
-                    alert("異常");
-            })
-        }
-    });
+        });    
+    }
 
-    var committee = new Vue({
-        el: "#committee",
-        data: {
-            items: []     
-        },
-        created() {
-            axios.get('./json/committee.json')
-                .then(res => {
-                    this.items = res.data;
+    if(document.getElementById('program')){
+        var program = new Vue({
+            el: "#program",
+            data: {    
+                items: [],
+                mainPage: '議程表總覽',
+                currentTab: '議程表總覽'
+            },
+            created() {
+                axios.get('./json/program.json')
+                    .then(res => {
+                        this.items = res.data;
+                    })
+                    .catch(error => {
+                        alert("異常");
                 })
-                .catch(error => {
-                    alert("異常");
-            })
-        }
-    });
+            }
+        });    
+    }
 
-    var program = new Vue({
-        el: "#program",
-        data: {    
-            items: [],
-            mainPage: 'Program',
-            currentTab: 'Program'
-        },
-        created() {
-            axios.get('./json/program.json')
-                .then(res => {
-                    this.items = res.data;
+    if(document.getElementById('program-simple')){
+        var programSimple = new Vue({
+            el: "#program-simple",
+            data: {
+                items: []
+            },
+            created() {
+                axios.get('./json/program-simple.json')
+                    .then(res => {
+                        this.items = res.data;
+                    })
+                    .catch(error => {
+                        alert("異常");
                 })
-                .catch(error => {
-                    alert("異常");
-            })
-        }
-    });
+            }
+        });    
+    }
 
-    var programSimple = new Vue({
-        el: "#program-simple",
-        data: {
-            items: []     
-        },
-        created() {
-            axios.get('./json/program-simple.json')
-                .then(res => {
-                    this.items = res.data;
+    if(document.getElementById('speakers')){
+        var speakers = new Vue({
+            el: "#speakers",
+            data: {
+                items: [],
+                items2: []    
+            },
+            created() {
+                axios.get('./json/speakers.json')
+                    .then(res => {
+                        this.items = res.data;
+                    })
+                    .catch(error => {
+                        alert("異常");
+                }),
+                axios.get('./json/main-speakers.json')
+                    .then(res => {
+                        this.items2 = res.data;
+                    })
+                    .catch(error => {
+                        alert("異常");
                 })
-                .catch(error => {
-                    alert("異常");
-            })
-        }
-    });
+            }
+        });    
+    }
 
-    var speakers = new Vue({
-        el: "#speakers",
-        data: {
-            items: [],
-            items2: []    
-        },
-        created() {
-            axios.get('./json/speakers.json')
-                .then(res => {
-                    this.items = res.data;
+    if(document.getElementById('hotelinfo')){
+        var hotelinfo = new Vue({
+            el: "#hotelinfo",
+            data: {
+                items: []  
+            },
+            created() {
+                axios.get('./json/hotelinfo.json')
+                    .then(res => {
+                        this.items = res.data;
+                    })
+                    .catch(error => {
+                        alert("異常");
                 })
-                .catch(error => {
-                    alert("異常");
-            }),
-            axios.get('./json/main-speakers.json')
-                .then(res => {
-                    this.items2 = res.data;
-                })
-                .catch(error => {
-                    alert("異常");
-            })
-        }
-    });
-    var hotelinfo = new Vue({
-        el: "#hotelinfo",
-        data: {
-            items: []  
-        },
-        created() {
-            axios.get('./json/hotelinfo.json')
-                .then(res => {
-                    this.items = res.data;
-                })
-                .catch(error => {
-                    alert("異常");
-            })
-        }
-    });
+            }
+        });    
+    }
 
     //----------Navbar樣式----------//
 
