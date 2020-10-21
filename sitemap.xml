@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>http://tms2020.math.fju.edu.tw/</loc>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>http://tms2020.math.fju.edu.tw/index.html</loc>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://tms2020.math.fju.edu.tw/registration.html</loc>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>http://tms2020.math.fju.edu.tw/program.html</loc>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>http://tms2020.math.fju.edu.tw/speakers.html</loc>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>http://tms2020.math.fju.edu.tw/news.html</loc>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>http://tms2020.math.fju.edu.tw/submission.html</loc>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>http://tms2020.math.fju.edu.tw/banquet.html</loc>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://tms2020.math.fju.edu.tw/committee.html</loc>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>http://tms2020.math.fju.edu.tw/subsidy.html</loc>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>http://tms2020.math.fju.edu.tw/traffic.html</loc>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://tms2020.math.fju.edu.tw/hotelinfo.html</loc>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://tms2020.math.fju.edu.tw/album.html</loc>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://tms2020.math.fju.edu.tw/en/index.html</loc>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>http://tms2020.math.fju.edu.tw/en/program.html</loc>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>http://tms2020.math.fju.edu.tw/en/submission.html</loc>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>http://tms2020.math.fju.edu.tw/en/speakers.html</loc>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>http://tms2020.math.fju.edu.tw/en/registration.html</loc>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>http://tms2020.math.fju.edu.tw/en/committee.html</loc>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>http://tms2020.math.fju.edu.tw/en/traffic.html</loc>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://tms2020.math.fju.edu.tw/en/album.html</loc>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://tms2020.math.fju.edu.tw/en/hotelinfo.html</loc>
+  <priority>0.80</priority>
+</url>
+
+</urlset>
