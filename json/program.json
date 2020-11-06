@@ -4,7 +4,7 @@
         "address": "MA301<br>耕莘樓(3F)",
         "topic": [
             {
-                "host": "",
+                "host": "余冠儒",
                 "speaker": "傅東山",
                 "rowspan": "1",
                 "time": ""
@@ -16,38 +16,38 @@
                 "time": ""
             },
             {
-                "host": "",
+                "host": "羅元勛",
                 "speaker": "林晉宏",
                 "rowspan": "1",
                 "time": ""
             },
             {
-                "host": "",
+                "host": "傅東山",
                 "speaker": "羅元勳",
                 "rowspan": "1",
                 "time": ""
             },
             {
-                "host": "",
+                "host": "林晉宏",
                 "speaker": "葉鴻國",
                 "rowspan": "1",
                 "time": ""
             },
             {
-                "host": "",
+                "host": "葉鴻國",
                 "speaker": "陳宏賓",
                 "rowspan": "1",
                 "time": ""
             },
             {
-                "host": "",
+                "host": "陳宏賓",
                 "speaker": "俞韋亘",
                 "rowspan": "1",
                 "time": ""
             },
             {
-                "host": "",
-                "speaker": "",
+                "host": "俞韋亘",
+                "speaker": "蔡馬良",
                 "rowspan": "1",
                 "time": ""
             },
@@ -64,8 +64,8 @@
                 "time": ""
             },
             {
-                "host": "",
-                "speaker": "",
+                "host": "鄭硯仁",
+                "speaker": "俞讚城",
                 "rowspan": "1",
                 "time": ""
             },
@@ -196,7 +196,7 @@
                 "time": ""
             },
             {
-                "host": "",
+                "host": "潘俊杰",
                 "speaker": "詹雁如",
                 "rowspan": "1",
                 "time": ""
@@ -208,19 +208,19 @@
                 "time": ""
             },
             {
-                "host": "",
+                "host": "王姿月",
                 "speaker": "陳君明",
                 "rowspan": "1",
                 "time": ""
             },
             {
-                "host": "",
+                "host": "蔡炎龍",
                 "speaker": "魏澤人",
                 "rowspan": "1",
                 "time": ""
             },
             {
-                "host": "",
+                "host": "魏澤人",
                 "speaker": "蔡炎龍",
                 "rowspan": "1",
                 "time": ""
@@ -334,20 +334,20 @@
                 "time": ""
             },
             {
-                "host": "",
-                "speaker": "",
+                "host": "魏福村",
+                "speaker": "Oguz Gezmis",
                 "rowspan": "1",
                 "time": ""
             },
             {
-                "host": "",
-                "speaker": "",
+                "host": "魏福村",
+                "speaker": "Ryotaro Harada",
                 "rowspan": "1",
                 "time": ""
             },
             {
-                "host": "",
-                "speaker": "",
+                "host": "魏福村",
+                "speaker": "孫維良",
                 "rowspan": "1",
                 "time": ""
             },
@@ -460,8 +460,8 @@
                 "time": ""
             },
             {
-                "host": "",
-                "speaker": "",
+                "host": "陳冠宇",
+                "speaker": "Kyung-Youn Kim",
                 "rowspan": "1",
                 "time": ""
             },
@@ -552,13 +552,13 @@
             {
                 "host": "黃禮珊",
                 "speaker": "盧鴻興",
-                "rowspan": "1",
-                "time": ""
+                "rowspan": "2",
+                "time": "13:40-14:25"
             },
             {
-                "host": "黃禮珊",
-                "speaker": "盧鴻興",
-                "rowspan": "1",
+                "host": "",
+                "speaker": "",
+                "rowspan": "0",
                 "time": ""
             },
             {
@@ -586,8 +586,8 @@
                 "time": ""
             },
             {
-                "host": "",
-                "speaker": "",
+                "host": "洪弘",
+                "speaker": "楊子賢",
                 "rowspan": "1",
                 "time": ""
             },
@@ -755,7 +755,7 @@
             },
             {
                 "host": "王埄彬",
-                "speaker": "鄭昌源 ",
+                "speaker": "鄭昌源",
                 "rowspan": "1",
                 "time": ""
             },
@@ -766,8 +766,8 @@
                 "time": ""
             },
             {
-                "host": "",
-                "speaker": "",
+                "host": "王埄彬",
+                "speaker": "黃志強",
                 "rowspan": "1",
                 "time": ""
             },
@@ -850,14 +850,14 @@
                 "time": ""
             },
             {
-                "host": "",
-                "speaker": "",
+                "host": "黃皓瑋",
+                "speaker": "Muoi Bui Ngoc",
                 "rowspan": "1",
                 "time": ""
             },
             {
-                "host": "",
-                "speaker": "",
+                "host": "黃皓瑋",
+                "speaker": "蔡明誠",
                 "rowspan": "1",
                 "time": ""
             },

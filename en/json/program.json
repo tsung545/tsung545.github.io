@@ -4,7 +4,7 @@
         "address": "MA301",
         "topic": [
             {
-                "host": "",
+                "host": "Guan-Ru Yu",
                 "speaker": "Tung-Shan Fu",
                 "rowspan": "1",
                 "time": ""
@@ -16,38 +16,38 @@
                 "time": ""
             },
             {
-                "host": "",
+                "host": "Yuan-Hsun Lo",
                 "speaker": "Jephian Chin-Hung Lin",
                 "rowspan": "1",
                 "time": ""
             },
             {
-                "host": "",
+                "host": "Tung-Shan Fu",
                 "speaker": "Yuan-Hsun Lo",
                 "rowspan": "1",
                 "time": ""
             },
             {
-                "host": "",
+                "host": "Jephian Chin-Hung Lin",
                 "speaker": "Hong-Gwa Yeh",
                 "rowspan": "1",
                 "time": ""
             },
             {
-                "host": "",
+                "host": "Hong-Gwa Yeh",
                 "speaker": "Hong-Bin Chen",
                 "rowspan": "1",
                 "time": ""
             },
             {
-                "host": "",
+                "host": "Hong-Bin Chen",
                 "speaker": "Wei-Hsuan Yu",
                 "rowspan": "1",
                 "time": ""
             },
             {
-                "host": "",
-                "speaker": "",
+                "host": "Wei-Hsuan Yu",
+                "speaker": "Ma-Lian Chia",
                 "rowspan": "1",
                 "time": ""
             },
@@ -64,8 +64,8 @@
                 "time": ""
             },
             {
-                "host": "",
-                "speaker": "",
+                "host": "Cheng-Yen Jen",
+                "speaker": "Tsan-Cheng Yu",
                 "rowspan": "1",
                 "time": ""
             },
@@ -196,7 +196,7 @@
                 "time": ""
             },
             {
-                "host": "",
+                "host": "Jun-Jie Pan",
                 "speaker": "Joyce Jan",
                 "rowspan": "1",
                 "time": ""
@@ -208,19 +208,19 @@
                 "time": ""
             },
             {
-                "host": "",
+                "host": "Julie Tzu-Yueh Wang",
                 "speaker": "Jimmy Chen",
                 "rowspan": "1",
                 "time": ""
             },
             {
-                "host": "",
+                "host": "Yen-Lung Tsai",
                 "speaker": "Tzer-jen Wei",
                 "rowspan": "1",
                 "time": ""
             },
             {
-                "host": "",
+                "host": "Tzer-jen Wei",
                 "speaker": "Yen-Lung Tsai",
                 "rowspan": "1",
                 "time": ""
@@ -460,8 +460,8 @@
                 "time": ""
             },
             {
-                "host": "",
-                "speaker": "",
+                "host": "Guan-Yu Chen",
+                "speaker": "Kyung-Youn Kim",
                 "rowspan": "1",
                 "time": ""
             },
@@ -552,13 +552,13 @@
             {
                 "host": "Li-Shan Huang",
                 "speaker": "Henry Horng-Shing Lu",
-                "rowspan": "1",
-                "time": ""
+                "rowspan": "2",
+                "time": "13:40-14:25"
             },
             {
-                "host": "Li-Shan Huang",
-                "speaker": "Henry Horng-Shing Lu",
-                "rowspan": "1",
+                "host": "",
+                "speaker": "",
+                "rowspan": "0",
                 "time": ""
             },
             {
@@ -586,8 +586,8 @@
                 "time": ""
             },
             {
-                "host": "",
-                "speaker": "",
+                "host": "Hung Hung",
+                "speaker": "Tzu-Hsien Young",
                 "rowspan": "1",
                 "time": ""
             },
@@ -766,8 +766,8 @@
                 "time": ""
             },
             {
-                "host": "",
-                "speaker": "",
+                "host": "Feng-Bin Wang",
+                "speaker": "Chih-Chiang Huang",
                 "rowspan": "1",
                 "time": ""
             },
@@ -850,14 +850,14 @@
                 "time": ""
             },
             {
-                "host": "",
-                "speaker": "",
+                "host": "Hao-Wei Huang",
+                "speaker": "Muoi Bui Ngoc",
                 "rowspan": "1",
                 "time": ""
             },
             {
-                "host": "",
-                "speaker": "",
+                "host": "Hao-Wei Huang",
+                "speaker": "Ming-Cheng Tsai",
                 "rowspan": "1",
                 "time": ""
             },
