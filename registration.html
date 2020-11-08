@@ -246,7 +246,7 @@
                         <p class="mark">網路註冊報名請使用有效 E-mail帳號。</p>
                         <p class="mark">線上報名截止日期: 2020/11/15。</p>
                         <p class="mark">研討會期間也接受現場報名。</p>
-                        <a href="https://tms.neticrm.tw/civicrm/event/register?reset=1&id=6" target="_blank"><button>按此註冊繳費</button></a>    
+                        <a href="https://tms.neticrm.tw/civicrm/event/register?reset=1&id=6" target="_blank"><button id="registrationBtn">按此註冊繳費</button></a>    
                     </div>
                 </div>
             </div>
@@ -287,6 +287,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.12/vue.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
     <script src="js/main.min.js"></script>
+    
+    <script>
+        var time_close = new Date("2020/11/16 00:00:00");
+        var time_now = new Date();
+        var registrationBtn = document.getElementById("registrationBtn")
+        if( time_now.getTime() - time_close.getTime() >= 0){
+            registrationBtn.style.backgroundColor = "#9a9a9a";
+            registrationBtn.textContent = "線上註冊繳費截止";
+            registrationBtn.parentElement.removeAttribute("href");
+            registrationBtn.parentElement.style.cursor = "default";
+            registrationBtn.style.cursor = "default";
+        }
+    </script>
 
 </body>
 </html>

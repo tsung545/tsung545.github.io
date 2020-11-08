@@ -228,7 +228,7 @@
                         <p class="mark">Please use a valid E-mail address to register online.</p>
                         <p class="mark">Registration Deadline: 2020/11/15.</p>
                         <p class="mark">On-site registration will be available.</p>
-                        <a href="https://tms.neticrm.tw/civicrm/event/register?reset=1&id=6" target="_blank"><button>Register and Pay Now!</button></a>    
+                        <a href="https://tms.neticrm.tw/civicrm/event/register?reset=1&id=6" target="_blank"><button id="registrationBtn">Register and Pay Now!</button></a>    
                     </div>
                 </div>
             </div>
@@ -246,6 +246,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.12/vue.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
     <script src="js/main.js"></script>
+
+    <script>
+        var time_close = new Date("2020/11/16 00:00:00");
+        var time_now = new Date();
+        var registrationBtn = document.getElementById("registrationBtn")
+        if( time_now.getTime() - time_close.getTime() >= 0){
+            registrationBtn.style.backgroundColor = "#9a9a9a";
+            registrationBtn.textContent = "We will not be able to accommodate any more registration requests. Thank you for your support!";
+            registrationBtn.parentElement.removeAttribute("href");
+            registrationBtn.parentElement.style.cursor = "default";
+            registrationBtn.style.cursor = "default";
+        }
+    </script>
 
 </body>
 </html>
