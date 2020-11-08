@@ -144,8 +144,11 @@
                                 <tr>
                                     <td style="background-color: #D9E1F2;">11:20 - 12:05</td>
                                     <td v-for="item in items" style="background-color: #e2efda;"> 
-                                        <p>主持人：<span style="font-weight: bold;">{{item.topic[0].host}}</span></p>
-                                        <p>演講者：<span style="font-weight: bold;">{{item.topic[0].speaker}}</span></p>
+                                        <p v-if="item.topic[0].host == ''">***</p>
+                                        <template v-else>
+                                            <p>主持人：<span style="font-weight: bold;">{{item.topic[0].host}}</span></p>
+                                            <p>演講者：<span style="font-weight: bold;">{{item.topic[0].speaker}}</span></p>    
+                                        </template>
                                     </td>
                                 </tr>
                                 <tr>
@@ -163,22 +166,33 @@
                                     <td style="background-color: #D9E1F2;">13:35 - 14:00</td>
                                     <td v-for="item in items" style="background-color: #e2efda;" v-bind:rowspan="item.topic[1].rowspan">
                                         <p style="color: #ff0000;">{{item.topic[1].time}}</p>
-                                        <p>主持人：<span style="font-weight: bold;">{{item.topic[1].host}}</span></p>
-                                        <p>演講者：<span style="font-weight: bold;" v-html="item.topic[1].speaker"></span></p>
+                                        <p v-if="item.topic[1].host == ''">***</p>
+                                        <template v-else>
+                                            <p>主持人：<span style="font-weight: bold;">{{item.topic[1].host}}</span></p>
+                                            <p>演講者：<span style="font-weight: bold;" v-html="item.topic[1].speaker"></span></p>    
+                                        </template>
+                                        
                                     </td>
                                 </tr>
                                 <tr>
                                     <td style="background-color: #D9E1F2;">14:00 - 14:25</td>
                                     <td v-for="item in items" style="background-color: #e2efda;" v-if="item.topic[2].rowspan != 0">
-                                        <p>主持人：<span style="font-weight: bold;">{{item.topic[2].host}}</span></p>
-                                        <p>演講者：<span style="font-weight: bold;">{{item.topic[2].speaker}}</span></p>
+                                        <p v-if="item.topic[2].host == ''">***</p>
+                                        <template v-else>
+                                            <p>主持人：<span style="font-weight: bold;">{{item.topic[2].host}}</span></p>
+                                            <p>演講者：<span style="font-weight: bold;">{{item.topic[2].speaker}}</span></p>    
+                                        </template>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td style="background-color: #D9E1F2;">14:25 - 14:50 </td>
                                     <td v-for="item in items" style="background-color: #e2efda;">
-                                        <p>主持人：<span style="font-weight: bold;">{{item.topic[3].host}}</span></p>
-                                        <p>演講者：<span style="font-weight: bold;">{{item.topic[3].speaker}}</span></p>
+                                        <p v-if="item.topic[3].host == ''">***</p>
+                                        <template v-else>
+                                            <p>主持人：<span style="font-weight: bold;">{{item.topic[3].host}}</span></p>
+                                            <p>演講者：<span style="font-weight: bold;">{{item.topic[3].speaker}}</span></p>    
+                                        </template>
+                                        
                                     </td>
                                 </tr>
                                 <tr>
@@ -253,29 +267,45 @@
                                     <td style="background-color: #D9E1F2;">10:10 - 10:55</td>
                                     <td v-for="item in items" style="background-color: #e2efda;" v-bind:rowspan="item.topic[4].rowspan">
                                         <p style="color: #ff0000;">{{item.topic[4].time}}</p>
-                                        <p>主持人：<span style="font-weight: bold;">{{item.topic[4].host}}</span></p>
-                                        <p>演講者：<span style="font-weight: bold;" v-html="item.topic[4].speaker"></span></p>
+                                        <p v-if="item.topic[4].host == ''">***</p>
+                                        <template v-else>
+                                            <p>主持人：<span style="font-weight: bold;">{{item.topic[4].host}}</span></p>
+                                            <p>演講者：<span style="font-weight: bold;" v-html="item.topic[4].speaker"></span></p>    
+                                        </template>
+                                        
                                     </td>
                                 </tr>
                                 <tr>
                                     <td style="background-color: #D9E1F2;">11:00 - 11:25</td>
                                     <td v-for="item in items" style="background-color: #e2efda;" v-if="item.topic[5].rowspan != 0">
-                                        <p>主持人：<span style="font-weight: bold;">{{item.topic[5].host}}</span></p>
-                                        <p>演講者：<span style="font-weight: bold;">{{item.topic[5].speaker}}</span></p>
+                                        <p v-if="item.topic[5].host == ''">***</p>
+                                        <template v-else>
+                                            <p>主持人：<span style="font-weight: bold;">{{item.topic[5].host}}</span></p>
+                                            <p>演講者：<span style="font-weight: bold;">{{item.topic[5].speaker}}</span></p>    
+                                        </template>
+                                        
                                     </td>
                                 </tr>
                                 <tr>
                                     <td style="background-color: #D9E1F2;">11:25 - 11:50</td>
                                     <td v-for="item in items" style="background-color: #e2efda;" v-if="item.topic[6].rowspan != 0">
-                                        <p>主持人：<span style="font-weight: bold;">{{item.topic[6].host}}</span></p>
-                                        <p>演講者：<span style="font-weight: bold;">{{item.topic[6].speaker}}</span></p>
+                                        <p v-if="item.topic[6].host == ''">***</p>
+                                        <template v-else>
+                                            <p>主持人：<span style="font-weight: bold;">{{item.topic[6].host}}</span></p>
+                                            <p>演講者：<span style="font-weight: bold;">{{item.topic[6].speaker}}</span></p>    
+                                        </template>
+                                        
                                     </td>
                                 </tr>
                                 <tr>
                                     <td style="background-color: #D9E1F2;">11:50 - 12:15</td>
                                     <td v-for="item in items" style="background-color: #e2efda;">
-                                        <p>主持人：<span style="font-weight: bold;">{{item.topic[7].host}}</span></p>
-                                        <p>演講者：<span style="font-weight: bold;">{{item.topic[7].speaker}}</span></p>
+                                        <p v-if="item.topic[7].host == ''">***</p>
+                                        <template v-else>
+                                            <p>主持人：<span style="font-weight: bold;">{{item.topic[7].host}}</span></p>
+                                            <p>演講者：<span style="font-weight: bold;">{{item.topic[7].speaker}}</span></p>    
+                                        </template>
+                                        
                                     </td>
                                 </tr>
                                 <tr>
@@ -292,43 +322,64 @@
                                 <tr>
                                     <td style="background-color: #fff2cc;">12:15 - 12:40</td>
                                     <td v-for="item in items" style="background-color: #e2efda;">
-                                        <p>主持人：<span style="font-weight: bold;">{{item.topic[8].host}}</span></p>
-                                        <p>演講者：<span style="font-weight: bold;">{{item.topic[8].speaker}}</span></p>
+                                        <p v-if="item.topic[8].host == ''">***</p>
+                                        <template v-else>
+                                            <p>主持人：<span style="font-weight: bold;">{{item.topic[8].host}}</span></p>
+                                            <p>演講者：<span style="font-weight: bold;">{{item.topic[8].speaker}}</span></p>    
+                                        </template>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td style="background-color: #fff2cc;">13:35 - 14:00</td>
                                     <td v-for="item in items" style="background-color: #e2efda;">
-                                        <p>主持人：<span style="font-weight: bold;">{{item.topic[9].host}}</span></p>
-                                        <p>演講者：<span style="font-weight: bold;">{{item.topic[9].speaker}}</span></p>
+                                        <p v-if="item.topic[9].host == ''">***</p>
+                                        <template v-else>
+                                            <p>主持人：<span style="font-weight: bold;">{{item.topic[9].host}}</span></p>
+                                            <p>演講者：<span style="font-weight: bold;">{{item.topic[9].speaker}}</span></p>    
+                                        </template>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td style="background-color: #D9E1F2;">14:00 - 14:25</td>
                                     <td v-for="item in items" style="background-color: #e2efda;">
-                                        <p>主持人：<span style="font-weight: bold;">{{item.topic[10].host}}</span></p>
-                                        <p>演講者：<span style="font-weight: bold;">{{item.topic[10].speaker}}</span></p>
+                                        <p v-if="item.topic[10].host == ''">***</p>
+                                        <template v-else>
+                                            <p>主持人：<span style="font-weight: bold;">{{item.topic[10].host}}</span></p>
+                                            <p>演講者：<span style="font-weight: bold;">{{item.topic[10].speaker}}</span></p>    
+                                        </template>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td style="background-color: #D9E1F2;">14:25 - 14:50</td>
                                     <td v-for="item in items" style="background-color: #e2efda;">
-                                        <p>主持人：<span style="font-weight: bold;">{{item.topic[11].host}}</span></p>
-                                        <p>演講者：<span style="font-weight: bold;">{{item.topic[11].speaker}}</span></p>
+                                        <p v-if="item.topic[11].host == ''">***</p>
+                                        <template v-else>
+                                            <p>主持人：<span style="font-weight: bold;">{{item.topic[11].host}}</span></p>
+                                            <p>演講者：<span style="font-weight: bold;">{{item.topic[11].speaker}}</span></p>    
+                                        </template>
+                                        
                                     </td>
                                 </tr>
                                 <tr>
                                     <td style="background-color: #D9E1F2;">14:50 - 15:15</td>
                                     <td v-for="item in items" style="background-color: #e2efda;">
-                                        <p>主持人：<span style="font-weight: bold;">{{item.topic[12].host}}</span></p>
-                                        <p>演講者：<span style="font-weight: bold;">{{item.topic[12].speaker}}</span></p>
+                                        <p v-if="item.topic[12].host == ''">***</p>
+                                        <template v-else>
+                                            <p>主持人：<span style="font-weight: bold;">{{item.topic[12].host}}</span></p>
+                                            <p>演講者：<span style="font-weight: bold;">{{item.topic[12].speaker}}</span></p>    
+                                        </template>
+                                        
                                     </td>
                                 </tr>
                                 <tr>
                                     <td style="background-color: #D9E1F2;">15:15 - 15:40</td>
                                     <td v-for="item in items" style="background-color: #e2efda;">
-                                        <p>主持人：<span style="font-weight: bold;">{{item.topic[13].host}}</span></p>
-                                        <p>演講者：<span style="font-weight: bold;">{{item.topic[13].speaker}}</span></p>
+                                        <p v-if="item.topic[13].host == ''">***</p>
+                                        <template v-else>
+                                            <p>主持人：<span style="font-weight: bold;">{{item.topic[13].host}}</span></p>
+                                            <p>演講者：<span style="font-weight: bold;">{{item.topic[13].speaker}}</span></p>    
+                                        </template>
+                                        
                                     </td>
                                 </tr>
                                 <tr>
@@ -384,8 +435,11 @@
                             <tr>
                                 <td style="background-color: #D9E1F2;">11:20 - 12:05</td>
                                 <td style="background-color: #e2efda;">
-                                    <p>主持人：<span style="font-weight: bold;">{{item.topic[0].host}}</span></p>
-                                    <p>演講者：<span style="font-weight: bold;">{{item.topic[0].speaker}}</span></p>
+                                    <p v-if="item.topic[0].host == ''">***</p>
+                                    <template v-else>
+                                        <p>主持人：<span style="font-weight: bold;">{{item.topic[0].host}}</span></p>
+                                        <p>演講者：<span style="font-weight: bold;">{{item.topic[0].speaker}}</span></p>    
+                                    </template>
                                 </td>
                             </tr>
                             <tr>
@@ -403,22 +457,34 @@
                                 <td style="background-color: #D9E1F2;">13:35 - 14:00</td>
                                 <td style="background-color: #e2efda;" v-bind:rowspan="item.topic[1].rowspan">
                                     <p style="color: #ff0000;">{{item.topic[1].time}}</p>
-                                    <p>主持人：<span style="font-weight: bold;">{{item.topic[1].host}}</span></p>
-                                    <p>演講者：<span style="font-weight: bold;" v-html="item.topic[1].speaker"></span></p>
+                                    <p v-if="item.topic[1].host == ''">***</p>
+                                    <template v-else>
+                                        <p>主持人：<span style="font-weight: bold;">{{item.topic[1].host}}</span></p>
+                                        <p>演講者：<span style="font-weight: bold;" v-html="item.topic[1].speaker"></span></p>    
+                                    </template>
+                                    
                                 </td>
                             </tr>
                             <tr>
                                 <td style="background-color: #D9E1F2;">14:00 - 14:25</td>
                                 <td style="background-color: #e2efda;" v-if="item.topic[2].rowspan != 0">
-                                    <p>主持人：<span style="font-weight: bold;">{{item.topic[2].host}}</span></p>
-                                    <p>演講者：<span style="font-weight: bold;">{{item.topic[2].speaker}}</span></p>
+                                    <p v-if="item.topic[2].host == ''">***</p>
+                                    <template v-else>
+                                        <p>主持人：<span style="font-weight: bold;">{{item.topic[2].host}}</span></p>
+                                        <p>演講者：<span style="font-weight: bold;">{{item.topic[2].speaker}}</span></p>    
+                                    </template>
+                                    
                                 </td>
                             </tr>
                             <tr>
                                 <td style="background-color: #D9E1F2;">14:25 - 14:50 </td>
                                 <td style="background-color: #e2efda;">
-                                    <p>主持人：<span style="font-weight: bold;">{{item.topic[3].host}}</span></p>
-                                    <p>演講者：<span style="font-weight: bold;">{{item.topic[3].speaker}}</span></p>
+                                    <p v-if="item.topic[3].host == ''">***</p>
+                                    <template v-else>
+                                        <p>主持人：<span style="font-weight: bold;">{{item.topic[3].host}}</span></p>
+                                        <p>演講者：<span style="font-weight: bold;">{{item.topic[3].speaker}}</span></p>    
+                                    </template>
+                                    
                                 </td>
                             </tr>
                             <tr>
@@ -490,29 +556,45 @@
                                 <td style="background-color: #D9E1F2;">10:10 - 10:55</td>
                                 <td style="background-color: #e2efda;" v-bind:rowspan="item.topic[4].rowspan">
                                     <p style="color: #ff0000;">{{item.topic[4].time}}</p>
-                                    <p>主持人：<span style="font-weight: bold;">{{item.topic[4].host}}</span></p>
-                                    <p>演講者：<span style="font-weight: bold;" v-html="item.topic[4].speaker"></span></p>
+                                    <p v-if="item.topic[4].host == ''">***</p>
+                                    <template v-else>
+                                        <p>主持人：<span style="font-weight: bold;">{{item.topic[4].host}}</span></p>
+                                        <p>演講者：<span style="font-weight: bold;" v-html="item.topic[4].speaker"></span></p>    
+                                    </template>
+                                    
                                 </td>
                             </tr>
                             <tr>
                                 <td style="background-color: #D9E1F2;">11:00 - 11:25</td>
                                 <td style="background-color: #e2efda;" v-if="item.topic[5].rowspan != 0">
-                                    <p>主持人：<span style="font-weight: bold;">{{item.topic[5].host}}</span></p>
-                                    <p>演講者：<span style="font-weight: bold;">{{item.topic[5].speaker}}</span></p>
+                                    <p v-if="item.topic[5].host == ''">***</p>
+                                    <template v-else>
+                                        <p>主持人：<span style="font-weight: bold;">{{item.topic[5].host}}</span></p>
+                                        <p>演講者：<span style="font-weight: bold;">{{item.topic[5].speaker}}</span></p>    
+                                    </template>
+                                    
                                 </td>
                             </tr>
                             <tr>
                                 <td style="background-color: #D9E1F2;">11:25 - 11:50</td>
                                 <td style="background-color: #e2efda;" v-if="item.topic[5].rowspan != 0">
-                                    <p>主持人：<span style="font-weight: bold;">{{item.topic[6].host}}</span></p>
-                                    <p>演講者：<span style="font-weight: bold;">{{item.topic[6].speaker}}</span></p>
+                                    <p v-if="item.topic[6].host == ''">***</p>
+                                    <template v-else>
+                                        <p>主持人：<span style="font-weight: bold;">{{item.topic[6].host}}</span></p>
+                                        <p>演講者：<span style="font-weight: bold;">{{item.topic[6].speaker}}</span></p>    
+                                    </template>
+                                    
                                 </td>
                             </tr>
                             <tr>
                                 <td style="background-color: #D9E1F2;">11:50 - 12:15</td>
                                 <td style="background-color: #e2efda;">
-                                    <p>主持人：<span style="font-weight: bold;">{{item.topic[7].host}}</span></p>
-                                    <p>演講者：<span style="font-weight: bold;">{{item.topic[7].speaker}}</span></p>
+                                    <p v-if="item.topic[7].host == ''">***</p>
+                                    <template v-else>
+                                        <p>主持人：<span style="font-weight: bold;">{{item.topic[7].host}}</span></p>
+                                        <p>演講者：<span style="font-weight: bold;">{{item.topic[7].speaker}}</span></p>    
+                                    </template>
+                                    
                                 </td>
                             </tr>
                             <tr>
@@ -529,43 +611,65 @@
                             <tr>
                                 <td style="background-color: #fff2cc;">12:15 - 12:40</td>
                                 <td style="background-color: #e2efda;">
-                                    <p>主持人：<span style="font-weight: bold;">{{item.topic[8].host}}</span></p>
-                                    <p>演講者：<span style="font-weight: bold;">{{item.topic[8].speaker}}</span></p>
+                                    <p v-if="item.topic[8].host == ''">***</p>
+                                    <template v-else>
+                                        <p>主持人：<span style="font-weight: bold;">{{item.topic[8].host}}</span></p>
+                                        <p>演講者：<span style="font-weight: bold;">{{item.topic[8].speaker}}</span></p>    
+                                    </template>
+                                    
                                 </td>
                             </tr>
                             <tr>
                                 <td style="background-color: #fff2cc;">13:35 - 14:00</td>
                                 <td style="background-color: #e2efda;">
-                                    <p>主持人：<span style="font-weight: bold;">{{item.topic[9].host}}</span></p>
-                                    <p>演講者：<span style="font-weight: bold;">{{item.topic[9].speaker}}</span></p>
+                                    <p v-if="item.topic[9].host == ''">***</p>
+                                    <template v-else>
+                                        <p>主持人：<span style="font-weight: bold;">{{item.topic[9].host}}</span></p>
+                                        <p>演講者：<span style="font-weight: bold;">{{item.topic[9].speaker}}</span></p>    
+                                    </template>
+                                    
                                 </td>
                             </tr>
                             <tr>
                                 <td style="background-color: #D9E1F2;">14:00 - 14:25</td>
                                 <td style="background-color: #e2efda;">
-                                    <p>主持人：<span style="font-weight: bold;">{{item.topic[10].host}}</span></p>
-                                    <p>演講者：<span style="font-weight: bold;">{{item.topic[10].speaker}}</span></p>
+                                    <p v-if="item.topic[10].host == ''">***</p>
+                                    <template v-else>
+                                        <p>主持人：<span style="font-weight: bold;">{{item.topic[10].host}}</span></p>
+                                        <p>演講者：<span style="font-weight: bold;">{{item.topic[10].speaker}}</span></p>    
+                                    </template>
+                                    
                                 </td>
                             </tr>
                             <tr>
                                 <td style="background-color: #D9E1F2;">14:25 - 14:50</td>
                                 <td style="background-color: #e2efda;">
-                                    <p>主持人：<span style="font-weight: bold;">{{item.topic[11].host}}</span></p>
-                                    <p>演講者：<span style="font-weight: bold;">{{item.topic[11].speaker}}</span></p>
+                                    <p v-if="item.topic[11].host == ''">***</p>
+                                    <template v-else>
+                                        <p>主持人：<span style="font-weight: bold;">{{item.topic[11].host}}</span></p>
+                                        <p>演講者：<span style="font-weight: bold;">{{item.topic[11].speaker}}</span></p>    
+                                    </template>
+                                    
                                 </td>
                             </tr>
                             <tr>
                                 <td style="background-color: #D9E1F2;">14:50 - 15:15</td>
                                 <td style="background-color: #e2efda;">
-                                    <p>主持人：<span style="font-weight: bold;">{{item.topic[12].host}}</span></p>
-                                    <p>演講者：<span style="font-weight: bold;">{{item.topic[12].speaker}}</span></p>
+                                    <p v-if="item.topic[12].host == ''">***</p>
+                                    <template v-else>
+                                        <p>主持人：<span style="font-weight: bold;">{{item.topic[12].host}}</span></p>
+                                        <p>演講者：<span style="font-weight: bold;">{{item.topic[12].speaker}}</span></p>    
+                                    </template>
                                 </td>
                             </tr>
                             <tr>
                                 <td style="background-color: #D9E1F2;">15:15 - 15:40</td>
                                 <td style="background-color: #e2efda;">
-                                    <p>主持人：<span style="font-weight: bold;">{{item.topic[13].host}}</span></p>
-                                    <p>演講者：<span style="font-weight: bold;">{{item.topic[13].speaker}}</span></p>
+                                    <p v-if="item.topic[13].host == ''">***</p>
+                                    <template v-else>
+                                        <p>主持人：<span style="font-weight: bold;">{{item.topic[13].host}}</span></p>
+                                        <p>演講者：<span style="font-weight: bold;">{{item.topic[13].speaker}}</span></p>    
+                                    </template>
                                 </td>
                             </tr>
                             <tr>
