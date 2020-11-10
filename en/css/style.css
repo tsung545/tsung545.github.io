@@ -1048,7 +1048,7 @@ header .navbar-mobile a:hover {
   border-spacing: 0;
   width: 100%;
   border: 1px solid #cccccc;
-  width: 1600px;
+  /*width: 1600px;*/
 }
 
 .main .main-content .main-text .table-program-1 tr {
