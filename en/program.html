@@ -88,139 +88,139 @@
                                     <td colspan="12" style="text-align: left; padding-left: 12px; font-weight: bold;">December 5, 2020 (Saturday)</td>
                                 </tr>
                                 <tr>
-                                    <td style="background-color: #D9E1F2;">Sessions</td>
-                                    <td v-for="item in items" style="background-color: #e2efda; font-weight: bold;">{{item.name}}</td>
+                                    <td style="font-weight: bold; background-color: #D9E1F2;">Sessions</td>
+                                    <td v-for="(item,index) in items" style="font-weight: bold;" v-bind:style="index % 2 == 0 ? {'background-color': '#e2efda'} : {'background-color': 'transparent'} ">{{item.name}}</td>
                                 </tr>
                                 <tr>
-                                    <td style="background-color: #D9E1F2;">Room</td>
-                                    <td v-for="item in items" style="background-color: #e2efda; color: #ff0000;" v-html="item.address"></td>
+                                    <td style="font-weight: bold; background-color: #D9E1F2;">Room</td>
+                                    <td v-for="(item,index) in items" style="font-weight: bold;color: #ff0000;" v-bind:style="index % 2 == 0 ? {'background-color': '#e2efda'} : {'background-color': 'transparent'} " v-html="item.address"></td>
                                 </tr>
                                 <tr>
-                                    <td style="background-color: #D9E1F2;">08:30 - 09:30</td>
-                                    <td colspan="11">Registration</td>
+                                    <td style="font-weight: bold; background-color: #D9E1F2;">08:30 - 09:30</td>
+                                    <td colspan="11" style="font-weight: bold;">Registration</td>
                                 </tr>
                                 <tr>
-                                    <td style="background-color: #D9E1F2;">09:30 - 10:00</td>
-                                    <td colspan="11" style="background-color: #B4C6E7;">
+                                    <td style="font-weight: bold; background-color: #D9E1F2;">09:30 - 10:00</td>
+                                    <td colspan="11" style="background-color: #B4C6E7; position: relative;">
                                         <p style="font-weight: bold;">Opening Ceremony (Chair: President Yng-Ing Lee)</p>
-                                        <p style="color: #ff0000;">LH108</p>
+                                        <p style="font-weight: bold; color: #ff0000; position: absolute; top: 50%; right: 0; transform: translateY(-50%);">LH108</p>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td style="background-color: #D9E1F2;">10:00 - 10:50</td>
-                                    <td colspan="11" style="background-color: #B4C6E7;">
+                                    <td style="font-weight: bold; background-color: #D9E1F2;">10:00 - 10:50</td>
+                                    <td colspan="11" style="background-color: #B4C6E7; position: relative;">
                                         <p style="font-weight: bold;">Plenary Lecture by Professor Mei-Chi Shaw (Online seminar)</p>
                                         <p style="font-weight: bold;">Chair: President Yng-Ing Lee</p>
-                                        <p style="color: #ff0000;">LH108</p>
+                                        <p style="font-weight: bold; color: #ff0000; position: absolute; top: 50%; right: 0; transform: translateY(-50%);">LH108</p>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td style="background-color: #D9E1F2;">10:50 - 11:05</td>
-                                    <td colspan="11">Group Photo Session</td>
+                                    <td style="font-weight: bold; background-color: #D9E1F2;">10:50 - 11:05</td>
+                                    <td colspan="11" style="font-weight: bold;">Group Photo Session</td>
                                 </tr>
                                 <tr>
-                                    <td style="background-color: #D9E1F2;">11:05 - 11:20</td>
-                                    <td colspan="11">
-                                        <p>Coffee Break</p>
-                                        <p style="color: #ff0000;">LH108</p>
+                                    <td style="font-weight: bold; background-color: #D9E1F2;">11:05 - 11:20</td>
+                                    <td colspan="11" style="position: relative;">
+                                        <p style="font-weight: bold;">Coffee Break</p>
+                                        <p style="font-weight: bold; color: #ff0000; position: absolute; top: 50%; right: 0; transform: translateY(-50%);">LH108</p>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td style="background-color: #D9E1F2;">11:20 - 12:05</td>
-                                    <td v-for="item in items" style="background-color: #e2efda;">
+                                    <td style="font-weight: bold; background-color: #D9E1F2;">11:20 - 12:05</td>
+                                    <td v-for="(item,index) in items" v-bind:style="index % 2 == 0 ? {'background-color': '#e2efda'} : {'background-color': 'transparent'} ">
                                         <p v-if="item.topic[0].host == ''">***</p>
                                         <template v-else>
-                                            <p>Chair: <span style="font-weight: bold;">{{item.topic[0].host}}</span></p>
-                                            <p>Speaker: <span style="font-weight: bold;">{{item.topic[0].speaker}}</span></p>    
+                                            <p>Chair: <span>{{item.topic[0].host}}</span></p>
+                                            <p>Speaker: <span style="font-weight: bold; color: #0000ff;">{{item.topic[0].speaker}}</span></p>    
                                         </template> 
                                         
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td rowspan="2" style="background-color: #fff2cc;">12:05 - 14:00</td>
-                                    <td colspan="11">
-                                        <p>Lunch</p>
-                                        <p style="color: #ff0000;">LH108</p>
+                                    <td rowspan="2" style="font-weight: bold; background-color: #D9E1F2;">12:05 - 14:00</td>
+                                    <td colspan="11" style="position: relative;">
+                                        <p style="font-weight: bold;">Lunch</p>
+                                        <p style="font-weight: bold; color: #ff0000;  position: absolute; top: 50%; right: 0; transform: translateY(-50%);">LH108</p>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td colspan="11" style="background-color: #fff2cc;">
-                                        <p style="color: #ff0000;">12:20-13:50</p>
+                                    <td colspan="11" style="background-color: #fff2cc; position: relative;">
+                                        <p style="font-weight: bold; color: #ff0000;">12:20-13:50</p>
                                         <p style="font-weight: bold;">Forum on Education</p>
-                                        <p style="color: #ff0000;">LH108</p>
+                                        <p style="font-weight: bold; color: #ff0000; position: absolute; top: 50%; right: 0; transform: translateY(-50%);">LH108</p>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td style="background-color: #D9E1F2;">13:35 - 14:00</td>
-                                    <td v-for="item in items" style="background-color: #e2efda;" v-bind:rowspan="item.topic[1].rowspan">
+                                    <td style="font-weight: bold; background-color: #D9E1F2;">13:35 - 14:00</td>
+                                    <td v-for="(item,index) in items" v-bind:style="index % 2 == 0 ? {'background-color': '#e2efda'} : {'background-color': 'transparent'} " v-bind:rowspan="item.topic[1].rowspan">
                                         <p style="color: #ff0000;">{{item.topic[1].time}}</p>
                                         <p v-if="item.topic[1].host == ''">***</p>
                                         <template v-else>
-                                            <p>Chair: <span style="font-weight: bold;">{{item.topic[1].host}}</span></p>
-                                            <p>Speaker: <span style="font-weight: bold;" v-html="item.topic[1].speaker"></span></p>    
+                                            <p>Chair: <span>{{item.topic[1].host}}</span></p>
+                                            <p>Speaker: <span style="font-weight: bold; color: #0000ff;" v-html="item.topic[1].speaker"></span></p>    
                                         </template>
                                         
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td style="background-color: #D9E1F2;">14:00 - 14:25</td>
-                                    <td v-for="item in items" style="background-color: #e2efda;" v-if="item.topic[2].rowspan != 0">
+                                    <td style="font-weight: bold; background-color: #D9E1F2;">14:00 - 14:25</td>
+                                    <td v-for="(item,index) in items" v-bind:style="index % 2 == 0 ? {'background-color': '#e2efda'} : {'background-color': 'transparent'} " v-if="item.topic[2].rowspan != 0">
                                         <p v-if="item.topic[2].host == ''">***</p>
                                         <template v-else>
-                                            <p>Chair: <span style="font-weight: bold;">{{item.topic[2].host}}</span></p>
-                                            <p>Speaker: <span style="font-weight: bold;">{{item.topic[2].speaker}}</span></p>    
+                                            <p>Chair: <span>{{item.topic[2].host}}</span></p>
+                                            <p>Speaker: <span style="font-weight: bold; color: #0000ff;">{{item.topic[2].speaker}}</span></p>    
                                         </template>
                                         
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td style="background-color: #D9E1F2;">14:25 - 14:50 </td>
-                                    <td v-for="item in items" style="background-color: #e2efda;">
+                                    <td style="font-weight: bold; background-color: #D9E1F2;">14:25 - 14:50 </td>
+                                    <td v-for="(item,index) in items" v-bind:style="index % 2 == 0 ? {'background-color': '#e2efda'} : {'background-color': 'transparent'} ">
                                         <p v-if="item.topic[3].host == ''">***</p>
                                         <template v-else>
-                                            <p>Chair: <span style="font-weight: bold;">{{item.topic[3].host}}</span></p>
-                                            <p>Speaker: <span style="font-weight: bold;">{{item.topic[3].speaker}}</span></p>    
+                                            <p>Chair: <span>{{item.topic[3].host}}</span></p>
+                                            <p>Speaker: <span style="font-weight: bold; color: #0000ff;">{{item.topic[3].speaker}}</span></p>    
                                         </template>
                                         
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td style="background-color: #D9E1F2;">14:50 - 15:00</td>
-                                    <td colspan="11">Intermission</td>
+                                    <td style="font-weight: bold; background-color: #D9E1F2;">14:50 - 15:00</td>
+                                    <td colspan="11" style="font-weight: bold;">Intermission</td>
                                 </tr>
                                 <tr style="background-color: #fff2cc;">
-                                    <td>15:00 - 15:45</td>
-                                    <td colspan="11">
+                                    <td style="font-weight: bold; background-color: #D9E1F2;">15:00 - 15:45</td>
+                                    <td colspan="11" style="position: relative;">
                                         <p style="font-weight: bold;">Special Lecture by Professor Ching-Ray Chang</p>
                                         <p style="font-weight: bold;">Chair: I-Liang Chern</p>
-                                        <p style="color: #ff0000;">LH108</p>
+                                        <p style="font-weight: bold; color: #ff0000; position: absolute; top: 50%; right: 0; transform: translateY(-50%);">LH108</p>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td style="background-color: #D9E1F2;">15:45 - 16:00</td>
-                                    <td colspan="11">
-                                        <p>Coffee Break</p>
-                                        <p style="color: #ff0000;">LH108</p>
+                                    <td style="font-weight: bold; background-color: #D9E1F2;">15:45 - 16:00</td>
+                                    <td colspan="11" style="position: relative;">
+                                        <p style="font-weight: bold;">Coffee Break</p>
+                                        <p style="font-weight: bold; color: #ff0000; position: absolute; top: 50%; right: 0; transform: translateY(-50%);">LH108</p>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td style="background-color: #D9E1F2;">16:00 - 16:50</td>
-                                    <td colspan="11" style="background-color: #B4C6E7;">
+                                    <td style="font-weight: bold; background-color: #D9E1F2;">16:00 - 16:50</td>
+                                    <td colspan="11" style="background-color: #B4C6E7; position: relative;">
                                         <p style="font-weight: bold;">Plenary Lecture by Yuan-Pin Lee</p>
                                         <p style="font-weight: bold;">Chair: Jih-Hsin Cheng</p>
-                                        <p style="color: #ff0000;">LH108</p>
+                                        <p style="font-weight: bold; color: #ff0000; position: absolute; top: 50%; right: 0; transform: translateY(-50%);">LH108</p>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td style="background-color: #D9E1F2;">16:50 - 18:10</td>
-                                    <td colspan="11">
+                                    <td style="font-weight: bold; background-color: #D9E1F2;">16:50 - 18:10</td>
+                                    <td colspan="11" style="position: relative;">
                                         <p style="font-weight: bold;">TMS Meeting & Award Ceremony</p>
-                                        <p style="color: #ff0000;">LH108</p>
+                                        <p style="font-weight: bold; color: #ff0000; position: absolute; top: 50%; right: 0; transform: translateY(-50%);">LH108</p>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td style="background-color: #D9E1F2;">18:30</td>
-                                    <td colspan="11">Banquet</td>
+                                    <td style="font-weight: bold; background-color: #D9E1F2;">18:30</td>
+                                    <td colspan="11" style="font-weight: bold;">Banquet</td>
                                 </tr>
                             </table>    
                         </div>
@@ -232,134 +232,134 @@
                                     <td colspan="12" style="text-align: left; padding-left: 12px; font-weight: bold;">December 6, 2020 (Sunday)</td>
                                 </tr>
                                 <tr>
-                                    <td style="background-color: #D9E1F2;">Sessions</td>
-                                    <td v-for="item in items" style="background-color: #e2efda; font-weight: bold;">{{item.name}}</td>
+                                    <td style="font-weight: bold; background-color: #D9E1F2;">Sessions</td>
+                                    <td v-for="(item,index) in items" style="font-weight: bold;" v-bind:style="index % 2 == 0 ? {'background-color': '#e2efda'} : {'background-color': 'transparent'} ">{{item.name}}</td>
                                 </tr>
                                 <tr>
-                                    <td style="background-color: #D9E1F2;">Room</td>
-                                    <td v-for="item in items" style="background-color: #e2efda; color: #ff0000;" v-html="item.address"></td>
+                                    <td style="font-weight: bold; background-color: #D9E1F2;">Room</td>
+                                    <td v-for="(item,index) in items" style="font-weight: bold; color: #ff0000;" v-bind:style="index % 2 == 0 ? {'background-color': '#e2efda'} : {'background-color': 'transparent'} " v-html="item.address"></td>
                                 </tr>
                                 <tr>
-                                    <td style="background-color: #D9E1F2;">08:30 - 09:00</td>
-                                    <td colspan="11">Registration</td>
+                                    <td style="font-weight: bold; background-color: #D9E1F2;">08:30 - 09:00</td>
+                                    <td colspan="11" style="font-weight: bold;">Registration</td>
                                 </tr>
                                 <tr>
-                                    <td style="background-color: #D9E1F2;">09:00 - 09:50</td>
-                                    <td colspan="11" style="background-color: #B4C6E7;">
+                                    <td style="font-weight: bold; background-color: #D9E1F2;">09:00 - 09:50</td>
+                                    <td colspan="11" style="background-color: #B4C6E7; position: relative;">
                                         <p style="font-weight: bold;">Plenary Lecture by Professor  Wee-Teck Gan ( Online seminar )</p>
                                         <p style="font-weight: bold;">Chair: Professor Ming-Lun Hsieh</p>
-                                        <p style="color: #ff0000;">LH108</p>
+                                        <p style="font-weight: bold; color: #ff0000; position: absolute; top: 50%; right: 0; transform: translateY(-50%);">LH108</p>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td style="background-color: #D9E1F2;">09:50 - 10:10</td>
-                                    <td colspan="11">
-                                        <p>Coffee Break</p>
-                                        <p style="color: #ff0000;">LH108</p>
+                                    <td style="font-weight: bold; background-color: #D9E1F2;">09:50 - 10:10</td>
+                                    <td colspan="11" style="position: relative;">
+                                        <p style="font-weight: bold;">Coffee Break</p>
+                                        <p style="font-weight: bold; color: #ff0000; position: absolute; top: 50%; right: 0; transform: translateY(-50%);">LH108</p>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td style="background-color: #D9E1F2;">10:10 - 10:55</td>
-                                    <td v-for="item in items" style="background-color: #e2efda;" v-bind:rowspan="item.topic[4].rowspan">
+                                    <td style="font-weight: bold; background-color: #D9E1F2;">10:10 - 10:55</td>
+                                    <td v-for="(item,index) in items" v-bind:style="index % 2 == 0 ? {'background-color': '#e2efda'} : {'background-color': 'transparent'} " v-bind:rowspan="item.topic[4].rowspan">
                                         <p style="color: #ff0000;">{{item.topic[4].time}}</p>
                                         <p v-if="item.topic[4].host == ''">***</p>
                                         <template v-else>
-                                            <p>Chair: <span style="font-weight: bold;">{{item.topic[4].host}}</span></p>
-                                            <p>Speaker: <span style="font-weight: bold;" v-html="item.topic[4].speaker"></span></p>    
+                                            <p>Chair: <span>{{item.topic[4].host}}</span></p>
+                                            <p>Speaker: <span style="font-weight: bold; color: #0000ff;" v-html="item.topic[4].speaker"></span></p>    
                                         </template>
                                         
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td style="background-color: #D9E1F2;">11:00 - 11:25</td>
-                                    <td v-for="item in items" style="background-color: #e2efda;" v-if="item.topic[5].rowspan != 0">
+                                    <td style="font-weight: bold; background-color: #D9E1F2;">11:00 - 11:25</td>
+                                    <td v-for="(item,index) in items" v-bind:style="index % 2 == 0 ? {'background-color': '#e2efda'} : {'background-color': 'transparent'} " v-if="item.topic[5].rowspan != 0">
                                         <p v-if="item.topic[5].host == ''">***</p>
                                         <template v-else>
-                                            <p>Chair: <span style="font-weight: bold;">{{item.topic[5].host}}</span></p>
-                                            <p>Speaker: <span style="font-weight: bold;">{{item.topic[5].speaker}}</span></p>    
+                                            <p>Chair: <span>{{item.topic[5].host}}</span></p>
+                                            <p>Speaker: <span style="font-weight: bold; color: #0000ff;">{{item.topic[5].speaker}}</span></p>    
                                         </template>
                                         
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td style="background-color: #D9E1F2;">11:25 - 11:50</td>
-                                    <td v-for="item in items" style="background-color: #e2efda;" v-if="item.topic[6].rowspan != 0">
+                                    <td style="font-weight: bold; background-color: #D9E1F2;">11:25 - 11:50</td>
+                                    <td v-for="(item,index) in items" v-bind:style="index % 2 == 0 ? {'background-color': '#e2efda'} : {'background-color': 'transparent'} " v-if="item.topic[6].rowspan != 0">
                                         <p v-if="item.topic[6].host == ''">***</p>
                                         <template v-else>
-                                            <p>Chair: <span style="font-weight: bold;">{{item.topic[6].host}}</span></p>
-                                            <p>Speaker: <span style="font-weight: bold;">{{item.topic[6].speaker}}</span></p>    
+                                            <p>Chair: <span>{{item.topic[6].host}}</span></p>
+                                            <p>Speaker: <span style="font-weight: bold; color: #0000ff;">{{item.topic[6].speaker}}</span></p>    
                                         </template>
                                         
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td style="background-color: #D9E1F2;">11:50 - 12:15</td>
-                                    <td v-for="item in items" style="background-color: #e2efda;">
+                                    <td style="font-weight: bold; background-color: #D9E1F2;">11:50 - 12:15</td>
+                                    <td v-for="(item,index) in items" v-bind:style="index % 2 == 0 ? {'background-color': '#e2efda'} : {'background-color': 'transparent'} ">
                                         <p v-if="item.topic[7].host == ''">***</p>
                                         <template v-else>
-                                            <p>Chair: <span style="font-weight: bold;">{{item.topic[7].host}}</span></p>
-                                            <p>Speaker: <span style="font-weight: bold;">{{item.topic[7].speaker}}</span></p>    
+                                            <p>Chair: <span>{{item.topic[7].host}}</span></p>
+                                            <p>Speaker: <span style="font-weight: bold; color: #0000ff;">{{item.topic[7].speaker}}</span></p>    
                                         </template>
                                         
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td rowspan="3" style="background-color: #fff2cc;">12:15 - 14:00</td>
-                                    <td colspan="11">
-                                        <p>Lunch</p>
-                                        <p style="color: #ff0000;">LH108</p>
+                                    <td rowspan="3" style="font-weight: bold; background-color: #D9E1F2;">12:15 - 14:00</td>
+                                    <td colspan="11" style="position: relative;">
+                                        <p style="font-weight: bold;">Lunch</p>
+                                        <p style="font-weight: bold; color: #ff0000; position: absolute; top: 50%; right: 0; transform: translateY(-50%);">LH108</p>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td colspan="11" style="background-color: #fff2cc;">
-                                        <p style="color: #ff0000;">12:15 - 13:45</p>
+                                    <td colspan="11" style="background-color: #fff2cc; position: relative;">
+                                        <p style="font-weight: bold; color: #ff0000;">12:15 - 13:45</p>
                                         <p style="font-weight: bold;">Forum of Female Mathematicians</p>
-                                        <p style="color: #ff0000;">MA307</p>
+                                        <p style="font-weight: bold; color: #ff0000; position: absolute; top: 50%; right: 0; transform: translateY(-50%);">MA307</p>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td colspan="11" style="background-color: #fff2cc;">
-                                        <p style="color: #ff0000;">13:45 - 14:00</p>
+                                    <td colspan="11" style="background-color: #fff2cc; position: relative;">
+                                        <p style="font-weight: bold; color: #ff0000;">13:45 - 14:00</p>
                                         <p style="font-weight: bold;">Coffee Break</p>
-                                        <p style="color: #ff0000;">LH108</p>
+                                        <p style="font-weight: bold; color: #ff0000; position: absolute; top: 50%; right: 0; transform: translateY(-50%);">LH108</p>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td style="background-color: #D9E1F2;">14:00 - 14:25</td>
-                                    <td v-for="item in items" style="background-color: #e2efda;">
+                                    <td style="font-weight: bold; background-color: #D9E1F2;">14:00 - 14:25</td>
+                                    <td v-for="(item,index) in items" v-bind:style="index % 2 == 0 ? {'background-color': '#e2efda'} : {'background-color': 'transparent'} ">
                                         <p v-if="item.topic[10].host == ''">***</p>
                                         <template v-else>
-                                            <p>Chair: <span style="font-weight: bold;">{{item.topic[10].host}}</span></p>
-                                            <p>Speaker: <span style="font-weight: bold;">{{item.topic[10].speaker}}</span></p>    
+                                            <p>Chair: <span>{{item.topic[10].host}}</span></p>
+                                            <p>Speaker: <span style="font-weight: bold; color: #0000ff;">{{item.topic[10].speaker}}</span></p>    
                                         </template>
                                         
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td style="background-color: #D9E1F2;">14:25 - 14:50</td>
-                                    <td v-for="item in items" style="background-color: #e2efda;">
+                                    <td style="font-weight: bold; background-color: #D9E1F2;">14:25 - 14:50</td>
+                                    <td v-for="(item,index) in items" v-bind:style="index % 2 == 0 ? {'background-color': '#e2efda'} : {'background-color': 'transparent'} ">
                                         <p v-if="item.topic[11].host == ''">***</p>
                                         <template v-else>
-                                            <p>Chair: <span style="font-weight: bold;">{{item.topic[11].host}}</span></p>
-                                            <p>Speaker: <span style="font-weight: bold;">{{item.topic[11].speaker}}</span></p>    
+                                            <p>Chair: <span>{{item.topic[11].host}}</span></p>
+                                            <p>Speaker: <span style="font-weight: bold; color: #0000ff;">{{item.topic[11].speaker}}</span></p>    
                                         </template>
                                         
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td style="background-color: #D9E1F2;">14:50 - 15:15</td>
-                                    <td v-for="item in items" style="background-color: #e2efda;">
+                                    <td style="font-weight: bold; background-color: #D9E1F2;">14:50 - 15:15</td>
+                                    <td v-for="(item,index) in items" v-bind:style="index % 2 == 0 ? {'background-color': '#e2efda'} : {'background-color': 'transparent'} ">
                                         <p v-if="item.topic[12].host == ''">***</p>
                                         <template v-else>
-                                            <p>Chair: <span style="font-weight: bold;">{{item.topic[12].host}}</span></p>
-                                            <p>Speaker: <span style="font-weight: bold;">{{item.topic[12].speaker}}</span></p>
+                                            <p>Chair: <span>{{item.topic[12].host}}</span></p>
+                                            <p>Speaker: <span style="font-weight: bold; color: #0000ff;">{{item.topic[12].speaker}}</span></p>
                                         </template>
                                         
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td style="background-color: #D9E1F2;">15:15</td>
-                                    <td colspan="11">Closing</td>
+                                    <td style="font-weight: bold; background-color: #D9E1F2;">15:15</td>
+                                    <td colspan="11" style="font-weight: bold;">Closing</td>
                                 </tr>
                             </table>
                         </div>
@@ -372,141 +372,141 @@
                                 <td colspan="2" style="font-weight: bold;">December 5, 2020 (Saturday)</td>
                             </tr>
                             <tr>
-                                <td style="background-color: #D9E1F2;">Sessions</td>
+                                <td style="font-weight: bold; background-color: #D9E1F2;">Sessions</td>
                                 <td style="background-color: #e2efda; font-weight: bold;">{{item.name}}</td>
                             </tr>
                             <tr>
-                                <td style="background-color: #D9E1F2;">Room</td>
-                                <td style="background-color: #e2efda; color: #ff0000;" v-html="item.address"></td>
+                                <td style="font-weight: bold; background-color: #D9E1F2;">Room</td>
+                                <td style="font-weight: bold; background-color: #e2efda; color: #ff0000;" v-html="item.address"></td>
                             </tr>
                             <tr>
-                                <td style="background-color: #D9E1F2;">08:30 - 09:30</td>
-                                <td>Registration</td>
+                                <td style="font-weight: bold; background-color: #D9E1F2;">08:30 - 09:30</td>
+                                <td style="font-weight: bold;">Registration</td>
                             </tr>
                             <tr>
-                                <td style="background-color: #D9E1F2;">09:30 - 10:00</td>
+                                <td style="font-weight: bold; background-color: #D9E1F2;">09:30 - 10:00</td>
                                 <td style="background-color: #B4C6E7;">
                                     <p style="font-weight: bold;">Opening Ceremony (Chair: President Yng-Ing Lee)</p>
-                                    <p style="color: #ff0000;">LH108</p>
+                                    <p style="font-weight: bold;color: #ff0000;">LH108</p>
                                 </td>
                             </tr>
                             <tr>
-                                <td style="background-color: #D9E1F2;">10:00 - 10:50</td>
+                                <td style="font-weight: bold; background-color: #D9E1F2;">10:00 - 10:50</td>
                                 <td style="background-color: #B4C6E7;">
                                     <p style="font-weight: bold;">Plenary Lecture by Professor Mei-Chi Shaw (Online seminar)</p>
-                                    <p style="color: #ff0000;">LH108</p>
+                                    <p style="font-weight: bold; color: #ff0000;">LH108</p>
                                 </td>
                             </tr>
                             <tr>
-                                <td style="background-color: #D9E1F2;">10:50 - 11:05</td>
-                                <td>Group Photo Session</td>
+                                <td style="font-weight: bold; background-color: #D9E1F2;">10:50 - 11:05</td>
+                                <td style="font-weight: bold;">Group Photo Session</td>
                             </tr>
                             <tr>
-                                <td style="background-color: #D9E1F2;">11:05 - 11:20</td>
+                                <td style="font-weight: bold; background-color: #D9E1F2;">11:05 - 11:20</td>
                                 <td>
-                                    <p>Coffee Break</p>
-                                    <p style="color: #ff0000;">LH108</p>
+                                    <p style="font-weight: bold;">Coffee Break</p>
+                                    <p style="font-weight: bold; color: #ff0000;">LH108</p>
                                 </td>
                             </tr>
                             <tr>
-                                <td style="background-color: #D9E1F2;">11:20 - 12:05</td>
+                                <td style="font-weight: bold; background-color: #D9E1F2;">11:20 - 12:05</td>
                                 <td style="background-color: #e2efda;">
                                     <p v-if="item.topic[0].host == ''">***</p>
                                     <template v-else>
-                                        <p>Chair: <span style="font-weight: bold;">{{item.topic[0].host}}</span></p>
-                                        <p>Speaker: <span style="font-weight: bold;">{{item.topic[0].speaker}}</span></p>    
+                                        <p>Chair: <span>{{item.topic[0].host}}</span></p>
+                                        <p>Speaker: <span style="font-weight: bold; color: #0000ff;">{{item.topic[0].speaker}}</span></p>    
                                     </template>
                                     
                                 </td>
                             </tr>
                             <tr>
-                                <td rowspan="2" style="background-color: #fff2cc;">12:05 - 14:00</td>
+                                <td rowspan="2" style="font-weight: bold; background-color: #D9E1F2;">12:05 - 14:00</td>
                                 <td>
-                                    <p>Lunch</p>
-                                    <p style="color: #ff0000;">LH108</p>
+                                    <p style="font-weight: bold;">Lunch</p>
+                                    <p style="font-weight: bold; color: #ff0000;">LH108</p>
                                 </td>
                             </tr>
                             <tr>
                                 <td style="background-color: #fff2cc;">
-                                    <p style="color: #ff0000;">12:20-13:50</p>
+                                    <p style="font-weight: bold; color: #ff0000;">12:20-13:50</p>
                                     <p style="font-weight: bold;">Forum on Education</p>
-                                    <p style="color: #ff0000;">LH108</p>
+                                    <p style="font-weight: bold; color: #ff0000;">LH108</p>
                                 </td>
                             </tr>
                             <tr>
-                                <td style="background-color: #D9E1F2;">13:35 - 14:00</td>
+                                <td style="font-weight: bold; background-color: #D9E1F2;">13:35 - 14:00</td>
                                 <td style="background-color: #e2efda;" v-bind:rowspan="item.topic[1].rowspan">
                                     <p style="color: #ff0000;">{{item.topic[1].time}}</p>
                                     <p v-if="item.topic[1].host == ''">***</p>
                                     <template v-else>
-                                        <p>Chair: <span style="font-weight: bold;">{{item.topic[1].host}}</span></p>
-                                        <p>Speaker: <span style="font-weight: bold;" v-html="item.topic[1].speaker"></span></p>    
+                                        <p>Chair: <span>{{item.topic[1].host}}</span></p>
+                                        <p>Speaker: <span style="font-weight: bold; color: #0000ff;" v-html="item.topic[1].speaker"></span></p>    
                                     </template>
                                     
                                 </td>
                             </tr>
                             <tr>
-                                <td style="background-color: #D9E1F2;">14:00 - 14:25</td>
+                                <td style="font-weight: bold; background-color: #D9E1F2;">14:00 - 14:25</td>
                                 <td style="background-color: #e2efda;" v-if="item.topic[2].rowspan != 0">
                                     <p v-if="item.topic[0].host == ''">***</p>
                                     <template v-else>
-                                        <p>Chair: <span style="font-weight: bold;">{{item.topic[2].host}}</span></p>
-                                        <p>Speaker: <span style="font-weight: bold;">{{item.topic[2].speaker}}</span></p>    
+                                        <p>Chair: <span>{{item.topic[2].host}}</span></p>
+                                        <p>Speaker: <span style="font-weight: bold; color: #0000ff;">{{item.topic[2].speaker}}</span></p>    
                                     </template>
                                     
                                 </td>
                             </tr>
                             <tr>
-                                <td style="background-color: #D9E1F2;">14:25 - 14:50 </td>
+                                <td style="font-weight: bold; background-color: #D9E1F2;">14:25 - 14:50 </td>
                                 <td style="background-color: #e2efda;">
                                     <p v-if="item.topic[3].host == ''">***</p>
                                     <template v-else>
-                                        <p>Chair: <span style="font-weight: bold;">{{item.topic[3].host}}</span></p>
-                                        <p>Speaker: <span style="font-weight: bold;">{{item.topic[3].speaker}}</span></p>    
+                                        <p>Chair: <span>{{item.topic[3].host}}</span></p>
+                                        <p>Speaker: <span style="font-weight: bold; color: #0000ff;">{{item.topic[3].speaker}}</span></p>    
                                     </template>
                                     
                                 </td>
                             </tr>
                             <tr>
-                                <td style="background-color: #D9E1F2;">14:50 - 15:00</td>
+                                <td style="font-weight: bold; background-color: #D9E1F2;">14:50 - 15:00</td>
                                 <td>
-                                    <p>Coffee Break</p>
-                                    <p style="color: #ff0000;">LH108</p>
+                                    <p style="font-weight: bold;">Coffee Break</p>
+                                    <p style="font-weight: bold; color: #ff0000;">LH108</p>
                                 </td>
                             </tr>
                             <tr style="background-color: #fff2cc;">
-                                <td>15:00 - 15:45</td>
+                                <td style="font-weight: bold; background-color: #D9E1F2;">15:00 - 15:45</td>
                                 <td>
                                     <p style="font-weight: bold;">NTU-IBM Q Hub project, Prof. Ching-Ray Chang</p>
                                     <p style="font-weight: bold;">Chair: </p>
-                                    <p style="color: #ff0000;">LH108</p>
+                                    <p style="font-weight: bold; color: #ff0000;">LH108</p>
                                 </td>
                             </tr>
                             <tr>
-                                <td style="background-color: #D9E1F2;">15:45 - 16:00</td>
+                                <td style="font-weight: bold; background-color: #D9E1F2;">15:45 - 16:00</td>
                                 <td>
-                                    <p>Coffee Break</p>
-                                    <p style="color: #ff0000;">LH108</p>
+                                    <p style="font-weight: bold;">Coffee Break</p>
+                                    <p style="font-weight: bold; color: #ff0000;">LH108</p>
                                 </td>
                             </tr>
                             <tr>
-                                <td style="background-color: #D9E1F2;">16:00 - 16:50</td>
+                                <td style="font-weight: bold; background-color: #D9E1F2;">16:00 - 16:50</td>
                                 <td style="background-color: #B4C6E7;">
                                     <p style="font-weight: bold;">Plenary Lecture by 2020 Academic Award Winner</p>
                                     <p style="font-weight: bold;">Chair: </p>
-                                    <p style="color: #ff0000;">LH108</p>
+                                    <p style="font-weight: bold; color: #ff0000;">LH108</p>
                                 </td>
                             </tr>
                             <tr>
-                                <td style="background-color: #D9E1F2;">16:50 - 18:10</td>
+                                <td style="font-weight: bold; background-color: #D9E1F2;">16:50 - 18:10</td>
                                 <td>
                                     <p style="font-weight: bold;">TMS Meeting & Award Ceremony</p>
-                                    <p style="color: #ff0000;">LH108</p>
+                                    <p style="font-weight: bold; color: #ff0000;">LH108</p>
                                 </td>
                             </tr>
                             <tr>
-                                <td style="background-color: #D9E1F2;">18:30</td>
-                                <td>Banquet</td>
+                                <td style="font-weight: bold; background-color: #D9E1F2;">18:30</td>
+                                <td style="font-weight: bold;">Banquet</td>
                             </tr>
                         </table>
                         <br><br>
@@ -515,134 +515,134 @@
                                 <td colspan="2" style="font-weight: bold;">December 6, 2020 (Sunday)</td>
                             </tr>
                             <tr>
-                                <td style="background-color: #D9E1F2;">Sessions</td>
+                                <td style="font-weight: bold; background-color: #D9E1F2;">Sessions</td>
                                 <td style="background-color: #e2efda; font-weight: bold;">{{item.name}}</td>
                             </tr>
                             <tr>
-                                <td style="background-color: #D9E1F2;">Room</td>
-                                <td style="background-color: #e2efda; color: #ff0000;" v-html="item.address"></td>
+                                <td style="font-weight: bold; background-color: #D9E1F2;">Room</td>
+                                <td style="font-weight: bold; background-color: #e2efda; color: #ff0000;" v-html="item.address"></td>
                             </tr>
                             <tr>
-                                <td style="background-color: #D9E1F2;">08:30 - 09:00</td>
-                                <td>Registration</td>
+                                <td style="font-weight: bold; background-color: #D9E1F2;">08:30 - 09:00</td>
+                                <td style="font-weight: bold;">Registration</td>
                             </tr>
                             <tr>
-                                <td style="background-color: #D9E1F2;">09:00 - 09:50</td>
+                                <td style="font-weight: bold; background-color: #D9E1F2;">09:00 - 09:50</td>
                                 <td style="background-color: #B4C6E7;">
                                     <p style="font-weight: bold;">Plenary Lecture by Professor  Wee-Teck Gan ( Online seminar )</p>
                                     <p style="font-weight: bold;">Chair: </p>
-                                    <p style="color: #ff0000;">LH108</p>			
+                                    <p style="font-weight: bold; color: #ff0000;">LH108</p>			
                                 </td>
                             </tr>
                             <tr>
-                                <td style="background-color: #D9E1F2;">09:50 - 10:10</td>
+                                <td style="font-weight: bold; background-color: #D9E1F2;">09:50 - 10:10</td>
                                 <td>
-                                    <p>Coffee Break</p>
-                                    <p style="color: #ff0000;">LH108</p>
+                                    <p style="font-weight: bold;">Coffee Break</p>
+                                    <p style="font-weight: bold;color: #ff0000;">LH108</p>
                                 </td>
                             </tr>
                             <tr>
-                                <td style="background-color: #D9E1F2;">10:10 - 10:55</td>
+                                <td style="font-weight: bold; background-color: #D9E1F2;">10:10 - 10:55</td>
                                 <td style="background-color: #e2efda;" v-bind:rowspan="item.topic[4].rowspan">
                                     <p style="color: #ff0000;">{{item.topic[4].time}}</p>
                                     <p v-if="item.topic[4].host == ''">***</p>
                                     <template v-else>
-                                        <p>Chair: <span style="font-weight: bold;">{{item.topic[4].host}}</span></p>
-                                        <p>Speaker: <span style="font-weight: bold;" v-html="item.topic[4].speaker"></span></p>
+                                        <p>Chair: <span>{{item.topic[4].host}}</span></p>
+                                        <p>Speaker: <span style="font-weight: bold; color: #0000ff;" v-html="item.topic[4].speaker"></span></p>
                                     </template>
                                     
                                 </td>
                             </tr>
                             <tr>
-                                <td style="background-color: #D9E1F2;">11:00 - 11:25</td>
+                                <td style="font-weight: bold; background-color: #D9E1F2;">11:00 - 11:25</td>
                                 <td style="background-color: #e2efda;" v-if="item.topic[5].rowspan != 0">
                                     <p v-if="item.topic[5].host == ''">***</p>
                                     <template v-else>
-                                        <p>Chair: <span style="font-weight: bold;">{{item.topic[5].host}}</span></p>
-                                        <p>Speaker: <span style="font-weight: bold;">{{item.topic[5].speaker}}</span></p>    
+                                        <p>Chair: <span>{{item.topic[5].host}}</span></p>
+                                        <p>Speaker: <span style="font-weight: bold; color: #0000ff;">{{item.topic[5].speaker}}</span></p>    
                                     </template>
                                     
                                 </td>
                             </tr>
                             <tr>
-                                <td style="background-color: #D9E1F2;">11:25 - 11:50</td>
+                                <td style="font-weight: bold; background-color: #D9E1F2;">11:25 - 11:50</td>
                                 <td style="background-color: #e2efda;" v-if="item.topic[5].rowspan != 0">
                                     <p v-if="item.topic[6].host == ''">***</p>
                                     <template v-else>
-                                        <p>Chair: <span style="font-weight: bold;">{{item.topic[6].host}}</span></p>
-                                        <p>Speaker: <span style="font-weight: bold;">{{item.topic[6].speaker}}</span></p>    
+                                        <p>Chair: <span>{{item.topic[6].host}}</span></p>
+                                        <p>Speaker: <span style="font-weight: bold; color: #0000ff;">{{item.topic[6].speaker}}</span></p>    
                                     </template>
                                     
                                 </td>
                             </tr>
                             <tr>
-                                <td style="background-color: #D9E1F2;">11:50 - 12:15</td>
+                                <td style="font-weight: bold; background-color: #D9E1F2;">11:50 - 12:15</td>
                                 <td style="background-color: #e2efda;">
                                     <p v-if="item.topic[7].host == ''">***</p>
                                     <template v-else>
-                                        <p>Chair: <span style="font-weight: bold;">{{item.topic[7].host}}</span></p>
-                                        <p>Speaker: <span style="font-weight: bold;">{{item.topic[7].speaker}}</span></p>    
+                                        <p>Chair: <span>{{item.topic[7].host}}</span></p>
+                                        <p>Speaker: <span style="font-weight: bold; color: #0000ff;">{{item.topic[7].speaker}}</span></p>    
                                     </template>
                                     
                                 </td>
                             </tr>
                             <tr>
-                                <td rowspan="3" style="background-color: #fff2cc;">12:15 - 14:00</td>
+                                <td rowspan="3" style="font-weight: bold; background-color: #D9E1F2;">12:15 - 14:00</td>
                                 <td>
-                                    <p>Lunch</p>
-                                    <p style="color: #ff0000;">LH108</p>
+                                    <p style="font-weight: bold;">Lunch</p>
+                                    <p style="font-weight: bold; color: #ff0000;">LH108</p>
                                 </td>
                             </tr>
                             <tr>
                                 <td style="background-color: #fff2cc;">
-                                    <p style="color: #ff0000;">12:15 - 13:45</p>
+                                    <p style="font-weight: bold; color: #ff0000;">12:15 - 13:45</p>
                                     <p style="font-weight: bold;">Forum of Female Mathematicians</p>
-                                    <p style="color: #ff0000;">MA307</p>
+                                    <p style="font-weight: bold; color: #ff0000;">MA307</p>
                                 </td>
                             </tr>
                             <tr>
                                 <td style="background-color: #fff2cc;">
-                                    <p style="color: #ff0000;">13:45 - 14:00</p>
+                                    <p style="font-weight: bold; color: #ff0000;">13:45 - 14:00</p>
                                     <p style="font-weight: bold;">Coffee Break</p>
-                                    <p style="color: #ff0000;">LH108</p>
+                                    <p style="font-weight: bold; color: #ff0000;">LH108</p>
                                 </td>
                             </tr>
                             <tr>
-                                <td style="background-color: #D9E1F2;">14:00 - 14:25</td>
+                                <td style="font-weight: bold; background-color: #D9E1F2;">14:00 - 14:25</td>
                                 <td style="background-color: #e2efda;">
                                     <p v-if="item.topic[10].host == ''">***</p>
                                     <template v-else>
-                                        <p>Chair: <span style="font-weight: bold;">{{item.topic[10].host}}</span></p>
-                                        <p>Speaker: <span style="font-weight: bold;">{{item.topic[10].speaker}}</span></p>    
+                                        <p>Chair: <span>{{item.topic[10].host}}</span></p>
+                                        <p>Speaker: <span style="font-weight: bold; color: #0000ff;">{{item.topic[10].speaker}}</span></p>    
                                     </template>
                                     
                                 </td>
                             </tr>
                             <tr>
-                                <td style="background-color: #D9E1F2;">14:25 - 14:50</td>
+                                <td style="font-weight: bold; background-color: #D9E1F2;">14:25 - 14:50</td>
                                 <td style="background-color: #e2efda;">
                                     <p v-if="item.topic[11].host == ''">***</p>
                                     <template v-else>
-                                        <p>Chair: <span style="font-weight: bold;">{{item.topic[11].host}}</span></p>
-                                        <p>Speaker: <span style="font-weight: bold;">{{item.topic[11].speaker}}</span></p>    
+                                        <p>Chair: <span>{{item.topic[11].host}}</span></p>
+                                        <p>Speaker: <span style="font-weight: bold; color: #0000ff;">{{item.topic[11].speaker}}</span></p>    
                                     </template>
                                     
                                 </td>
                             </tr>
                             <tr>
-                                <td style="background-color: #D9E1F2;">14:50 - 15:15</td>
+                                <td style="font-weight: bold; background-color: #D9E1F2;">14:50 - 15:15</td>
                                 <td style="background-color: #e2efda;">
                                     <p v-if="item.topic[12].host == ''">***</p>
                                     <template v-else>
-                                        <p>Chair: <span style="font-weight: bold;">{{item.topic[12].host}}</span></p>
-                                        <p>Speaker: <span style="font-weight: bold;">{{item.topic[12].speaker}}</span></p>    
+                                        <p>Chair: <span>{{item.topic[12].host}}</span></p>
+                                        <p>Speaker: <span style="font-weight: bold; color: #0000ff;">{{item.topic[12].speaker}}</span></p>    
                                     </template>
                                     
                                 </td>
                             </tr>
                             <tr>
-                                <td style="background-color: #D9E1F2;">15:15</td>
-                                <td>Closing</td>
+                                <td style="font-weight: bold; background-color: #D9E1F2;">15:15</td>
+                                <td style="font-weight: bold;">Closing</td>
                             </tr>
                         </table>
                     </template>
