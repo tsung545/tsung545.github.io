@@ -66,13 +66,17 @@
             <div class="main-content">
                 <div class="main-text">
                     <h2>Plenary Speakers</h2>
-                    <div class="main-speakers" v-for="item2 in items2">
+                    <div class="main-speakers" v-for="(item2,index) in items2">
                         <div class="photo" v-bind:style="{'background-image': 'url(' + item2.photo + ')'}"></div>
                         <div class="content">
                             <h3>{{item2.name}}</h3>
                             <p v-if="item2.unit !=''">Affiliation: {{item2.unit}}</p>
                             <p v-if="item2.study !=''">Fields: {{item2.study}}</p>
                             <p v-if="item2.unit =='' && item2.study ==''"></p>
+                            <p v-if="index == 0" style="color: #ff0000; font-weight: bold;">
+                                <br>
+                                蕭美琪教授因緊急要事取消演講
+                            </p>
                         </div>
                     </div>
                 </div>
