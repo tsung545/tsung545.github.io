@@ -75,12 +75,15 @@
                         </a>
                         <select v-model="currentTab" class="program-select">
                             <option v-bind:value="mainPage">Category</option>
-                            <option v-bind:value="mainPage">{{mainPage}}</option>
+                            <!-- <option v-bind:value="mainPage">{{mainPage}}</option> -->
                             <option v-for="item in items" v-bind:value="item.name">{{item.name}}</option>
                         </select>    
                     </div>
                     
                     <template v-if="currentTab == mainPage">
+                        <h2>請點選領域 或下載PDF</h2>
+                    </template>
+                    <!-- <template v-if="currentTab == mainPage">
                         <h2>{{mainPage}}</h2>
                         <div style="overflow-x: scroll;">
                             <table class="table-program-1">
@@ -364,7 +367,7 @@
                             </table>
                         </div>
                         
-                    </template>
+                    </template> -->
                     <template v-for="item in items" v-if="item.name == currentTab">
                         <h2>{{item.name}}</h2>
                         <table class="table-program-2">
