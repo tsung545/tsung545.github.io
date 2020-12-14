@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/nanogallery2/3.0.1/css/nanogallery2.min.css">
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon" />
     <title>年會花絮 | 2020年中華民國數學年會 - 輔仁大學</title>
@@ -82,9 +83,33 @@
     <section class="main">
         <div class="container">
             <div class="main-content">
-                <div class="main-text">
-                    <h2>Coming Soon</h2>
-                    <p style="color: #DE85A6; font-size: 72px; text-align: center;">Coming Soon</p>
+                <div class="main-text" style="padding: 20px 40px;">
+                    <h2>年會相片</h2>
+
+                    <!-- <button type="button" id="btn_albums">所有相簿</button>
+                    <button type="button" id="btn_photostream">所有相片</button> -->
+
+                    <div id="nanogallery2_flickr" data-nanogallery2='{
+                        "kind":             "flickr",
+                        "userID":           "191257048@N07",
+                        "thumbnailHeight":  320,
+                        "thumbnailWidth":   320,
+                        "thumbnailL1Height":  200,
+                        "thumbnailL1Width":   260,
+                        "thumbnailBorderVertical": 0,
+                        "thumbnailBorderHorizontal": 0,
+                        "thumbnailGutterWidth": "15" ,
+                        "thumbnailGutterHeight": "15",
+                        "colorScheme": {
+                            "thumbnail": {
+                                "borderColor": "rgba(255,255,255,1)",
+                                "background": "rgba(11,12,90,1)"
+                            }
+                        },
+                        "thumbnailLabel":     { "valign": "bottom", "position": "overImage", "hideIcons": false, "titleFontSize": "0em" },
+                        "thumbnailL1Label":     { "valign": "bottom", "position": "onBottom", "hideIcons": false, "titleFontSize": "1em" },
+                        "thumbnailToolbarImage" :  { "topLeft": "select", "topRight" : "featured,display,download,cart" }
+                    }'></div>
                 </div>
             </div>    
         </div>
@@ -97,10 +122,53 @@
 
 
     <!-- Javascript -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.12/vue.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
-    <script src="js/main.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/nanogallery2/3.0.1/jquery.nanogallery2.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- <script>
+        var settings = {
+            kind:            'flickr',
+            userID:          '185758340@N02',           // Flickr User ID
+            thumbnailHeight: 400, thumbnailWidth: 400,
+            thumbnailBorderVertical: 5,
+            thumbnailBorderHorizontal: 5,
+            thumbnailGutterWidth: 15 ,
+            thumbnailGutterHeight: 15,
+            thumbnailLabel: { display: true },
+            locationHash:    true,
+            thumbnailLabel: { display: true, position:'overImageOnTop', hideIcons: true, titleFontSize: '1.5em', align: 'left'},
+            
+        };
+
+        jQuery(document).ready(function () {
+        
+            jQuery("#nanogallery2_flickr").nanogallery2(settings);
+            
+            jQuery('#btn_photostream').on('click', function() {
+                jQuery("#nanogallery2_flickr").nanogallery2('destroy');
+                settings.album = 'none';
+                jQuery("#nanogallery2_flickr").nanogallery2(settings);
+            });
+            
+            jQuery('#btn_albums').on('click', function() {
+                jQuery("#nanogallery2_flickr").nanogallery2('destroy');
+                settings.album = undefined;
+                jQuery("#nanogallery2_flickr").nanogallery2(settings);
+            });
+            
+            jQuery('#btn_album').on('click', function() {
+                jQuery("#nanogallery2_flickr").nanogallery2('destroy');
+                settings.album = '72157675219521270';     // Flickr album ID
+                jQuery("#nanogallery2_flickr").nanogallery2(settings);
+            });
+        
+        });
+
+
+    </script> -->
 
 </body>
 </html>
