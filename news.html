@@ -85,7 +85,7 @@
                 <div class="main-text">
                     <h2>最新消息</h2>
                     <div class="focus-content" v-for="item in reverseItems" style="align-items: flex-start;">
-                        <span class="block date">{{item.gsx$date.$t}}</span><p style="width: calc(100% - 110px);" v-html="item.gsx$content.$t"></p>
+                        <span class="block date">{{item[0]}}</span><p style="width: calc(100% - 110px);" v-html="item[1]"></p>
                     </div>
                 </div>
             </div>    

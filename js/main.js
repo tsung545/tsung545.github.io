@@ -120,9 +120,9 @@ $(function(){
                 }
             },
             created() {
-                axios.get('https://spreadsheets.google.com/feeds/list/1KH6Fy1T-R3T_2Qkql8MLtlf991hEG3m-IZrm4DKlONo/2/public/values?alt=json')
+                axios.get('https://sheets.googleapis.com/v4/spreadsheets/1KH6Fy1T-R3T_2Qkql8MLtlf991hEG3m-IZrm4DKlONo/values/%E6%9C%80%E6%96%B0%E6%B6%88%E6%81%AF!A2:B200?key=AIzaSyBHLzwB74KOsQZlv0mA7kaRJ2HEXeB_k40')
                     .then(res => {
-                        this.items = res.data.feed.entry;
+                        this.items = res.data.values;
                     })
                     .catch(error => {
                         alert("異常");
@@ -238,9 +238,9 @@ $(function(){
                 items: []  
             },
             created() {
-                axios.get('https://spreadsheets.google.com/feeds/list/1KH6Fy1T-R3T_2Qkql8MLtlf991hEG3m-IZrm4DKlONo/1/public/values?alt=json')
+                axios.get('https://sheets.googleapis.com/v4/spreadsheets/1KH6Fy1T-R3T_2Qkql8MLtlf991hEG3m-IZrm4DKlONo/values/%E5%8F%83%E5%8A%A0%E8%80%85%E5%90%8D%E5%96%AE!D2:F700?key=AIzaSyBHLzwB74KOsQZlv0mA7kaRJ2HEXeB_k40')
                     .then(res => {
-                        this.items = res.data.feed.entry;
+                        this.items = res.data.values;
                     })
                     .catch(error => {
                         alert("異常");
@@ -248,9 +248,6 @@ $(function(){
             }
         });    
     }
-    
-
-    
 
     //----------Navbar樣式----------//
 
